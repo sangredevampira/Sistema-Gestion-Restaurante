@@ -5,7 +5,7 @@
 #ifndef PROYECTO_PROGRA_DEREK_Y_KRIS_CLIENTE_H
 #define PROYECTO_PROGRA_DEREK_Y_KRIS_CLIENTE_H
 
-#include "../Utilities.h"
+#include "../Utilities/Utilities.h"
 
 class Client {
 private:
