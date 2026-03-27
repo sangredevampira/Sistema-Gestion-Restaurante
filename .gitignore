@@ -1,0 +1,52 @@
+.idea
+
+
+Archivos compilados / binarios
+
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+
+Objetos y librerías
+
+*.o
+*.obj
+*.a
+*.lib
+
+
+Archivos de build
+
+build/
+bin/
+obj/
+out/
+
+
+CMake
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+
+Archivos de dependencias
+
+*.d
+
+
+Archivos temporales / editor
+
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+
+compile_commands.json
