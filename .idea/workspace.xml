@@ -23,19 +23,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Prueba 1129873821">
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities cpp/Card.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities cpp/Cash.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities cpp/Client.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities cpp/Digital.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities headers/Card.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities headers/Cash.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities headers/Client.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities headers/Digital.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities headers/PaymentMethod.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities headers/Utilities.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="cmake .h">
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/Card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Card.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Card.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Card.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Cash.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Cash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Digital.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Digital.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/PaymentMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/PaymentMethod.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Utilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,11 +106,19 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "Modulo1-Clientes",
-    "last_opened_file_path": "E:/Clion/Proyecto/Entities headers",
+    "last_opened_file_path": "E:/Clion/Proyecto",
     "org.rust.first.attach.projects": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Clion\Proyecto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Clion\Proyecto" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -168,7 +172,23 @@
       <option name="project" value="LOCAL" />
       <updated>1774592404223</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Agramos cliente y metodos de pago">
+      <option name="closed" value="true" />
+      <created>1774593574956</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1774593574956</updated>
+    </task>
+    <task id="LOCAL-00006" summary="cmake .h">
+      <option name="closed" value="true" />
+      <created>1774593824182</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774593824182</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +203,9 @@
     <MESSAGE value="Prueba 2" />
     <MESSAGE value="Prueba" />
     <MESSAGE value="Prueba 1129873821" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prueba 1129873821" />
+    <MESSAGE value="Agramos cliente y metodos de pago" />
+    <MESSAGE value="cmake .h" />
+    <option name="LAST_COMMIT_MESSAGE" value="cmake .h" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

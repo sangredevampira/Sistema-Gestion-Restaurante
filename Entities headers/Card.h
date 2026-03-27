@@ -5,12 +5,13 @@
 #ifndef PROYECTO_PROGRA_DEREK_Y_KRIS_CARD_H
 #define PROYECTO_PROGRA_DEREK_Y_KRIS_CARD_H
 
-#include "Entities headers/PaymentMethod.h"
+#include "../Entities headers/PaymentMethod.h"
+
 
 class Card : public PaymentMethod
 {
 public:
-    std::string pay() override;
+    virtual std::string pay() override;
 };
 
 

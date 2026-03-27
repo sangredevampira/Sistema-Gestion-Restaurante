@@ -5,7 +5,7 @@
 #ifndef PROYECTO_PROGRA_DEREK_Y_KRIS_METODOPAGO_H
 #define PROYECTO_PROGRA_DEREK_Y_KRIS_METODOPAGO_H
 
-#include "Utilities.h"
+#include "../Utilities.h"
 
 class PaymentMethod {
 public:
