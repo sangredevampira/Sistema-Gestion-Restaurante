@@ -8,5 +8,5 @@ add_executable(new_target main.cpp
         "Entities cpp/Client.cpp"
         "Entities cpp/Cash.cpp"
         "Entities headers/Card.h"
-        "Utilities.h"
+        "Utilities/Utilities.h"
 )
