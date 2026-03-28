@@ -9,4 +9,6 @@ add_executable(new_target main.cpp
         "Entities cpp/Cash.cpp"
         "Entities headers/Card.h"
         "Utilities/Utilities.h"
+        TemplateList/Nodo.h
+        TemplateList/Lista.h
 )
