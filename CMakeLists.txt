@@ -9,4 +9,8 @@ add_executable(new_target main.cpp
         "Entities cpp/Cash.cpp"
         "Entities headers/Card.h"
         "Utilities/Utilities.h"
+        CashRegister.cpp
+        CashRegister.h
+        Exceptions/GeneralException.cpp
+        Exceptions/GeneralException.h
 )
