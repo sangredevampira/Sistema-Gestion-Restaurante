@@ -4,7 +4,7 @@
 
 #include "../Decorator Headers/ExtraIce.h"
 
-ExtraIce::ExtraIce(Product *baseProduct): ExtraDrink(baseProduct) {
+ExtraIce::ExtraIce(std::shared_ptr<Product>p): ExtraBeverage(p) {
 }
 
 std::string ExtraIce::description() {

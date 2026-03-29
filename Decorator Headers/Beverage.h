@@ -7,9 +7,9 @@
 #include "Product.h"
 
 
-class Drink : public Product {
+class Beverage : public Product {
 public:
-    Drink(std::string name = "", float price = 0.0);
+    Beverage(std::string name = "", float price = 0.0);
     std::string getName() override;
     float getPrice() override;
 };

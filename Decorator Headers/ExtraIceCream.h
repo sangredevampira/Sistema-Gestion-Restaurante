@@ -8,7 +8,7 @@
 #include "ExtraDessert.h"
 class ExtraIceCream:public ExtraDessert {
     public:
-    ExtraIceCream(Product *baseProduct = nullptr);
+    ExtraIceCream(std::shared_ptr<Product> p);
     virtual std::string description() override;
     virtual float price() override;
 };

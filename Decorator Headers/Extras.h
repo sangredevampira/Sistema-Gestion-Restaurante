@@ -8,10 +8,9 @@
 #include "Product.h"
 class Extras {
     protected:
-    Product *baseProduct;
+    std::shared_ptr<Product> baseProduct;
 public:
-    Extras(Product *baseProduct = nullptr);
-    virtual ~Extras() = default;
+    Extras(std::shared_ptr<Product> p);
     virtual std::string description() = 0;
     virtual float price() = 0;
 };

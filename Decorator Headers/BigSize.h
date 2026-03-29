@@ -6,9 +6,8 @@
 #define PROYECTO_1_PROGA_2_DEREK_Y_KRIS_BIG_H
 
 #include "Extras.h"
-class Big:public Extras {
-public: Big(Product *baseProduct = nullptr);
-    virtual ~Big();
+class BigSize:public Extras {
+public: BigSize(std::shared_ptr<Product> p);
     std::string description() override;
     float price() override;
 };

@@ -6,9 +6,9 @@
 #define PROYECTO_1_PROGA_2_DEREK_Y_KRIS_MEDIUM_H
 
 #include "Extras.h"
-class Medium: public Extras{
+class MediumSize: public Extras{
     public:
-    Medium(Product *baseProduct = nullptr);
+    MediumSize(std::shared_ptr<Product> p);
     std::string description() override;
     float price() override;
 };

@@ -8,7 +8,7 @@
 #include "Extras.h"
 class ExtraDessert :public Extras{
     public:
-    ExtraDessert(Product *baseProduct = nullptr);
+    ExtraDessert(std::shared_ptr<Product> p);
 };
 
 

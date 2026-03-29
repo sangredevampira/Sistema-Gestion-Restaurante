@@ -4,6 +4,6 @@
 
 #include "../Decorator Headers/Extras.h"
 
-Extras::Extras(Product *baseProduct) {
-    this->baseProduct = baseProduct;
+Extras::Extras(std::shared_ptr<Product> p):baseProduct(p) {
+
 }

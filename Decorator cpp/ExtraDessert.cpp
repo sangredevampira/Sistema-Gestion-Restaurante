@@ -4,5 +4,5 @@
 
 #include "../Decorator Headers/ExtraDessert.h"
 
-ExtraDessert::ExtraDessert(Product *baseProduct): Extras(baseProduct) {
+ExtraDessert::ExtraDessert(std::shared_ptr<Product>p): Extras(p) {
 }

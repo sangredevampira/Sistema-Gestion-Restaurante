@@ -5,10 +5,10 @@
 #ifndef PROYECTO_1_PROGA_2_DEREK_Y_KRIS_EXTRAICE_H
 #define PROYECTO_1_PROGA_2_DEREK_Y_KRIS_EXTRAICE_H
 
-#include "ExtraDrink.h"
-class ExtraIce: public ExtraDrink {
+#include "ExtraBeverage.h"
+class ExtraIce: public ExtraBeverage {
     public:
-    ExtraIce(Product *baseProduct = nullptr);
+    ExtraIce(std::shared_ptr<Product> p);
     virtual std::string description() override;
     virtual float price() override;
 };

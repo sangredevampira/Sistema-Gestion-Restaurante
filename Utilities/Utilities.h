@@ -8,5 +8,6 @@
 #include <iostream>
 #include <exception>
 #include <sstream>
+#include <memory>
 
 #endif //PROYECTO_PROGRA_DEREK_Y_KRIS_UTILITIES_H

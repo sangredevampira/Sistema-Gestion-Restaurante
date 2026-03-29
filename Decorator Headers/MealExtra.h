@@ -6,9 +6,9 @@
 #define PROYECTO_1_PROGA_2_DEREK_Y_KRIS_EXTRAFOOD_H
 
 #include "Extras.h"
-class ExtraFood: public Extras{
+class MealExtra: public Extras{
     public:
-    ExtraFood(Product* baseProduct);
+    MealExtra(std::shared_ptr<Product> p);
 };
 
 

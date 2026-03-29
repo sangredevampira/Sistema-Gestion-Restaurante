@@ -4,6 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/RefactoringsMru/RenameRefactoring/DoSearchForTextInStrings/@EntryValue" value="true" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
@@ -26,37 +28,36 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Commit main &gt;:D">
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/Big.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/Dessert.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/Drink.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/ExtraDrink.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/ExtraFood.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/ExtraFries.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/ExtraIce.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/ExtraIceCream.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/Extras.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/Little.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/Meal.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/Medium.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator Headers/Product.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/Big.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/Dessert.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/Drink.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/ExtraDrink.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/ExtraFood.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/ExtraFries.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/ExtraIce.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/ExtraIceCream.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/Extras.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/Little.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/Meal.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/Medium.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator cpp/Product.cpp" afterDir="false" />
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Prueba">
+      <change afterPath="$PROJECT_DIR$/ListEntitie/List.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ListEntitie/Nodo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Big.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/BigSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Drink.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Beverage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraDrink.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraBeverage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraFood.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MealExtra.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraFries.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraFries.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraIce.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraIce.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraIceCream.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraIceCream.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Extras.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Extras.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Little.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/SmallSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Medium.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MediumSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Product.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Product.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Big.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/BigSize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Drink.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Beverage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraDrink.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraBeverage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraFood.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MealExtra.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraFries.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraFries.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraIce.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraIce.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraIceCream.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraIceCream.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Extras.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Extras.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Little.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/SmallSize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Medium.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MediumSize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Product.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Product.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Utilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Utilities.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +67,8 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="CopilotPersistence">
-    <persistenceIdMap>
-      <entry key="_E:/Clion/Proyecto 1 - Proga 2 - Derek y Kris" value="3BW5YIvLSsS8eh7YIjWAp22tONZ" />
-    </persistenceIdMap>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
   </component>
   <component name="CopilotUserSelectedModel">
     <selectedModels>
@@ -81,7 +80,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Modulo-2-Decorador" />
+        <entry key="$PROJECT_DIR$" value="Rama-3-Lista-Template" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,12 +91,12 @@
     &quot;assignee&quot;: &quot;kristelperazasanchez-cloud&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/kristelperazasanchez-cloud/Proyecto-1---Kris-y-Derek.git",
-    "accountId": "c808a30d-f741-4a06-b8f4-fe9a61194d3d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kristelperazasanchez-cloud/Proyecto-1---Kris-y-Derek.git&quot;,
+    &quot;accountId&quot;: &quot;e826efe3-0324-475a-ba6f-9945e83258ef&quot;
   }
-}]]></component>
+}</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="Em2MZL6v" />
   </component>
@@ -111,9 +110,6 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="3BW5YIvLSsS8eh7YIjWAp22tONZ" />
-  <component name="ProjectStatusUIService"><![CDATA[{
-  "uiKindId": "Widget"
-}]]></component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -133,18 +129,18 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "Modulo-2-Decorador",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/Clion/Proyecto 1 - Proga 2 - Derek y Kris",
+    "last_opened_file_path": "E:/Clion/Proyecto 1 - Proga 2 - Derek y Kris/ListEntitie",
     "org.rust.first.attach.projects": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Clion\Proyecto 1 - Proga 2 - Derek y Kris\ListEntitie" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Clion\Proyecto 1 - Proga 2 - Derek y Kris\Decorator Headers" />
-      <recent name="E:\Clion\Proyecto 1 - Proga 2 - Derek y Kris\Decorator cpp" />
-      <recent name="E:\Clion\Proyecto 1 - Proga 2 - Derek y Kris\Entities headers" />
-      <recent name="E:\Clion\Proyecto 1 - Proga 2 - Derek y Kris\Entities cpp" />
+      <recent name="E:\Clion\Proyecto 1 - Proga 2 - Derek y Kris\TemplateList" />
+      <recent name="E:\Clion\Proyecto 1 - Proga 2 - Derek y Kris" />
       <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Utilities" />
     </key>
   </component>
@@ -168,7 +164,6 @@
       <option name="presentableId" value="Default" />
       <updated>1774592031293</updated>
       <workItem from="1774592032311" duration="720000" />
-      <workItem from="1774676952886" duration="10636000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -210,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774596930945</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Prueba">
+      <option name="closed" value="true" />
+      <created>1774691560973</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774691560973</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,19 +226,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prueba 2" />
-    <MESSAGE value="Prueba" />
     <MESSAGE value="Prueba 1129873821" />
     <MESSAGE value="hola tonotos" />
     <MESSAGE value="Actualizacion carpeta de utilities" />
     <MESSAGE value="Commit main &gt;:D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit main &gt;:D" />
-  </component>
-  <component name="github-copilot-workspace">
-    <instructionFileLocations>
-      <option value=".github/instructions" />
-    </instructionFileLocations>
-    <promptFileLocations>
-      <option value=".github/prompts" />
-    </promptFileLocations>
+    <MESSAGE value="Agregue el decorador (no se enoje conmigo Kris :c)" />
+    <MESSAGE value="Prueba" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prueba" />
   </component>
 </project>

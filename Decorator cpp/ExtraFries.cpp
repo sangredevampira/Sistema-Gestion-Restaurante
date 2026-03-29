@@ -4,8 +4,8 @@
 
 #include "../Decorator Headers/ExtraFries.h"
 
-ExtraFries::ExtraFries(Product *baseProduct)
-    : ExtraFood(baseProduct) {
+ExtraFries::ExtraFries(std::shared_ptr<Product> baseProduct)
+    : MealExtra(baseProduct) {
 }
 
 std::string ExtraFries::description() {

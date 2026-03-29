@@ -5,10 +5,10 @@
 #ifndef PROYECTO_1_PROGA_2_DEREK_Y_KRIS_EXTRAFRIES_H
 #define PROYECTO_1_PROGA_2_DEREK_Y_KRIS_EXTRAFRIES_H
 
-#include "ExtraFood.h"
-class ExtraFries :public ExtraFood{
+#include "MealExtra.h"
+class ExtraFries :public MealExtra{
     public:
-    ExtraFries(Product *baseProduct = nullptr);
+    ExtraFries(std::shared_ptr<Product> baseProduct);
     virtual std::string description() override;
     virtual float price() override;
 };

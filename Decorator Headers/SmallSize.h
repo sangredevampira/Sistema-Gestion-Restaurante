@@ -6,9 +6,9 @@
 #define PROYECTO_1_PROGA_2_DEREK_Y_KRIS_LITTLE_H
 
 #include "Extras.h"
-    class Little:public Extras{
+    class SmallSize:public Extras{
 public:
-    Little(Product *baseProduct = nullptr);
+    SmallSize(std::shared_ptr<Product> p);
     std::string description() override;
     float price() override;
 };
