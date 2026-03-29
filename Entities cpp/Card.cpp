@@ -5,4 +5,4 @@
 #include "../Entities headers/Card.h"
 
 
-std::string Card::pay() { return "Pago con tr\n"; }
+std::string Card::pay() { return "Pago realizado con tarjeta\n"; }
