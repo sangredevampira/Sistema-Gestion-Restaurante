@@ -6,6 +6,7 @@
   <component name="BackendCodeEditorMiscSettings">
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/RefactoringsMru/RenameRefactoring/DoSearchForTextInStrings/@EntryValue" value="true" type="bool" />
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
@@ -28,15 +29,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Clase caja, manejo de excepciones">
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Implementacion de algoritmo greedy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Card.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Cash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Cash.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Digital.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Digital.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/Card.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Card.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/Cash.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Cash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/Digital.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Digital.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/PaymentMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/PaymentMethod.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Modulo3-Lista-Template" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
