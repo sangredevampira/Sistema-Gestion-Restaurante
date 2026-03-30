@@ -8,16 +8,17 @@
 
 #include "Nodo.h"
 
+#include "Nodo.h"
+
 template<class T>
 class List {
 private:
-    Nodo<T>* first;
-    public:
+    std::shared_ptr<Nodo<T>> first;
+public:
     List();
-    ~List();
-    void insertarInicio(T*);
-    bool estaVacio();
-    std::string toStringLista();
+    void insertFirst(std::shared_ptr<T>);
+    bool isEmpty();
+    std::shared_ptr<Nodo<T>> getFirst();
 
 };
 
@@ -29,37 +30,19 @@ List<T>::List() {
 }
 
 template<class T>
-List<T>::~List() {
-    Nodo<T>* temp = first;
-    while (temp != nullptr) {
-        Nodo<T>* aux = temp;
-        temp = temp->getNext();
-        delete aux;
-    }
-}
-
-template<class T>
-bool List<T>::estaVacio() {
+bool List<T>::isEmpty() {
     return (first == nullptr);
 }
 
 template<class T>
-void List<T>::insertarInicio(T* dato) {
+void List<T>::insertFirst(std::shared_ptr<T> dato) {
     first = new Nodo<T>(dato, first);
 }
 
+
 template<class T>
-std::string List<T>::toStringLista() {
-    std::stringstream s;
-    Nodo<T>* temp = first;
-    if (temp == nullptr) {
-        s << "lista vacia.";
-    }
-    while (temp != nullptr) {
-        s << temp->getElement()->mostrarCliente() << std::endl;
-        temp = temp->getNext();
-    }
-    return s.str();
+std::shared_ptr<Nodo<T>> List<T>::getFirst() {
+    return first;
 }
 
 
