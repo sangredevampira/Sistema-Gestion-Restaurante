@@ -17,4 +17,6 @@ add_executable(new_target main.cpp
         Exceptions/IndexOutOfRange.h
         Exceptions/Underpayment.cpp
         Exceptions/Underpayment.h
+        TemplateList/Nodo.h
+        TemplateList/Lista.h
 )
