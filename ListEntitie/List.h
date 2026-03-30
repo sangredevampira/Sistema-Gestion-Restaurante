@@ -14,8 +14,8 @@ private:
     std::shared_ptr<Nodo<T>> first;
     public:
     List();
-    void insertarInicio(std::shared_ptr<T>);
-    bool estaVacio();
+    void insertFirst(std::shared_ptr<T>);
+    bool isEmpty();
     std::shared_ptr<Nodo<T>> getFirst();
 
 };
@@ -28,12 +28,12 @@ List<T>::List() {
 }
 
 template<class T>
-bool List<T>::estaVacio() {
+bool List<T>::isEmpty() {
     return (first == nullptr);
 }
 
 template<class T>
-void List<T>::insertarInicio(std::shared_ptr<T> dato) {
+void List<T>::insertFirst(std::shared_ptr<T> dato) {
     first = new Nodo<T>(dato, first);
 }
 
