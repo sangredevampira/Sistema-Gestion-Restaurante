@@ -11,6 +11,8 @@ public:
     SmallSize(std::shared_ptr<Product> p);
     std::string description() override;
     float price() override;
+        virtual std::string getName() override;
+        virtual float getPrice() override;
 };
 
 

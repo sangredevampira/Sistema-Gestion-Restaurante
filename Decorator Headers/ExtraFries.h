@@ -10,7 +10,9 @@ class ExtraFries :public MealExtra{
     public:
     ExtraFries(std::shared_ptr<Product> baseProduct);
     virtual std::string description() override;
-    virtual float price() override;
+    float price() override;
+    std::string getName() override;
+    float getPrice() override;
 };
 
 

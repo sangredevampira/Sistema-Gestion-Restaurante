@@ -7,8 +7,16 @@
 SmallSize::SmallSize(std::shared_ptr<Product>p): Extras(p){
 }
 
+std::string SmallSize::getName() {
+    return "Pequeno";
+}
+
+float SmallSize::getPrice() {
+    return 0.050;
+}
+
 std::string SmallSize::description() {
-    return baseProduct->getName() + "Pequeno";
+    return baseProduct->getName() + "pequeno";
 }
 
 float SmallSize::price() {

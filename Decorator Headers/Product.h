@@ -13,15 +13,15 @@ class Product {
 protected:
     std::string name;
     float price;
-    List<Extras>* extras;
+    std::shared_ptr<List<Extras>> extras;
     public:
     Product(std::string name = "", float price = 0.0);
     virtual ~Product() = default;
     virtual std::string getName() = 0;
     virtual float getPrice() = 0;
     friend std::ostream& operator<<(std::ostream& os, const Product* baseProduct); // operador sobrecargado
-    std::string addExtraToProduct(Product* baseProduct, Extras* extras);
-    std::string removeExtraFromProduct(Product* baseProduct, std:: string extrasName);
+    std::string addExtraToProduct(std::shared_ptr<Product> baseProduct, std::shared_ptr<Extras> extras);
+    std::string removeExtraFromProduct(std::shared_ptr<Product> baseProduct, std::string extra);
 
 
 };

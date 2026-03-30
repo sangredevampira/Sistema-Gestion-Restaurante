@@ -16,6 +16,7 @@ private:
     List();
     void insertFirst(std::shared_ptr<T>);
     bool isEmpty();
+    void deleteElement(std::shared_ptr<T>);
     std::shared_ptr<Nodo<T>> getFirst();
 
 };
@@ -34,13 +35,36 @@ bool List<T>::isEmpty() {
 
 template<class T>
 void List<T>::insertFirst(std::shared_ptr<T> dato) {
-    first = new Nodo<T>(dato, first);
+    first = std::make_shared<Nodo<T>>(dato, first);
 }
 
 
 template<class T>
 std::shared_ptr<Nodo<T>> List<T>::getFirst() {
     return first;
+}
+
+template<class T>
+void List<T>::deleteElement(std::shared_ptr<T> target) {
+    if (isEmpty()) {
+        return;
+    }
+    std::shared_ptr<Nodo<T>> temp = first;
+
+    if (temp->getElement() == target) {
+        first = temp->getNext();
+        return;
+    }
+    std::shared_ptr<Nodo<T>> prev = temp;
+    std::shared_ptr<Nodo<T>> curr = temp->getNext();
+    while (curr != nullptr) {
+        if (curr->getElement() == target) {
+            prev->setNext(curr->getNext());
+            return;
+        }
+        prev = curr;
+        curr = curr->getNext();
+    }
 }
 
 

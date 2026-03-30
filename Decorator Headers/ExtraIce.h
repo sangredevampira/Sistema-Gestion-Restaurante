@@ -11,6 +11,8 @@ class ExtraIce: public ExtraBeverage {
     ExtraIce(std::shared_ptr<Product> p);
     virtual std::string description() override;
     virtual float price() override;
+    virtual std::string getName() override;
+    virtual float getPrice() override;
 };
 
 

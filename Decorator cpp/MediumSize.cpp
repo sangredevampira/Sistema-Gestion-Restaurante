@@ -7,8 +7,16 @@
 MediumSize::MediumSize(std::shared_ptr<Product> p): Extras(p) {
 }
 
+std::string MediumSize::getName() {
+    return "Mediano";
+}
+
+float MediumSize::getPrice() {
+    return 0.075;
+}
+
 std::string MediumSize::description() {
-    return baseProduct->getName() + "Mediano";
+    return baseProduct->getName() + "mediano";
 }
 
 float MediumSize::price() {

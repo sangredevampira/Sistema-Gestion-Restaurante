@@ -13,6 +13,8 @@ public:
     Extras(std::shared_ptr<Product> p);
     virtual std::string description() = 0;
     virtual float price() = 0;
+    virtual std::string getName() = 0;
+    virtual float getPrice() = 0;
 };
 
 
