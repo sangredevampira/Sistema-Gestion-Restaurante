@@ -37,11 +37,12 @@ void Client::setId(std::string id) {
     this->id = id;
 }
 
-std::string Client::mostrarCliente() {
-    std::stringstream s;
-    s << "Nombre: " << name << std::endl;
-    s << "ID: " << id << std::endl;
-    s << "Telefono: " << phone << std::endl;
-    return s.str();
-}
 
+std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Client> client)
+{
+    os << "\t** DATOS DEL CLIENTE **" << "\n";
+    os << "Nombre: " << client->getName() << "\n";
+    os << "ID: " << client->getId() << "\n";
+    os << "Numero telefonico : " << client->getPhone() << "\n";
+    return os;
+}

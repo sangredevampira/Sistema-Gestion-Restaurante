@@ -29,8 +29,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Implementacion de algoritmo greedy">
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Fusion modulo1-clientes con modulo3-templates">
+      <change afterPath="$PROJECT_DIR$/Entities cpp/ClientManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entities headers/ClientManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ListEntitie/List.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ListEntitie/Nodo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/Client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Client.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemplateList/Lista.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemplateList/Nodo.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +56,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Modulo3-Lista-Template" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,34 +90,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;CMake Application.new_target.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Modulo1-Clientes&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/XPC/Documents/UNIVERSIDAD/Programacion 2/Proyecto 1&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "CMake Application.new_target.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "Modulo3-Lista-Template",
+    "last_opened_file_path": "C:/Users/XPC/Documents/UNIVERSIDAD/Programacion 2/Proyecto 1",
+    "org.rust.first.attach.projects": "true",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Entities cpp" />
+      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\ListEntitie" />
       <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Entities headers" />
-      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Exceptions" />
-      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Utilities" />
+      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Entities cpp" />
+      <recent name="E:\Clion\Proyecto 1 - Proga 2 - Derek y Kris\TemplateList" />
+      <recent name="E:\Clion\Proyecto 1 - Proga 2 - Derek y Kris" />
     </key>
   </component>
   <component name="RunManager">
@@ -129,11 +143,6 @@
       <option name="presentableId" value="Default" />
       <updated>1774592031293</updated>
       <workItem from="1774592032311" duration="720000" />
-      <workItem from="1774665146212" duration="17000" />
-      <workItem from="1774674691841" duration="4482000" />
-      <workItem from="1774740712680" duration="6991000" />
-      <workItem from="1774774641915" duration="3803000" />
-      <workItem from="1774821559386" duration="8439000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -175,31 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774596930945</updated>
     </task>
-    <task id="LOCAL-00006" summary="configuracion de gitignore">
+    <task id="LOCAL-00006" summary="Prueba">
       <option name="closed" value="true" />
-      <created>1774597693820</created>
+      <created>1774691560973</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1774597693820</updated>
+      <updated>1774691560973</updated>
     </task>
-    <task id="LOCAL-00007" summary="Creacion de caja y excepciones generales">
-      <option name="closed" value="true" />
-      <created>1774679199877</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1774679199877</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Clase caja, manejo de excepciones">
-      <option name="closed" value="true" />
-      <created>1774780179599</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1774780179599</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,24 +205,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prueba 2" />
-    <MESSAGE value="Prueba" />
     <MESSAGE value="Prueba 1129873821" />
     <MESSAGE value="hola tonotos" />
     <MESSAGE value="Actualizacion carpeta de utilities" />
     <MESSAGE value="Commit main &gt;:D" />
-    <MESSAGE value="configuracion de gitignore" />
-    <MESSAGE value="Creacion de caja y excepciones generales" />
-    <MESSAGE value="Clase caja, manejo de excepciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clase caja, manejo de excepciones" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Agregue el decorador (no se enoje conmigo Kris :c)" />
+    <MESSAGE value="Prueba" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prueba" />
   </component>
 </project>

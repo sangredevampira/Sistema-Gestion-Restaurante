@@ -17,8 +17,10 @@ add_executable(new_target main.cpp
         Exceptions/IndexOutOfRange.h
         Exceptions/Underpayment.cpp
         Exceptions/Underpayment.h
-        TemplateList/Nodo.h
-        TemplateList/Lista.h
+        "Entities cpp/ClientManager.cpp"
+        "Entities headers/ClientManager.h"
+        Order.cpp
+        Order.h
         "Decorator Headers/Product.h"
         "Decorator cpp/Meal.cpp"
         "Decorator Headers/Meal.h"
@@ -47,4 +49,6 @@ add_executable(new_target main.cpp
         "Decorator Headers/ExtraIceCream.h"
         "Decorator cpp/Extras.cpp"
         "Decorator cpp/Product.cpp"
+        ListEntitie/List.h
+        ListEntitie/Nodo.h
 )

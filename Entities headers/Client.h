@@ -21,7 +21,7 @@ public:
     void setName(std::string name);
     void setPhone(std::string phone);
     void setId(std::string id);
-    std::string mostrarCliente();
+    friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Client> client);
 
 };
 
