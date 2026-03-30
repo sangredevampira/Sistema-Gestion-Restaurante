@@ -11,14 +11,12 @@
 template<class T>
 class List {
 private:
-    Nodo<T>* first;
+    std::shared_ptr<Nodo<T>> first;
     public:
     List();
-    ~List();
-    void insertarInicio(T*);
+    void insertarInicio(std::shared_ptr<T>);
     bool estaVacio();
-    std::string toStringLista();
-    Nodo<T>* getFirst();
+    std::shared_ptr<Nodo<T>> getFirst();
 
 };
 
@@ -30,28 +28,18 @@ List<T>::List() {
 }
 
 template<class T>
-List<T>::~List() {
-    Nodo<T>* temp = first;
-    while (temp != nullptr) {
-        Nodo<T>* aux = temp;
-        temp = temp->getNext();
-        delete aux;
-    }
-}
-
-template<class T>
 bool List<T>::estaVacio() {
     return (first == nullptr);
 }
 
 template<class T>
-void List<T>::insertarInicio(T* dato) {
+void List<T>::insertarInicio(std::shared_ptr<T> dato) {
     first = new Nodo<T>(dato, first);
 }
 
 
 template<class T>
-Nodo<T> * List<T>::getFirst() {
+std::shared_ptr<Nodo<T>> List<T>::getFirst() {
     return first;
 }
 

@@ -5,53 +5,46 @@
 #ifndef PRACTICA_TEMPLATES_NODO_H
 #define PRACTICA_TEMPLATES_NODO_H
 
-#include "Utilities.h"
+#include "../Utilities/Utilities.h"
 template<class T>
 class Nodo {
 private:
-  T* element;
-  Nodo<T>* next;
+  std::shared_ptr<T> element;
+  std::shared_ptr<Nodo<T>> next;
 public:
-  Nodo(T* element, Nodo<T>* Next);
-  Nodo<T>* getNext();
-  ~Nodo();
-  T* getElement();
-  void setNext(Nodo<T>* sig);
-  void setElement(T* element);
+  Nodo(std::shared_ptr<T> element,  std::shared_ptr<Nodo<T>> next);
+  std::shared_ptr<Nodo<T>> getNext();
+  std::shared_ptr<T> getElement();
+  void setNext(std::shared_ptr<Nodo<T>> sig);
+  void setElement(std::shared_ptr<T> element);
 };
 
 template<class T>
-Nodo<T>::Nodo(T* element, Nodo<T>* next){
+Nodo<T>::Nodo(std::shared_ptr<T> element,std::shared_ptr<Nodo<T>> next ){
   this->element = element;
   this->next = next;
 }
 
 
 template<class T>
-T* Nodo<T>::getElement() {
+std::shared_ptr<T> Nodo<T>::getElement() {
   return element;
 }
 
 template<class T>
-Nodo<T> *Nodo<T>::getNext() {
+std::shared_ptr<Nodo<T>> Nodo<T>::getNext() {
   return next;
 }
 
 template<class T>
-void Nodo<T>::setNext(Nodo<T>* next) {
+void Nodo<T>::setNext(std::shared_ptr<Nodo<T>> next) {
   this->next = next;
 }
 
 template<class T>
-void Nodo<T>::setElement(T *element) {
+void Nodo<T>::setElement(std::shared_ptr<T>element) {
   this->element = element;
 }
-
-template<class T>
-Nodo<T>::~Nodo() {
-  delete element;
-}
-
 
 
 
