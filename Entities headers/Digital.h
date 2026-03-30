@@ -9,7 +9,7 @@
 
 class Digital : public PaymentMethod {
  public:
-    std::string pay() override;
+    std::string pay(float, float) override;
 };
 
 

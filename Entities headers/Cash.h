@@ -10,8 +10,9 @@
 
 class Cash : public PaymentMethod
 {
-   public:
-      std::string pay(float, float);
+public:
+      std::string pay(float, float) override;
+
 };
 
 

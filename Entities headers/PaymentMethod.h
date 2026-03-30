@@ -9,7 +9,7 @@
 
 class PaymentMethod {
 public:
-    virtual std::string pay() = 0;
+    virtual std::string pay(float, float) = 0;
 };
 
 

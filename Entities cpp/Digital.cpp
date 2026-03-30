@@ -4,4 +4,4 @@
 
 #include "../Entities headers/Digital.h"
 
-std::string Digital::pay() { return "Pago con SinpeMovil\n"; }
+std::string Digital::pay(float amount, float totalPrice) { return "Pago con SinpeMovil\n"; }
