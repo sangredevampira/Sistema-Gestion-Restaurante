@@ -6,7 +6,6 @@
 #define PROYECTO_PROGRA_DEREK_Y_KRIS_UTILITIES_H
 
 #include <iostream>
-#include <exception>
 #include <sstream>
 #include <memory>
 

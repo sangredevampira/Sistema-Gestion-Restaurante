@@ -11,7 +11,7 @@
 class Card : public PaymentMethod
 {
 public:
-    virtual std::string pay() override;
+    virtual std::string pay(float, float) override;
 };
 
 

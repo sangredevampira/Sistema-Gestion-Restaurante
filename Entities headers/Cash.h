@@ -6,11 +6,13 @@
 #define PROYECTO_PROGRA_DEREK_Y_KRIS_CASH_H
 
 #include "../Entities headers/PaymentMethod.h"
+#include "../Exceptions/Underpayment.h"
 
 class Cash : public PaymentMethod
 {
-   public:
-      std::string pay() override;
+public:
+      std::string pay(float, float) override;
+
 };
 
 
