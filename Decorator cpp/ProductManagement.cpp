@@ -5,12 +5,8 @@
 #include "../Decorator Headers/ProductManagement.h"
 
 
-ProductManagement::ProductManagement(std::shared_ptr<List<Product>> productList) {
-    if (productList == nullptr) {
-        this->productList = std::make_shared<List<Product>>();
-    } else {
-        this->productList = productList;
-    }
+ProductManagement::ProductManagement() {
+    this->productList = std::make_shared<List<Product>>();
 }
 
 std::string ProductManagement::addProduct(std::shared_ptr<Product> product) {

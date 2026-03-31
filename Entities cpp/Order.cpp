@@ -2,7 +2,7 @@
 // Created by XPC on 29/3/2026.
 //
 
-#include "Order.h"
+#include "../Entities headers/Order.h"
 
 Order::Order(std::shared_ptr<Client> client, std::shared_ptr<PaymentMethod> selected)
     : client(client), payment(selected)

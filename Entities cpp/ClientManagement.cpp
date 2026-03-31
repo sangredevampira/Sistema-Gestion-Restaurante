@@ -2,12 +2,12 @@
 // Created by XPC on 29/3/2026.
 //
 
-#include "../Entities headers/ClientManager.h"
+#include "../Entities headers/ClientManagement.h"
 
-ClientManager::ClientManager()
+ClientManagement::ClientManagement()
 { clientsList = std::make_shared<List<Client>>();}
 
-std::string ClientManager::addClient(std::string name, std::string id, std::string phoneNumber)
+std::string ClientManagement::addClient(std::string name, std::string id, std::string phoneNumber)
 {
     std::string message;
     if (!searchClient(id))
@@ -20,7 +20,7 @@ std::string ClientManager::addClient(std::string name, std::string id, std::stri
     return message;
 }
 
-bool ClientManager::searchClient(std::string id)
+bool ClientManagement::searchClient(std::string id)
 {
     bool found = false;
     std::shared_ptr<Nodo<Client>> current = clientsList->getFirst();

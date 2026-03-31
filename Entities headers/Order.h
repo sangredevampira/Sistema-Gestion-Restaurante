@@ -5,10 +5,10 @@
 #ifndef PROYECTO_1_ORDER_H
 #define PROYECTO_1_ORDER_H
 
-#include "Entities headers/Client.h"
-#include "Entities headers/PaymentMethod.h"
-#include "Decorator Headers/Product.h"
-#include "ListEntitie/List.h"
+#include "Client.h"
+#include "PaymentMethod.h"
+#include "../Decorator Headers/Product.h"
+#include "../ListEntitie/List.h"
 
 static int orderCounter = 1;
 

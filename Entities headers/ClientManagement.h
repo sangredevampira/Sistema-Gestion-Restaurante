@@ -8,12 +8,12 @@
 #include "Client.h"
 #include "../ListEntitie/List.h"
 
-class ClientManager
+class ClientManagement
 {
 private:
     std::shared_ptr<List<Client>> clientsList;
 public:
-    ClientManager();
+    ClientManagement();
     std::string addClient(std::string, std::string, std::string);
     bool searchClient(std::string);
 };
