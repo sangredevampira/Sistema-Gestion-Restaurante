@@ -11,8 +11,23 @@ Product::Product(std::string name, float price) {
     extras = std::make_shared<List<Extras>>();
 }
 std::ostream & operator<<(std::ostream &os, const Product *baseProduct) {
-    os << "Nombre: "<< baseProduct->name << std::endl;
+    os << "Nombre: " << baseProduct->name << std::endl;
     os << "Precio: " << baseProduct->price << std::endl;
+
+    if (baseProduct->extras != nullptr && !baseProduct->extras->isEmpty()) {
+        os << "Extras:" << std::endl;
+
+        std::shared_ptr<Nodo<Extras>> current = baseProduct->extras->getFirst();
+        while (current != nullptr) {
+            std::shared_ptr<Extras> e = current->getElement();
+            if (e != nullptr) {
+                // Puedes usar e->getName() o e->description()
+                os << "  - " << e->getName() << " (+" << e->getPrice() << ")" << std::endl;
+            }
+            current = current->getNext();
+        }
+    }
+
     return os;
 }
 

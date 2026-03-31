@@ -39,4 +39,6 @@ add_executable(new_target main.cpp
         "Decorator cpp/Product.cpp"
         ListEntitie/Nodo.h
         ListEntitie/List.h
+        "Decorator cpp/ProductManagement.cpp"
+        "Decorator Headers/ProductManagement.h"
 )
