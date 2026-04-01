@@ -5,10 +5,10 @@
 #ifndef PROYECTO_1_KRIS_Y_DEREK_RESTAURANT_H
 #define PROYECTO_1_KRIS_Y_DEREK_RESTAURANT_H
 
-#include "ListEntitie/List.h"
-#include "Entities headers/ClientManagement.h"
-#include "Decorator Headers/ProductManagement.h"
-#include "Entities headers/OrderManagement.h"
+#include "../ListEntitie/List.h"
+#include "ClientManagement.h"
+#include "../Decorator Headers/ProductManagement.h"
+#include "OrderManagement.h"
 class Restaurant {
 private:
     std::string restaurantsName;

@@ -52,8 +52,8 @@ add_executable(new_target main.cpp
         ListEntitie/Nodo.h
         "Decorator cpp/ProductManagement.cpp"
         "Decorator Headers/ProductManagement.h"
-        Restaurant.cpp
-        Restaurant.h
+        "Entities cpp/Restaurant.cpp"
+        "Entities headers/Restaurant.h"
         "Entities cpp/OrderManagement.cpp"
         "Entities headers/OrderManagement.h"
         Menu.cpp

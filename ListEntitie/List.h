@@ -25,8 +25,6 @@ private:
 template<class T>
 List<T>::List() {
     first = nullptr;
-    std::cout<<"Se creo una lista generica."<<std::endl;
-
 }
 
 template<class T>

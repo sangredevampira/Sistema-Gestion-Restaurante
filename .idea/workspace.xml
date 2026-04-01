@@ -29,22 +29,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Creacion de product management y ajuste de sobrecarga de product">
-      <change afterPath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entities headers/OrderManagement.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Menu.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Menu.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.h" afterDir="false" />
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Agregue showList, lenght en list">
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/ClientManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/ClientManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/ClientManagement.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ListEntitie/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/ListEntitie/List.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Order.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Restaurant.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Restaurant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <list id="5a34b0bc-77f2-4e04-802b-2dd6d8646319" name="Changes by XPC" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,17 +128,17 @@
       <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Exceptions" />
+      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Decorator Headers" />
+      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Entities headers" />
+      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Entities cpp" />
       <recent name="E:\Clion\Proyecto-1---Kris-y-Derek\Entities cpp" />
-      <recent name="E:\Clion\Proyecto-1---Kris-y-Derek\Entities headers" />
-      <recent name="E:\Clion\Proyecto-1---Kris-y-Derek\Decorator Headers" />
-      <recent name="E:\Clion\Proyecto-1---Kris-y-Derek\ListEntitie" />
-      <recent name="E:\Clion\Proyecto-1---Kris-y-Derek\Decorator cpp" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="new_target" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="new_target" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="new_target">

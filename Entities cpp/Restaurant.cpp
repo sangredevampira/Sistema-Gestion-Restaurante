@@ -2,10 +2,10 @@
 // Created by derek on 31/03/2026.
 //
 
-#include "Restaurant.h"
+#include "../Entities headers/Restaurant.h"
 
 Restaurant::Restaurant()
-        : restaurantsName("Gojo's Room")
+        : restaurantsName("GOJO'S ROOM")
 {
         this->clientService = std::make_shared<ClientManagement>();
         this->productService = std::make_shared<ProductManagement>();

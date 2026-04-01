@@ -16,7 +16,7 @@ std::string Order::addProductOrder(std::shared_ptr<Product> product)
 
 std::string Order::removeProductOrder(std::string productName)
 {
-    productsList->deleteElement()
+
 }
 
 std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client)
