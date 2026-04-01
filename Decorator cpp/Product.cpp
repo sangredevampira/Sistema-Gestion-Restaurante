@@ -21,7 +21,6 @@ std::ostream & operator<<(std::ostream &os, const Product *baseProduct) {
         while (current != nullptr) {
             std::shared_ptr<Extras> e = current->getElement();
             if (e != nullptr) {
-                // Puedes usar e->getName() o e->description()
                 os << "  - " << e->getName() << " (+" << e->getPrice() << ")" << std::endl;
             }
             current = current->getNext();
@@ -65,4 +64,8 @@ std::string Product::removeExtraFromProduct(std::shared_ptr<Product> baseProduct
     extras->deleteElement(targetExtra);
 
     return "Extra eliminado: " + extrasName + " del producto: " + baseProduct->getName();
+}
+
+std::shared_ptr<List<Extras>> Product::getExtras() {
+    return extras;
 }
