@@ -16,6 +16,11 @@ std::shared_ptr<List<Product>> Order::getProductsList() { return productsList; }
 
 std::shared_ptr<PaymentMethod> Order::getPaymentMethod() { return payment; }
 
+float Order::getTotalPrice() {
+    return totalPrice;
+}
+
+
 std::string Order::addProductOrder(std::shared_ptr<Product> product)
 {
     productsList->insertFirst(product);

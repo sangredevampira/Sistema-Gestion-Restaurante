@@ -28,6 +28,7 @@ public:
     std::shared_ptr<PaymentMethod> getPaymentMethod();
     std::string addProductOrder(std::shared_ptr<Product>);
     std::string removeProductOrder(std::string);
+    float getTotalPrice();
     friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client);
 
 };
