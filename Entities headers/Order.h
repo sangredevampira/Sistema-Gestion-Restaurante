@@ -23,7 +23,8 @@ public:
     Order(std::shared_ptr<Client>, std::shared_ptr<PaymentMethod>);
     std::string addProductOrder(std::shared_ptr<Product>);
     std::string removeProductOrder(std::string);
-    friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client);};
+    friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client);
 
+};
 
 #endif //PROYECTO_1_ORDER_H
