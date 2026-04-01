@@ -29,19 +29,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Diseno de interfaz y agregacion de excepciones nuevas">
-      <change afterPath="$PROJECT_DIR$/Exceptions/EmptyOrder.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/EmptyOrder.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/Miscapture.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/Miscapture.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/MissingFile.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/MissingFile.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utilities/ConsoleService.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utilities/ConsoleService.h" afterDir="false" />
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Diseno de interfaz basico y agregué la clase console service">
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/ClientManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/ClientManagement.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Order.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Order.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListEntitie/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/ListEntitie/List.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.h" afterDir="false" />
     </list>
     <list id="5a34b0bc-77f2-4e04-802b-2dd6d8646319" name="Changes by XPC" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,12 +77,12 @@
     &quot;assignee&quot;: &quot;kristelperazasanchez-cloud&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/kristelperazasanchez-cloud/Proyecto-1---Kris-y-Derek.git&quot;,
-    &quot;accountId&quot;: &quot;c808a30d-f741-4a06-b8f4-fe9a61194d3d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kristelperazasanchez-cloud/Proyecto-1---Kris-y-Derek.git",
+    "accountId": "e826efe3-0324-475a-ba6f-9945e83258ef"
   }
-}</component>
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="Em2MZL6v" />
   </component>
@@ -119,6 +115,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "Modulo-2-Decorador",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/XPC/Documents/UNIVERSIDAD/Programacion 2/Proyecto 1",
     "org.rust.first.attach.projects": "true",
     "settings.editor.selected.configurable": "preferences.lookFeel",
@@ -138,11 +135,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="new_target" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="new_target" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="new_target">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -158,6 +150,7 @@
       <updated>1774592031293</updated>
       <workItem from="1774592032311" duration="720000" />
       <workItem from="1774942340400" duration="13000" />
+      <workItem from="1775026773402" duration="9368000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -231,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775005698919</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Diseno de interfaz basico y agregué la clase console service">
+      <option name="closed" value="true" />
+      <created>1775014553197</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1775014553197</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,10 +253,18 @@
     <MESSAGE value="Prueba" />
     <MESSAGE value="Creacion de product management y ajuste de sobrecarga de product" />
     <MESSAGE value="Diseno de interfaz y agregacion de excepciones nuevas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diseno de interfaz y agregacion de excepciones nuevas" />
+    <MESSAGE value="Diseno de interfaz basico y agregué la clase console service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Diseno de interfaz basico y agregué la clase console service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Entities headers/Order.h</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

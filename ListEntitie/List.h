@@ -64,9 +64,7 @@ std::string List<T>::showList()
     int i = 1;
     while (i <= length())
     {
-        ss << i << ". "
-            << temp->getElement()
-            << "\n";
+        ss << i << ". " << temp->getElement() << "\n";
 
         temp = temp->getNext();
         i++;

@@ -4,9 +4,17 @@
 
 #include "../Entities headers/Order.h"
 
-Order::Order(std::shared_ptr<Client> client, std::shared_ptr<PaymentMethod> selected)
-    : client(client), payment(selected)
+Order::Order(std::string clientsName, std::shared_ptr<PaymentMethod> selected)
+    : clientsName(clientsName), payment(selected)
 { this->orderID = orderCounter++; }
+
+int Order::getOrderID() { return orderID;}
+
+std::string Order::getClientsName() { return clientsName;}
+
+std::shared_ptr<List<Product>> Order::getProductsList() { return productsList; }
+
+std::shared_ptr<PaymentMethod> Order::getPaymentMethod() { return payment; }
 
 std::string Order::addProductOrder(std::shared_ptr<Product> product)
 {
@@ -16,9 +24,27 @@ std::string Order::addProductOrder(std::shared_ptr<Product> product)
 
 std::string Order::removeProductOrder(std::string productName)
 {
-
+    std::string messaje;
+    std::shared_ptr<Nodo<Product>> temp = productsList->getFirst();
+    while (temp != nullptr)
+    {
+        if (temp->getNext()->getElement()->getName() == productName)
+        {
+            temp->setNext(temp->getNext()->getNext());
+            messaje = "Producto eliminado correctamente\n";
+        }else
+            messaje = "Producto no encontrado\n";
+    }
+    return messaje;
 }
 
-std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client)
+std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> order)
 {
+    os << "*********************************\n";
+    os << "  ORDEN No. " << order->getOrderID() << "\n";
+    if (order->getClientsName() != "")
+        os << "Cliente: " << order->getClientsName() << "\n";
+    os << "* Productos seleccionados:\n";
+    os << order->getProductsList()->showList();
+    return os;
 }

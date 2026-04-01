@@ -16,7 +16,7 @@ void Menu::mainMenu()
             << "(2) Submenu clientes" << "\n"
             << "(3) Submenu productos" << "\n"
             << "(4) Cargar pedidos" << "\n"
-            << "(5) Guardar" << "\n"
+            << "(5) Guardar pedidos" << "\n"
             << "(0) Salir" << "\n"
             << "* Digita la opcion deseada: ";
 }

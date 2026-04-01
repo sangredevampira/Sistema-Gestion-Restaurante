@@ -16,11 +16,16 @@ class Order
 {
 private:
     int orderID;
-    std::shared_ptr<Client> client;
+    std::string clientsName;
     std::shared_ptr<List<Product>> productsList;
     std::shared_ptr<PaymentMethod> payment;
+    float totalPrice;
 public:
-    Order(std::shared_ptr<Client>, std::shared_ptr<PaymentMethod>);
+    Order(std::string, std::shared_ptr<PaymentMethod>);
+    int getOrderID();
+    std::string getClientsName();
+    std::shared_ptr<List<Product>> getProductsList();
+    std::shared_ptr<PaymentMethod> getPaymentMethod();
     std::string addProductOrder(std::shared_ptr<Product>);
     std::string removeProductOrder(std::string);
     friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client);};
