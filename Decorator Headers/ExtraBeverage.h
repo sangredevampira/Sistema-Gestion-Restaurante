@@ -9,6 +9,8 @@
 class ExtraBeverage : public Extras {
     public:
     ExtraBeverage(std::shared_ptr<Product> p);
+    std::string getName() override;
+    float getPrice() override;
 };
 
 

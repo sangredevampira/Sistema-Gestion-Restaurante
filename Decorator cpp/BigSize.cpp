@@ -9,17 +9,10 @@ BigSize::BigSize(std::shared_ptr<Product>p): Extras(p) {
 }
 
 std::string BigSize::getName() {
-  return "Grande";
+  return baseProduct->getName() + " tamaño grande. ";
 }
 
 float BigSize::getPrice() {
-  return 0.075;
-}
-
-std::string BigSize::description() {
-  return baseProduct->getName() + "grande";
-}
-
-float BigSize::price() {
   return baseProduct->getPrice() + 0.075;
 }
+
