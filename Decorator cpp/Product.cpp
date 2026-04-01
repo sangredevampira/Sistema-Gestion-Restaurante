@@ -36,7 +36,7 @@ std::string Product::addExtraToProduct(std::shared_ptr<Product> baseProduct, std
         return "No se puede agregar un extra nulo al producto: " + baseProduct->getName();
     }
     this->extras->insertFirst(extras);
-    return "Extra agregado: " + extras->description() + " al producto: " + baseProduct->getName();
+    return "Extra agregado: " + extras->getName() + " al producto: " + baseProduct->getName();
 }
 
 
