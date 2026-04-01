@@ -29,18 +29,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Agregue showList, lenght en list">
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListEntitie/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/ListEntitie/List.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurant.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Restaurant.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Restaurant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Diseno de interfaz y agregacion de excepciones nuevas" />
     <list id="5a34b0bc-77f2-4e04-802b-2dd6d8646319" name="Changes by XPC" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774937271429</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Diseno de interfaz y agregacion de excepciones nuevas">
+      <option name="closed" value="true" />
+      <created>1775005650947</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1775005650947</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +230,8 @@
     <MESSAGE value="Agregue el decorador (no se enoje conmigo Kris :c)" />
     <MESSAGE value="Prueba" />
     <MESSAGE value="Creacion de product management y ajuste de sobrecarga de product" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion de product management y ajuste de sobrecarga de product" />
+    <MESSAGE value="Diseno de interfaz y agregacion de excepciones nuevas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Diseno de interfaz y agregacion de excepciones nuevas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
