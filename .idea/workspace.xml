@@ -23,8 +23,28 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Commit main &gt;:D">
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Rama para modificar el decorador">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/BigSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/BigSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraBeverage.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraBeverage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraFries.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraIce.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraIceCream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Extras.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Extras.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/MealExtra.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MealExtra.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/MediumSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MediumSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/SmallSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/SmallSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/BigSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/BigSize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraBeverage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraBeverage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraFries.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraIce.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraIceCream.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/MealExtra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MealExtra.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/MediumSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MediumSize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/SmallSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/SmallSize.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +63,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Modulo-2-Decorador" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,14 +104,16 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Modulo-2-Decorador",
+    "git-widget-placeholder": "Modulo-2-Decorador-Modificacion",
     "org.rust.first.attach.projects": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -121,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1774592031293</updated>
       <workItem from="1774592032311" duration="720000" />
-      <workItem from="1775006411710" duration="34000" />
+      <workItem from="1775006411710" duration="4179000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -163,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774596930945</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rama para modificar el decorador">
+      <option name="closed" value="true" />
+      <created>1775006743884</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775006743884</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +211,8 @@
     <MESSAGE value="hola tonotos" />
     <MESSAGE value="Actualizacion carpeta de utilities" />
     <MESSAGE value="Commit main &gt;:D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit main &gt;:D" />
+    <MESSAGE value="Rama para modificar el decorador" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rama para modificar el decorador" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
