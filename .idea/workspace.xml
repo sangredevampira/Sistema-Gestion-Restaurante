@@ -3,12 +3,6 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
-    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
-    <option name="/Default/Housekeeping/RefactoringsMru/RenameRefactoring/DoSearchForTextInStrings/@EntryValue" value="true" type="bool" />
-    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
-  </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
@@ -29,10 +23,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras">
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Commit main &gt;:D">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/fileManagement.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +36,8 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_E:/Clion/Proyecto-1---Kris-y-Derekk" value="3BW5YIvLSsS8eh7YIjWAp22tONZ" />
+      <entry key="_E:/Clion/Proyecto-1---Kris-y-Derek" value="3BW5YIvLSsS8eh7YIjWAp22tONZ" />
     </persistenceIdMap>
-  </component>
-  <component name="CopilotUserSelectedModel">
-    <selectedModels>
-      <entry key="chat-panel" value="GPT-5.2" />
-      <entry key="agent-panel" value="GPT-5.2" />
-    </selectedModels>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -68,12 +54,12 @@
     &quot;assignee&quot;: &quot;kristelperazasanchez-cloud&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/kristelperazasanchez-cloud/Proyecto-1---Kris-y-Derek.git&quot;,
-    &quot;accountId&quot;: &quot;e826efe3-0324-475a-ba6f-9945e83258ef&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kristelperazasanchez-cloud/Proyecto-1---Kris-y-Derek.git",
+    "accountId": "c808a30d-f741-4a06-b8f4-fe9a61194d3d"
   }
-}</component>
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="Em2MZL6v" />
   </component>
@@ -91,25 +77,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;CMake Application.new_target.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Modulo-2-Decorador&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "CMake Application.new_target.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "Modulo-2-Decorador",
+    "org.rust.first.attach.projects": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Utilities" />
@@ -135,9 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1774592031293</updated>
       <workItem from="1774592032311" duration="720000" />
-      <workItem from="1775117357969" duration="2148000" />
-      <workItem from="1775121029484" duration="622000" />
-      <workItem from="1775178007633" duration="14271000" />
+      <workItem from="1775006411710" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -179,39 +163,7 @@
       <option name="project" value="LOCAL" />
       <updated>1774596930945</updated>
     </task>
-    <task id="LOCAL-00006" summary="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales">
-      <option name="closed" value="true" />
-      <created>1775187089588</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1775187089588</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales">
-      <option name="closed" value="true" />
-      <created>1775187138558</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1775187138558</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras">
-      <option name="closed" value="true" />
-      <created>1775190077365</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1775190077365</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras">
-      <option name="closed" value="true" />
-      <created>1775191254423</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1775191254423</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,10 +181,7 @@
     <MESSAGE value="hola tonotos" />
     <MESSAGE value="Actualizacion carpeta de utilities" />
     <MESSAGE value="Commit main &gt;:D" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/Modulo-2-Archivos' into Modulo-2-Archivos" />
-    <MESSAGE value="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales" />
-    <MESSAGE value="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit main &gt;:D" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
