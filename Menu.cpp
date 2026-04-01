@@ -6,20 +6,11 @@
 
 Menu::Menu() { this->restaurant = std::make_unique<Restaurant>(); }
 
-void Menu::pause()
-{
-    std::cout << "\nPresiona ENTER para continuar...";
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    std::cin.get();
-}
-
-void Menu::clearConsole() { std::cout << std::string(50, '\n'); }
-
 void Menu::mainMenu()
 {
     std::cout << "===================================\n"
             << " * SISTEMA DE GESTION DE PEDIDOS *\n"
-            << "\t " << "RESTAURANTE" << restaurant->getRestaurantsName() << "\n"
+            << "     RESTAURANTE " << restaurant->getRestaurantsName() << "\n"
             << "===================================\n"
             << "(1) Submenu pedidos" << "\n"
             << "(2) Submenu clientes" << "\n"
@@ -41,12 +32,59 @@ void Menu::actionsMainMenu()
         {
             mainMenu();
             std::cin>>option;
-            if (std::cin.fail()) throw
+            if (std::cin.fail()) throw Miscapture();
+
+            switch (option)
+            {
+            case 1:
+                    actionsSubmenuOrders(); break;
+                case 2:
+                    actionsSubmenuClients(); break;
+                case 3:
+                    actionsSubmenuProducts(); break;
+                case 4:
+                case 5:
+            case 0:
+                    ConsoleService::clearConsole();
+                    std::cout << "\t * GRACIAS POR USAR EL SISTEMA DE GESTION DE PEDIDOS RESTAURANTE " << restaurant->getRestaurantsName() << " * \n"
+                                << "\t\t\t\t\t Hasta pronto! :)\n";
+                    quit = true; break;
+                default:
+                    throw IndexOutOfRange();
+            }
+
 
         }catch (std::exception& e)
         {
+            std::cout << "ERROR: " << e.what() << '\n';
 
+            std::cin.clear();
+            std::cin.ignore(1000, '\n');
         }
 
     }while (!quit);
+}
+
+void Menu::submenuOrders()
+{
+}
+
+void Menu::actionsSubmenuOrders()
+{
+}
+
+void Menu::submenuClients()
+{
+}
+
+void Menu::actionsSubmenuClients()
+{
+}
+
+void Menu::submenuProducts()
+{
+}
+
+void Menu::actionsSubmenuProducts()
+{
 }

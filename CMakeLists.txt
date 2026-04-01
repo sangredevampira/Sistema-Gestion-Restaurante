@@ -58,4 +58,12 @@ add_executable(new_target main.cpp
         "Entities headers/OrderManagement.h"
         Menu.cpp
         Menu.h
+        Exceptions/Miscapture.cpp
+        Exceptions/Miscapture.h
+        Exceptions/MissingFile.cpp
+        Exceptions/MissingFile.h
+        Exceptions/EmptyOrder.cpp
+        Exceptions/EmptyOrder.h
+        Utilities/ConsoleService.cpp
+        Utilities/ConsoleService.h
 )

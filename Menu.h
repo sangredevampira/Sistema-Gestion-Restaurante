@@ -6,16 +6,15 @@
 #define PROYECTO_1_KRIS_Y_DEREK_MENU_H
 
 #include "Entities headers/Restaurant.h"
-#include <limits>
+#include "Utilities/ConsoleService.h"
+#include "Exceptions/Miscapture.h"
+#include "Exceptions/IndexOutOfRange.h"
 
 class Menu {
 private:
     std::unique_ptr<Restaurant> restaurant;
 public:
     Menu();
-
-    void pause();
-    void clearConsole();
 
     //Menu principal
     void mainMenu();
