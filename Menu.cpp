@@ -67,10 +67,12 @@ void Menu::actionsMainMenu()
 
 void Menu::submenuOrders()
 {
+
 }
 
 void Menu::actionsSubmenuOrders()
 {
+
 }
 
 void Menu::submenuClients()

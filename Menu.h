@@ -32,9 +32,12 @@ public:
     void submenuProducts();
     void actionsSubmenuProducts();
 
+
     //Cargar pedidos
+    void loadOrders();
 
     //Guardar
+    void saveOrders();
 };
 
 
