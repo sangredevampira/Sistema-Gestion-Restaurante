@@ -3,12 +3,6 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
-    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
-    <option name="/Default/Housekeeping/RefactoringsMru/RenameRefactoring/DoSearchForTextInStrings/@EntryValue" value="true" type="bool" />
-    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
-  </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
@@ -29,8 +23,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Diseno de archivos completos(creo)" />
-    <list id="5a34b0bc-77f2-4e04-802b-2dd6d8646319" name="Changes by XPC" comment="" />
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Commit main &gt;:D">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,23 +37,13 @@
   <component name="CopilotPersistence">
     <persistenceIdMap>
       <entry key="_E:/Clion/Proyecto-1---Kris-y-Derek" value="3BW5YIvLSsS8eh7YIjWAp22tONZ" />
-      <entry key="_E:/Clion/Proyecto-1---Kris-y-Derekk" value="3BmUWDTHqONZ2mIp0t3GyfmwulJ" />
     </persistenceIdMap>
-  </component>
-  <component name="CopilotUserSelectedChatMode">
-    <option name="chatModeId" value="Agent" />
-  </component>
-  <component name="CopilotUserSelectedModel">
-    <selectedModels>
-      <entry key="chat-panel" value="GPT-5.1" />
-      <entry key="agent-panel" value="GPT-5.1" />
-    </selectedModels>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Modulo-2-Decorador" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,12 +54,12 @@
     &quot;assignee&quot;: &quot;kristelperazasanchez-cloud&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/kristelperazasanchez-cloud/Proyecto-1---Kris-y-Derek.git&quot;,
-    &quot;accountId&quot;: &quot;c808a30d-f741-4a06-b8f4-fe9a61194d3d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kristelperazasanchez-cloud/Proyecto-1---Kris-y-Derek.git",
+    "accountId": "c808a30d-f741-4a06-b8f4-fe9a61194d3d"
   }
-}</component>
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="Em2MZL6v" />
   </component>
@@ -99,7 +84,6 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -107,24 +91,14 @@
     "RunOnceActivity.west.config.association.type.startup.service": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Modulo-2-Archivos",
-    "last_opened_file_path": "C:/Users/XPC/Documents/UNIVERSIDAD/Programacion 2/Proyecto 1",
-    "nodejs_package_manager_path": "npm",
+    "git-widget-placeholder": "Modulo-2-Decorador",
     "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Exceptions" />
-      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Decorator Headers" />
-      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Entities headers" />
-      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Entities cpp" />
-      <recent name="E:\Clion\Proyecto-1---Kris-y-Derek\Entities cpp" />
+      <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Utilities" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,9 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1774592031293</updated>
       <workItem from="1774592032311" duration="720000" />
-      <workItem from="1774942340400" duration="13000" />
-      <workItem from="1775093777569" duration="435000" />
-      <workItem from="1775094690736" duration="12170000" />
+      <workItem from="1775006411710" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -191,55 +163,7 @@
       <option name="project" value="LOCAL" />
       <updated>1774596930945</updated>
     </task>
-    <task id="LOCAL-00006" summary="Prueba">
-      <option name="closed" value="true" />
-      <created>1774691560973</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1774691560973</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Creacion de product management y ajuste de sobrecarga de product">
-      <option name="closed" value="true" />
-      <created>1774937271429</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1774937271429</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Diseno de interfaz y agregacion de excepciones nuevas">
-      <option name="closed" value="true" />
-      <created>1775005650947</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1775005650947</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Diseno de interfaz y agregacion de excepciones nuevas">
-      <option name="closed" value="true" />
-      <created>1775005698919</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1775005698919</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Diseno de archivos incompletos">
-      <option name="closed" value="true" />
-      <created>1775042899744</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1775042899744</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Diseno de archivos completos(creo)">
-      <option name="closed" value="true" />
-      <created>1775114119587</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1775114119587</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,28 +176,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prueba 2" />
+    <MESSAGE value="Prueba" />
     <MESSAGE value="Prueba 1129873821" />
     <MESSAGE value="hola tonotos" />
     <MESSAGE value="Actualizacion carpeta de utilities" />
     <MESSAGE value="Commit main &gt;:D" />
-    <MESSAGE value="Agregue el decorador (no se enoje conmigo Kris :c)" />
-    <MESSAGE value="Prueba" />
-    <MESSAGE value="Creacion de product management y ajuste de sobrecarga de product" />
-    <MESSAGE value="Diseno de interfaz y agregacion de excepciones nuevas" />
-    <MESSAGE value="Diseno de archivos incompletos" />
-    <MESSAGE value="Diseno de archivos completos(creo)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diseno de archivos completos(creo)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="Commit main &gt;:D" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
