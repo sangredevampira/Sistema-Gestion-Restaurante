@@ -8,6 +8,16 @@ Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsLis
     : clientsName(clientsName), productsList(productsList), payment(selected), orderID(orderCounter++)
 { calculateTotalPrice(this->clientsName); }
 
+
+Order::Order(int orderID, std::string clientsName, std::shared_ptr<List<Product>> productsList, std::shared_ptr<PaymentMethod>payment, float totalPrice){
+    this->orderID = orderID;
+    this->clientsName = clientsName;
+    this->productsList = productsList;
+    this->payment = payment;
+    this->totalPrice = totalPrice;
+}
+
+
 int Order::getOrderID() { return orderID;}
 
 std::string Order::getClientsName() { return clientsName;}
@@ -15,6 +25,11 @@ std::string Order::getClientsName() { return clientsName;}
 std::shared_ptr<List<Product>> Order::getProductsList() { return productsList; }
 
 std::shared_ptr<PaymentMethod> Order::getPaymentMethod() { return payment; }
+
+float Order::getTotalPrice() {
+    return totalPrice;
+}
+
 
 std::string Order::addProductOrder(std::shared_ptr<Product> product)
 {

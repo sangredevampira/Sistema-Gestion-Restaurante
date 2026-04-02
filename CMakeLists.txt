@@ -41,12 +41,6 @@ add_executable(new_target main.cpp
         "Decorator Headers/ExtraBeverage.h"
         "Decorator cpp/ExtraDessert.cpp"
         "Decorator Headers/ExtraDessert.h"
-        "Decorator cpp/ExtraFries.cpp"
-        "Decorator Headers/ExtraFries.h"
-        "Decorator cpp/ExtraIce.cpp"
-        "Decorator Headers/ExtraIce.h"
-        "Decorator cpp/ExtraIceCream.cpp"
-        "Decorator Headers/ExtraIceCream.h"
         "Decorator cpp/Extras.cpp"
         "Decorator cpp/Product.cpp"
         ListEntitie/Nodo.h
@@ -66,4 +60,7 @@ add_executable(new_target main.cpp
         Exceptions/EmptyOrder.h
         Utilities/ConsoleService.cpp
         Utilities/ConsoleService.h
+        fileManagement.h
+        fileManagement.cpp
+        dist/jsoncpp.cpp
 )

@@ -22,6 +22,8 @@ private:
     float totalPrice;
 public:
     Order(std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>);
+    Order(std::string, std::shared_ptr<PaymentMethod>);
+    Order(int, std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>, float);
     int getOrderID();
     std::string getClientsName();
     std::shared_ptr<List<Product>> getProductsList();
@@ -29,7 +31,9 @@ public:
     std::string addProductOrder(std::shared_ptr<Product>);
     std::string removeProductOrder(std::string);
     void calculateTotalPrice(std::string);
-    friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client);};
+    float getTotalPrice();
+    friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client);
 
+};
 
 #endif //PROYECTO_1_ORDER_H
