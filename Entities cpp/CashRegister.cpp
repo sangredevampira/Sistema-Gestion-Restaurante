@@ -20,3 +20,14 @@ std::shared_ptr<PaymentMethod> CashRegister::classifyPayment(int index)
 
     return selected;
 }
+
+std::string CashRegister::availablePaymentMethods()
+{
+    std::stringstream ss;
+    ss << "---* METODOS DE PAGO DISPONIBLES *---\n";
+    ss << "1. Tarjeta\n";
+    ss << "2. Efectivo\n";
+    ss << "3. Digital SinpeMovil\n";
+    ss << "Digita la opcion deseada: ";
+    return ss.str();
+}

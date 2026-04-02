@@ -2,7 +2,7 @@
 // Created by derek on 31/03/2026.
 //
 
-#include "Menu.h"
+#include "../Entities headers/Menu.h"
 
 Menu::Menu() { this->restaurant = std::make_unique<Restaurant>(); }
 

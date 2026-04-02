@@ -15,6 +15,7 @@ class CashRegister
 {
 public:
     static std::shared_ptr<PaymentMethod> classifyPayment(int);
+    static std::string availablePaymentMethods();
 };
 
 

@@ -5,8 +5,17 @@
 #ifndef PROYECTO_1_KRIS_Y_DEREK_ORDERMANAGEMENT_H
 #define PROYECTO_1_KRIS_Y_DEREK_ORDERMANAGEMENT_H
 
+#include "Order.h"
+#include "CashRegister.h"
 
 class OrderManagement {
+private:
+    std::shared_ptr<List<Order>> ordersList;
+public:
+    OrderManagement();
+    std::string placeOrder(std::string, std::shared_ptr<List<Product>>, int);
+    std::shared_ptr<Order> searchOrder(int);
+
 };
 
 

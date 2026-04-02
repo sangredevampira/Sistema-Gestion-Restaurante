@@ -4,9 +4,9 @@
 
 #include "../Entities headers/Order.h"
 
-Order::Order(std::string clientsName, std::shared_ptr<PaymentMethod> selected)
-    : clientsName(clientsName), payment(selected)
-{ this->orderID = orderCounter++; }
+Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsList, std::shared_ptr<PaymentMethod> selected)
+    : clientsName(clientsName), productsList(productsList), payment(selected), orderID(orderCounter++)
+{ calculateTotalPrice(this->clientsName); }
 
 int Order::getOrderID() { return orderID;}
 
@@ -36,6 +36,15 @@ std::string Order::removeProductOrder(std::string productName)
             messaje = "Producto no encontrado\n";
     }
     return messaje;
+}
+
+void Order::calculateTotalPrice(std::string clientName)
+{
+    std::shared_ptr<Nodo<Product>> temp = productsList->getFirst();
+    while (temp != nullptr)
+        totalPrice += temp->getElement()->getPrice();
+    if (clientName != "")
+        totalPrice -= (totalPrice * 0.15);
 }
 
 std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> order)

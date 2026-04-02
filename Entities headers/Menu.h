@@ -5,10 +5,10 @@
 #ifndef PROYECTO_1_KRIS_Y_DEREK_MENU_H
 #define PROYECTO_1_KRIS_Y_DEREK_MENU_H
 
-#include "Entities headers/Restaurant.h"
-#include "Utilities/ConsoleService.h"
-#include "Exceptions/Miscapture.h"
-#include "Exceptions/IndexOutOfRange.h"
+#include "Restaurant.h"
+#include "../Utilities/ConsoleService.h"
+#include "../Exceptions/Miscapture.h"
+#include "../Exceptions/IndexOutOfRange.h"
 
 class Menu {
 private:

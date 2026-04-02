@@ -56,8 +56,8 @@ add_executable(new_target main.cpp
         "Entities headers/Restaurant.h"
         "Entities cpp/OrderManagement.cpp"
         "Entities headers/OrderManagement.h"
-        Menu.cpp
-        Menu.h
+        "Entities cpp/Menu.cpp"
+        "Entities headers/Menu.h"
         Exceptions/Miscapture.cpp
         Exceptions/Miscapture.h
         Exceptions/MissingFile.cpp
