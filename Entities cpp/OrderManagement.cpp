@@ -31,3 +31,8 @@ std::shared_ptr<Order> OrderManagement::searchOrder(int id)
     return searched;
 
 }
+
+std::shared_ptr<List<Order>> OrderManagement::getOrderList() {
+    return ordersList;
+}
+
