@@ -8,7 +8,7 @@ ExtraDessert::ExtraDessert(std::shared_ptr<Product>p): Extras(p) {
 }
 
 std::string ExtraDessert::getName() {
-    return baseProduct->getName() + " con helado extra.";
+    return baseProduct->getName() + "con helado extra.";
 }
 
 float ExtraDessert::getPrice() {

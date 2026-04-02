@@ -62,4 +62,5 @@ add_executable(new_target main.cpp
         Utilities/ConsoleService.h
         fileManagement.h
         fileManagement.cpp
+        dist/jsoncpp.cpp
 )
