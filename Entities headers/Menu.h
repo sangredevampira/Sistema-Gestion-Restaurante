@@ -25,7 +25,7 @@ public:
     void createOrder();
 
     //Registrar cliente
-   void registerClient();
+    void registerClient();
 
     //Agregar un producto
     void addProduct();

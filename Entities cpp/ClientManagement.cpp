@@ -10,7 +10,7 @@ ClientManagement::ClientManagement()
 std::string ClientManagement::addClient(std::string name, std::string id, std::string phoneNumber)
 {
     std::string message;
-    if (searchClient(id) != nullptr)
+    if (searchClient(id) == nullptr)
     {
         std::shared_ptr<Client> newClient = std::make_shared<Client>(name, id, phoneNumber);
         clientsList->insertFirst(newClient);

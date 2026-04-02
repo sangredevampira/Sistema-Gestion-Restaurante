@@ -29,11 +29,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Agregué la implementación de la clase OrderManagement y el método availablePaymentMethods">
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Agregué la implementación de las opciones del menu del proyecto">
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities headers/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Menu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/IndexOutOfRange.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/IndexOutOfRange.cpp" afterDir="false" />
     </list>
     <list id="5a34b0bc-77f2-4e04-802b-2dd6d8646319" name="Changes by XPC" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +153,7 @@
       <workItem from="1774592032311" duration="720000" />
       <workItem from="1774942340400" duration="13000" />
       <workItem from="1775026773402" duration="13770000" />
-      <workItem from="1775089144018" duration="16668000" />
+      <workItem from="1775089144018" duration="20692000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -250,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775106997058</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Agregué la implementación de las opciones del menu del proyecto">
+      <option name="closed" value="true" />
+      <created>1775114031123</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1775114031123</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +283,8 @@
     <MESSAGE value="Diseno de interfaz basico y agregué la clase console service" />
     <MESSAGE value="Agregué metodos get y set en Order y su atributo totalPrice" />
     <MESSAGE value="Agregué la implementación de la clase OrderManagement y el método availablePaymentMethods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregué la implementación de la clase OrderManagement y el método availablePaymentMethods" />
+    <MESSAGE value="Agregué la implementación de las opciones del menu del proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregué la implementación de las opciones del menu del proyecto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

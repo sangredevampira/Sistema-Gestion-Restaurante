@@ -8,10 +8,10 @@ Menu::Menu() { this->restaurant = std::make_unique<Restaurant>(); }
 
 void Menu::mainMenu()
 {
-    std::cout << "=======================================\n"
+    std::cout << "========================================\n"
             << "  * SISTEMA DE GESTION DE PEDIDOS *\n"
             << "       RESTAURANTE " << restaurant->getRestaurantsName() << "\n"
-            << "=======================================\n"
+            << "========================================\n"
             << "(1) Crear un pedido" << "\n"
             << "(2) Registrar cliente" << "\n"
             << "(3) Agregar un producto" << "\n"
@@ -80,18 +80,28 @@ void Menu::registerClient()
 {
     ConsoleService::clearConsole();
     std::string name, phone, id;
+    int confirm;
 
     try
     {
-        std::cout << "------------------ * ------------------\n"
+        std::cout << "------------------ * -------------------\n"
                 << "     INGRESA LOS DATOS DEL CLIENTE\n"
-                << "------------------ * ------------------\n";
-        std::cout << "* Digita el nombre completo: "; std::getline(std::cin,name);
+                << "------------------ * -------------------\n";
+        std::cout << "* Digita el nombre completo: "; std::cin.ignore(); std::getline(std::cin,name);
         if (std::cin.fail()) throw Miscapture();
         std::cout << "* Digita el numero telefonico sin espacios ni guiones: "; std::cin >> phone;
         if (std::cin.fail()) throw Miscapture();
-        std::cout << "* Digita el numero telefonico sin espacios ni guiones: "; std::cin >> phone;
+        std::cout << "* Digita el numero de identificacion: "; std::cin >> id;
         if (std::cin.fail()) throw Miscapture();
+
+        std::cout << "----------------------------------------\n";
+
+        std::cout << "     " << restaurant->getClientService()->addClient(name, id, phone);
+
+        std::cout << "------------------ * -------------------\n";
+
+        ConsoleService::pause();
+        ConsoleService::clearConsole();
 
     }catch (std::exception& e)
     {
