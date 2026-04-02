@@ -22,6 +22,7 @@ private:
     float totalPrice;
 public:
     Order(std::string, std::shared_ptr<PaymentMethod>);
+    Order(int, std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>, float);
     int getOrderID();
     std::string getClientsName();
     std::shared_ptr<List<Product>> getProductsList();

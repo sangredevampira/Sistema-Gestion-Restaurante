@@ -19,16 +19,21 @@
 class fileManagement {
 public:
 
+    //metodos de guardar archivos Json
    std::string saveToFile(std::shared_ptr<List<Client>> clientList, std::shared_ptr<List<Product>> productList, std::shared_ptr<List<Order>> orderList);
-   //std::string loadFromFile(std::shared_ptr<List<Client>>&clientList, std::shared_ptr<List<Product>>&productList, std::shared_ptr<List<Order>>&orderList);
-   Json::Value convertClientListToJson(std::shared_ptr<List<Client>> clientList);
-   Json::Value convertProductListToJson(std::shared_ptr<List<Product>> productList);
-   Json::Value convertOrderListToJson(std::shared_ptr<List<Order>> orderList);
-   Json::Value convertExtrasToJson(std::shared_ptr<List<Extras>> extraList);
-   //Json::Value loadClientListToJson(const Json::Value& root, std::shared_ptr<List<Client>>&clientList);
-   //Json::Value loadProductListToJson(const Json::Value& root, std::shared_ptr<List<Product>>&productList);
-  // Json::Value loadOrderListToJson(const Json::Value& root, std::shared_ptr<List<Order>>&orderList);
-   //Json::Value loadExtrasListToJson(const Json::Value& root, std::shared_ptr<List<Extras>>&extraList);
+    Json::Value convertClientListToJson(std::shared_ptr<List<Client>> clientList);
+    Json::Value convertProductListToJson(std::shared_ptr<List<Product>> productList);
+    Json::Value convertOrderListToJson(std::shared_ptr<List<Order>> orderList);
+    Json::Value convertExtrasToJson(std::shared_ptr<List<Extras>> extraList);
+
+
+    //metodos de leer archivos Json
+
+    void loadFromFile(std::shared_ptr<List<Client>>&clientList, std::shared_ptr<List<Product>>&productList, std::shared_ptr<List<Order>>&orderList);
+   void loadClientListToJson(const Json::Value& root, std::shared_ptr<List<Client>>&clientList);
+   void loadProductListToJson(const Json::Value& root, std::shared_ptr<List<Product>>&productList);
+  void loadOrderListToJson(const Json::Value& root, std::shared_ptr<List<Order>>&orderList);
+   void loadExtrasListToJson(const Json::Value& root, std::shared_ptr<List<Extras>>&extraList, std::string type,std::shared_ptr<Product> product);
 
 
 };
