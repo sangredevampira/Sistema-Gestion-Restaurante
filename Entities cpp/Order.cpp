@@ -18,8 +18,6 @@ Order::Order(int orderID, std::string clientsName, std::shared_ptr<List<Product>
 }
 
 
-
-
 int Order::getOrderID() { return orderID;}
 
 std::string Order::getClientsName() { return clientsName;}
