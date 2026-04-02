@@ -29,15 +29,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Diseno de archivos incompletos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/Order.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Order.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/fileManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/fileManagement.h" afterDir="false" />
-    </list>
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Diseno de archivos completos(creo)" />
     <list id="5a34b0bc-77f2-4e04-802b-2dd6d8646319" name="Changes by XPC" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +149,7 @@
       <workItem from="1774592032311" duration="720000" />
       <workItem from="1774942340400" duration="13000" />
       <workItem from="1775093777569" duration="435000" />
-      <workItem from="1775094690736" duration="11858000" />
+      <workItem from="1775094690736" duration="12170000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -239,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775042899744</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Diseno de archivos completos(creo)">
+      <option name="closed" value="true" />
+      <created>1775114119587</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1775114119587</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +261,8 @@
     <MESSAGE value="Creacion de product management y ajuste de sobrecarga de product" />
     <MESSAGE value="Diseno de interfaz y agregacion de excepciones nuevas" />
     <MESSAGE value="Diseno de archivos incompletos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diseno de archivos incompletos" />
+    <MESSAGE value="Diseno de archivos completos(creo)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Diseno de archivos completos(creo)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
