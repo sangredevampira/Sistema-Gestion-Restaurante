@@ -5,5 +5,5 @@
 #include "IndexOutOfRange.h"
 
 IndexOutOfRange::IndexOutOfRange()
-    : GeneralException("Indice fuera del rango de opciones ")
+    : GeneralException("Indice fuera del rango de opciones. Intenta nuevamente")
 {}

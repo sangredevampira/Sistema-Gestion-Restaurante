@@ -29,18 +29,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Agregué metodos get y set en Order y su atributo totalPrice">
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Agregué la implementación de la clase OrderManagement y el método availablePaymentMethods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/CashRegister.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/CashRegister.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/CashRegister.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/CashRegister.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/Order.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Order.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/OrderManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/OrderManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Menu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Menu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exceptions/IndexOutOfRange.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/IndexOutOfRange.cpp" afterDir="false" />
     </list>
     <list id="5a34b0bc-77f2-4e04-802b-2dd6d8646319" name="Changes by XPC" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,6 +131,11 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="new_target" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="new_target" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="new_target">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -154,7 +152,7 @@
       <workItem from="1774592032311" duration="720000" />
       <workItem from="1774942340400" duration="13000" />
       <workItem from="1775026773402" duration="13770000" />
-      <workItem from="1775089144018" duration="10515000" />
+      <workItem from="1775089144018" duration="16668000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -244,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775037699872</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Agregué la implementación de la clase OrderManagement y el método availablePaymentMethods">
+      <option name="closed" value="true" />
+      <created>1775106997058</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775106997058</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +273,8 @@
     <MESSAGE value="Diseno de interfaz y agregacion de excepciones nuevas" />
     <MESSAGE value="Diseno de interfaz basico y agregué la clase console service" />
     <MESSAGE value="Agregué metodos get y set en Order y su atributo totalPrice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregué metodos get y set en Order y su atributo totalPrice" />
+    <MESSAGE value="Agregué la implementación de la clase OrderManagement y el método availablePaymentMethods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregué la implementación de la clase OrderManagement y el método availablePaymentMethods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

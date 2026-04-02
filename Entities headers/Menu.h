@@ -19,19 +19,16 @@ public:
     //Menu principal
     void mainMenu();
     void actionsMainMenu();
+    void finalMessage();
 
-    //Submenu pedidos
-    void submenuOrders();
-    void actionsSubmenuOrders();
+    //Crear pedido
+    void createOrder();
 
-    //Submenu clientes
-    void submenuClients();
-    void actionsSubmenuClients();
+    //Registrar cliente
+   void registerClient();
 
-    //Submenu productos
-    void submenuProducts();
-    void actionsSubmenuProducts();
-
+    //Agregar un producto
+    void addProduct();
 
     //Cargar pedidos
     void loadOrders();
