@@ -9,6 +9,8 @@
 #include "../Utilities/ConsoleService.h"
 #include "../Exceptions/Miscapture.h"
 #include "../Exceptions/IndexOutOfRange.h"
+#include "../fileManagement.h"
+
 
 class Menu {
 private:

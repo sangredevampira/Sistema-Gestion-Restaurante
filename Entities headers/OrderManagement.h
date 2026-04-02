@@ -15,6 +15,7 @@ public:
     OrderManagement();
     std::string placeOrder(std::string, std::shared_ptr<List<Product>>, int);
     std::shared_ptr<Order> searchOrder(int);
+    std::shared_ptr<List<Order>> getOrderList();
 
 };
 

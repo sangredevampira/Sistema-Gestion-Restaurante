@@ -34,6 +34,7 @@ std::string fileManagement::saveToFile(std::shared_ptr<List<Client>> clientList,
         writer->write(event, &file);
         Json::Value arreglo(Json::arrayValue);
         file.close();
+        return "Archivo guardado exitosamente\n";
 
 }
 

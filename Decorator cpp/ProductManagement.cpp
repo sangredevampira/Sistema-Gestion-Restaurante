@@ -68,3 +68,8 @@ std::string ProductManagement::showProduct(std::shared_ptr<Product> product) {
 
     return ss.str();
 }
+
+std::shared_ptr<List<Product>> ProductManagement::getProductList() {
+    return productList;
+}
+

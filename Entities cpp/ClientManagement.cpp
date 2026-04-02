@@ -35,3 +35,8 @@ std::shared_ptr<Client> ClientManagement::searchClient(std::string id)
     }
     return searched;
 }
+
+std::shared_ptr<List<Client>> ClientManagement::getClientList() {
+    return clientsList;
+}
+
