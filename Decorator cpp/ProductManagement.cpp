@@ -103,7 +103,7 @@ std::string ProductManagement::showExtrasByType(std::shared_ptr<Product> product
 
     std::stringstream ss;
     std::shared_ptr<Nodo<Extras>> current = extrasList->getFirst();
-    for (int i = 1; i <= productList->length(); i++)
+    for (int i = 1; i <= extrasList->length(); i++)
     {
         if (type == 1)
             if (dynamic_cast<MealExtra*>(current->getElement().get()))
@@ -122,6 +122,20 @@ std::string ProductManagement::showExtrasByType(std::shared_ptr<Product> product
 
 std::shared_ptr<Extras> ProductManagement::searchExtra(int index)
 {
+    if (productList == nullptr || productList->isEmpty()) {
+        return nullptr;
+    }
+    bool found = false;
+    std::shared_ptr<Nodo<Extras>> current = extrasList->getFirst();
+    for (int i = 1; i <= extrasList->length() && !found; i++)
+    {
+        if (i == index)
+        {
+            found = true;
+            return current->getElement();
+        }else current = current->getNext();
+    }
+    return nullptr;
 }
 
 void ProductManagement::loadProducts()
