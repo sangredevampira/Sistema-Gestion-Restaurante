@@ -33,7 +33,7 @@ public:
    void loadClientListToJson(const Json::Value& root, std::shared_ptr<List<Client>>&clientList);
    void loadProductListToJson(const Json::Value& root, std::shared_ptr<List<Product>>&productList);
   void loadOrderListToJson(const Json::Value& root, std::shared_ptr<List<Order>>&orderList);
-   void loadExtrasListToJson(const Json::Value& root, std::shared_ptr<List<Extras>>&extraList, std::string type,std::shared_ptr<Product> product);
+   void loadExtrasListToJson(const Json::Value& root, std::shared_ptr<List<Extras>>&extraList, std::string type);
 
 
 };

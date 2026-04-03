@@ -7,7 +7,7 @@
 
 #include "Extras.h"
 class BigSize:public Extras {
-public: BigSize(std::shared_ptr<Product> p, std::string name, float price);
+public: BigSize(std::string name, float price);
     std::string getName() override;
     float getPrice() override;
 };

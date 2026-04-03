@@ -8,7 +8,7 @@
 #include "Extras.h"
 class MediumSize: public Extras{
     public:
-    MediumSize(std::shared_ptr<Product> p,std::string name, float price);
+    MediumSize(std::string name, float price);
     std::string getName() override;
     float getPrice() override;
 };

@@ -4,11 +4,9 @@
 
 #include "../Decorator Headers/Extras.h"
 
-Extras::Extras(std::shared_ptr<Product> p,std::string name, float price):baseProduct(p) {
-    this->name = name;
-    this->price = price;
+Extras::Extras(std::string name, float price) : Product(name, price)
+{}
 
-}
 
 std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Extras> extras) {
 

@@ -26,7 +26,7 @@ void Menu::mainMenu()
 void Menu::actionsMainMenu()
 {
     int option;
-    bool quit = false;
+    bool continueMenu = true;
 
     do
     {
@@ -51,7 +51,7 @@ void Menu::actionsMainMenu()
             case 0:
                 ConsoleService::clearConsole();
                 finalMessage();
-                quit = true; break;
+                continueMenu = false; break;
             default:
                 throw IndexOutOfRange();
             }
@@ -63,7 +63,7 @@ void Menu::actionsMainMenu()
             std::cin.ignore(1000, '\n');
         }
 
-    }while (quit);
+    }while (continueMenu);
 }
 
 void Menu::finalMessage()
@@ -78,16 +78,18 @@ void Menu::createOrder()
     ConsoleService::clearConsole();
     std::string clientsName;
     int index, menuSize = restaurant->getProductService()->getProductList()->length();
-    bool option = false;
+    bool continueO = true;
     std::shared_ptr<Product> newProduct = nullptr;
     std::shared_ptr<Extras> newExtra = nullptr;
     std::shared_ptr<List<Product>> products = std::make_shared<List<Product>>();
-
 
     std::cout << "------------------ * -------------------\n"
                 << "              NUEVO PEDIDO\n"
                 << "------------------ * -------------------\n";
     std::cout << "* Digita el nombre del cliente: "; std::cin.ignore(); std::getline(std::cin,clientsName);
+    if (std::cin.fail() || clientsName == "") throw Miscapture();
+
+
     std::cout << "\n";
     do
     {
@@ -105,9 +107,9 @@ void Menu::createOrder()
             std::cout << "* Deseas personalizar el producto?\n"
                     << "(1) Si\n"
                     << "(0) No\n"
-                    << "* Digita la opcion deseada: "; std::cin >> option;
+                    << "* Digita la opcion deseada: "; std::cin >> continueO;
 
-            if (option)
+            if (continueO)
             {
                 std::cout << "----------------------------------------\n"
                     << "    MENU EXTRAS - RESTAURANTE GOJO'S ROOM\n"
@@ -120,9 +122,9 @@ void Menu::createOrder()
             std::cout << "* Deseas agregar mas productos?\n"
                     << "(1) Si\n"
                     << "(0) No\n"
-                    << "* Digita la opcion deseada: "; std::cin >> option;
+                    << "* Digita la opcion deseada: "; std::cin >> continueO;
             }
-        }while (!option);
+        }while (continueO);
 }
 
 void Menu::registerClient()

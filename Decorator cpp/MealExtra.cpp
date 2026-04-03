@@ -4,12 +4,12 @@
 
 #include "../Decorator Headers/MealExtra.h"
 
-MealExtra::MealExtra(std::shared_ptr<Product> p, std::string name, float price)
-    : Extras(p, name, price) {
+MealExtra::MealExtra(std::string name, float price)
+    : Extras(name, price) {
 }
 
 std::string MealExtra::getName() {
-    return baseProduct->getName() + " " + name;
+    return name;
 }
 
 float MealExtra::getPrice() {

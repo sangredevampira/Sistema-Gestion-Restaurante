@@ -4,15 +4,6 @@
 
 #include "../Entities headers/Restaurant.h"
 
-#include "../Decorator Headers/Beverage.h"
-#include "../Decorator Headers/Dessert.h"
-#include "../Decorator Headers/Meal.h"
-#include "../Decorator Headers/Beverage.h"
-#include "../Decorator Headers/Dessert.h"
-#include "../Decorator Headers/Extras.h"
-#include "../Decorator Headers/MealExtra.h"
-#include "../Decorator Headers/ExtraDessert.h"
-#include "../Decorator Headers/ExtraBeverage.h"
 
 Restaurant::Restaurant()
         : restaurantsName("GOJO'S ROOM")

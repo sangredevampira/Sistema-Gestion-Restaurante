@@ -4,13 +4,13 @@
 
 #include "../Decorator Headers/MediumSize.h"
 
-MediumSize::MediumSize(std::shared_ptr<Product> p,std::string name, float price): Extras(p, name, price) {
+MediumSize::MediumSize(std::string name, float price): Extras(name, price) {
 }
 
 std::string MediumSize::getName() {
-    return baseProduct->getName() + " tamaño mediano/a. ";
+    return name;
 }
 
 float MediumSize::getPrice() {
-    return baseProduct->getPrice() + 0.075;
+    return price;
 }

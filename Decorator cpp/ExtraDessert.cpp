@@ -4,11 +4,11 @@
 
 #include "../Decorator Headers/ExtraDessert.h"
 
-ExtraDessert::ExtraDessert(std::shared_ptr<Product> p, std::string name, float price): Extras(p, name, price) {
+ExtraDessert::ExtraDessert(std::string name, float price): Extras(name, price) {
 }
 
 std::string ExtraDessert::getName() {
-    return baseProduct->getName() + " " + name;
+    return name;
 }
 
 float ExtraDessert::getPrice() {
