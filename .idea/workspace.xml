@@ -29,22 +29,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Menu de archivos listo. Archivos completos(sin imprime bien el json)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/BigSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/BigSize.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraBeverage.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraBeverage.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/Extras.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Extras.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/MealExtra.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MealExtra.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/MediumSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MediumSize.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/SmallSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/SmallSize.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/BigSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/BigSize.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraBeverage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraBeverage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/Extras.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Extras.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/MealExtra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MealExtra.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/MediumSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MediumSize.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/SmallSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/SmallSize.cpp" afterDir="false" />
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="modificacion de los extras, ademas del sobrecargado de extra">
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +46,7 @@
     </persistenceIdMap>
   </component>
   <component name="CopilotUserSelectedChatMode">
-    <option name="chatModeId" value="Agent" />
+    <option name="chatModeId" value="Ask" />
   </component>
   <component name="CopilotUserSelectedModel">
     <selectedModels>
@@ -152,7 +138,7 @@
       <workItem from="1774592032311" duration="720000" />
       <workItem from="1775117357969" duration="2148000" />
       <workItem from="1775121029484" duration="974000" />
-      <workItem from="1775180495641" duration="5730000" />
+      <workItem from="1775180495641" duration="8987000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -202,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775122013787</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="modificacion de los extras, ademas del sobrecargado de extra">
+      <option name="closed" value="true" />
+      <created>1775190678569</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775190678569</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +216,8 @@
     <MESSAGE value="Commit main &gt;:D" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Modulo-2-Archivos' into Modulo-2-Archivos" />
     <MESSAGE value="Menu de archivos listo. Archivos completos(sin imprime bien el json)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu de archivos listo. Archivos completos(sin imprime bien el json)" />
+    <MESSAGE value="modificacion de los extras, ademas del sobrecargado de extra" />
+    <option name="LAST_COMMIT_MESSAGE" value="modificacion de los extras, ademas del sobrecargado de extra" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
