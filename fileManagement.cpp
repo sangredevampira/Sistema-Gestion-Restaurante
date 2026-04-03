@@ -16,6 +16,37 @@
 #include "dist/json/json.h"
 #include "Exceptions/MissingFile.h"
 
+//metodos para limpiar la lista
+
+void fileManagement::clearClienteList(std::shared_ptr<List<Client>> &clientList) {
+    if (clientList == nullptr) return;
+    while (!clientList->isEmpty()) {
+        clientList->deleteElement(clientList->getFirst()->getElement());
+    }
+}
+
+void fileManagement::clearProductList(std::shared_ptr<List<Product>> &productList) {
+    if (productList == nullptr) return;
+    while (!productList->isEmpty()) {
+        productList->deleteElement(productList->getFirst()->getElement());
+    }
+}
+
+void fileManagement::clearOrderList(std::shared_ptr<List<Order>> &orderList) {
+    if (orderList == nullptr) return;
+    while (!orderList->isEmpty()) {
+        orderList->deleteElement(orderList->getFirst()->getElement());
+    }
+}
+
+void clearOrderList(std::shared_ptr<List<Order>>& orderList) {
+    if (orderList == nullptr) return;
+    while (!orderList->isEmpty()) {
+        orderList->deleteElement(orderList->getFirst()->getElement());
+    }
+}
+//--------------------------------------------------------------------------
+
 
 // metodos para guardar archivod
 std::string fileManagement::saveToFile(std::shared_ptr<List<Client>> clientList, std::shared_ptr<List<Product>> productList,
@@ -131,7 +162,7 @@ Json::Value fileManagement::convertOrderListToJson(std::shared_ptr<List<Order>> 
     return arreglo;
 }
 
-//-=--------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------
 
 //  metodos para leer archivos.
 
@@ -139,14 +170,23 @@ void fileManagement::loadFromFile(std::shared_ptr<List<Client>> &clientList,
                                   std::shared_ptr<List<Product>> &productList, std::shared_ptr<List<Order>> &orderList) {
 
     std::ifstream file("GestionRestaurante.txt");
-    if (!file) throw  MissingFile();
+    if (!file) throw MissingFile();
+
+
+    clearClienteList(clientList);
+    clearProductList(productList);
+    clearOrderList(orderList);
+
     Json::Value object;
     Json::Reader reader;
-    reader.parse(file, object);
+    if (!reader.parse(file, object)) {
+        throw std::runtime_error("Error al parsear el JSON de GestionRestaurante.txt");
+    }
+
     loadClientListToJson(object, clientList);
     loadProductListToJson(object, productList);
     loadOrderListToJson(object, orderList);
-    reader.parse(file, object);
+
     file.close();
 }
 
