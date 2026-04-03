@@ -13,7 +13,7 @@
 class ProductManagement {
 private:
     std::shared_ptr<List<Product>> productList;
-    std::shared_ptr<Extras> extrasList;
+    std::shared_ptr<List<Extras>> extrasList;
 public:
     ProductManagement();
     std::string addProduct(std::shared_ptr<Product> product);

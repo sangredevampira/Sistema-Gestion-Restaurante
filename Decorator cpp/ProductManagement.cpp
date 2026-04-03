@@ -92,8 +92,7 @@ std::shared_ptr<List<Product>> ProductManagement::getProductList() {
 }
 
 std::shared_ptr<List<Extras>> ProductManagement::getExtrasList()
-{
-}
+{ return extrasList;}
 
 std::string ProductManagement::showExtrasByType(int index)
 {
