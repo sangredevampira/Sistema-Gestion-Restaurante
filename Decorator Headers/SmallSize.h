@@ -8,7 +8,7 @@
 #include "Extras.h"
 class SmallSize:public Extras{
 public:
-    SmallSize(std::shared_ptr<Product> p);
+    SmallSize(std::shared_ptr<Product> p,std::string name, float price);
         std::string getName() override;
         float getPrice() override;
 };
