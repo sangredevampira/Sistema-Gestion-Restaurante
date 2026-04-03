@@ -63,7 +63,7 @@ void Menu::actionsMainMenu()
             std::cin.ignore(1000, '\n');
         }
 
-    }while (!quit);
+    }while (quit);
 }
 
 void Menu::finalMessage()
@@ -75,7 +75,53 @@ void Menu::finalMessage()
 
 void Menu::createOrder()
 {
+    ConsoleService::clearConsole();
+    std::string clientsName;
+    int index, menuSize = restaurant->getProductService()->getProductList()->length();
+    bool option = false;
+    std::shared_ptr<Product> newProduct = nullptr;
+    std::shared_ptr<Extras> newExtra = nullptr;
+    std::shared_ptr<List<Product>> products = std::make_shared<List<Product>>();
 
+
+    std::cout << "------------------ * -------------------\n"
+                << "              NUEVO PEDIDO\n"
+                << "------------------ * -------------------\n";
+    std::cout << "* Digita el nombre del cliente: "; std::cin.ignore(); std::getline(std::cin,clientsName);
+    std::cout << "\n";
+    do
+    {
+        std::cout << "----------------------------------------\n"
+                << "     MENU - RESTAURANTE GOJO'S ROOM\n"
+                << "----------------------------------------\n";
+        std::cout << restaurant->getProductService()->getProductList()->showList();
+        std::cout << "* Digita el numero de producto deseado: "; std::cin >> index;
+
+        if(index > menuSize) throw IndexOutOfRange();
+        else
+        {
+            newProduct = restaurant->getProductService()->searchProduct(index);
+
+            std::cout << "* Deseas personalizar el producto?\n"
+                    << "(1) Si\n"
+                    << "(0) No\n"
+                    << "* Digita la opcion deseada: "; std::cin >> option;
+
+            if (option)
+            {
+                std::cout << "----------------------------------------\n"
+                    << "    MENU EXTRAS - RESTAURANTE GOJO'S ROOM\n"
+                    << "----------------------------------------\n";
+                //aqui la vara de los extras
+            }
+
+
+            std::cout << "* Deseas agregar mas productos?\n"
+                    << "(1) Si\n"
+                    << "(0) No\n"
+                    << "* Digita la opcion deseada: "; std::cin >> option;
+            }
+        }while (!option);
 }
 
 void Menu::registerClient()
@@ -91,14 +137,18 @@ void Menu::registerClient()
                 << "------------------ * -------------------\n";
         std::cout << "* Digita el nombre completo: "; std::cin.ignore(); std::getline(std::cin,name);
         if (std::cin.fail()) throw Miscapture();
-        std::cout << "* Digita el numero telefonico sin espacios ni guiones: "; std::cin >> phone;
+        std::cout << "* Digita el numero telefonico: "; std::cin >> phone;
         if (std::cin.fail()) throw Miscapture();
-        std::cout << "* Digita el numero de identificacion: "; std::cin >> id;
+        std::cout << "* Digita el numero de identificacion: "; std::cin.ignore(); std::getline(std::cin,id);
         if (std::cin.fail()) throw Miscapture();
 
         std::cout << "----------------------------------------\n";
 
-        std::cout << "     " << restaurant->getClientService()->addClient(name, id, phone);
+        if (name == "" || id == "")
+        {
+            std::cout << "    No se puedo registrar el cliente\n";
+        }else
+            std::cout << "     " << restaurant->getClientService()->addClient(name, id, phone);
 
         std::cout << "------------------ * -------------------\n";
 

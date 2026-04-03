@@ -57,6 +57,24 @@ std::shared_ptr<Product> ProductManagement::searchProduct(std::string name) {
     return nullptr;
 }
 
+std::shared_ptr<Product> ProductManagement::searchProduct(int index)
+{
+    if (productList == nullptr || productList->isEmpty()) {
+        return nullptr;
+    }
+    bool found = false;
+    std::shared_ptr<Nodo<Product>> current = productList->getFirst();
+    for (int i = 1; i <= productList->length() && !found; i++)
+    {
+        if (i == index)
+        {
+            found = true;
+            return current->getElement();
+        }else current = current->getNext();
+    }
+    return nullptr;
+}
+
 std::string ProductManagement::showProduct(std::shared_ptr<Product> product) {
     if (product == nullptr) {
         return "Producto nulo";
@@ -71,5 +89,25 @@ std::string ProductManagement::showProduct(std::shared_ptr<Product> product) {
 
 std::shared_ptr<List<Product>> ProductManagement::getProductList() {
     return productList;
+}
+
+std::shared_ptr<List<Extras>> ProductManagement::getExtrasList()
+{
+}
+
+std::string ProductManagement::showExtrasByType(int index)
+{
+}
+
+std::shared_ptr<Extras> ProductManagement::searchExtra(int index)
+{
+}
+
+void ProductManagement::loadProducts()
+{
+}
+
+void ProductManagement::loadExtras()
+{
 }
 

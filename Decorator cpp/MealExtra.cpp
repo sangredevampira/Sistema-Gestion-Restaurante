@@ -8,9 +8,9 @@ MealExtra::MealExtra(std::shared_ptr<Product> p): Extras(p)  {
 }
 
 std::string MealExtra::getName() {
-    return baseProduct->getName() + "con papas Fritas";
+    return baseProduct->getName() + " con papas Fritas";
 }
 
 float MealExtra::getPrice() {
-    return baseProduct->getPrice() + 0.005;
+    return baseProduct->getPrice() + 550;
 }
