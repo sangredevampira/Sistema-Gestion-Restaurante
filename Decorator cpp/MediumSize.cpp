@@ -4,7 +4,7 @@
 
 #include "../Decorator Headers/MediumSize.h"
 
-MediumSize::MediumSize(std::shared_ptr<Product> p): Extras(p) {
+MediumSize::MediumSize(std::shared_ptr<Product> p,std::string name, float price): Extras(p, name, price) {
 }
 
 std::string MediumSize::getName() {
