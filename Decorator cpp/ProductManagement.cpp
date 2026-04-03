@@ -7,6 +7,7 @@
 
 ProductManagement::ProductManagement() {
     this->productList = std::make_shared<List<Product>>();
+    this->extrasList = std::make_shared<List<Extras>>();
 }
 
 std::string ProductManagement::addProduct(std::shared_ptr<Product> product) {
@@ -140,9 +141,43 @@ std::shared_ptr<Extras> ProductManagement::searchExtra(int index)
 
 void ProductManagement::loadProducts()
 {
+    productList->insertFirst(std::make_shared<Meal>("Hamburguesa", 1500));
+    productList->insertFirst(std::make_shared<Meal>("Pizza", 2000));
+    productList->insertFirst(std::make_shared<Meal>("Perro Caliente", 1000));
+    productList->insertFirst(std::make_shared<Meal>("Pasta", 3500));
+    productList->insertFirst(std::make_shared<Meal>("Burrito", 1200));
+
+    productList->insertFirst(std::make_shared<Beverage>("Coca-Cola", 800));
+    productList->insertFirst(std::make_shared<Beverage>("Fanta", 800));
+    productList->insertFirst(std::make_shared<Beverage>("Sprite", 800));
+    productList->insertFirst(std::make_shared<Beverage>("Agua", 500));
+    productList->insertFirst(std::make_shared<Beverage>("GingerAle", 800));
+
+    productList->insertFirst(std::make_shared<Dessert>("Helado", 700));
+    productList->insertFirst(std::make_shared<Dessert>("Pastel", 1200));
+    productList->insertFirst(std::make_shared<Dessert>("Galleta", 500));
+    productList->insertFirst(std::make_shared<Dessert>("Brownie", 900));
+    productList->insertFirst(std::make_shared<Dessert>("Flan", 600));
+
 }
 
 void ProductManagement::loadExtras()
 {
+    if (dynamic_cast<Meal*>(productList->getFirst()->getElement().get()) != nullptr) {
+        extrasList->insertFirst(std::make_shared<MealExtra>(productList->getFirst()->getElement(), "Doble carne", 500));
+        extrasList->insertFirst(std::make_shared<MealExtra>(productList->getFirst()->getElement(), "Queso extra", 200));
+        extrasList->insertFirst(std::make_shared<MealExtra>(productList->getFirst()->getElement(), "Tocino extra", 300));
+    }
+    if (dynamic_cast<Beverage*>(productList->getFirst()->getElement().get()) != nullptr) {
+        extrasList->insertFirst(std::make_shared<ExtraBeverage>(productList->getFirst()->getElement(), "Hielo extra", 50));
+        extrasList->insertFirst(std::make_shared<ExtraBeverage>(productList->getFirst()->getElement(), "Limón extra", 30));
+        extrasList->insertFirst(std::make_shared<ExtraBeverage>(productList->getFirst()->getElement(), "Soda extra", 50));
+    }
+    if (dynamic_cast<Dessert*>(productList->getFirst()->getElement().get()) != nullptr) {
+        extrasList->insertFirst(std::make_shared<ExtraDessert>(productList->getFirst()->getElement(), "Chocolate extra", 100));
+        extrasList->insertFirst(std::make_shared<ExtraDessert>(productList->getFirst()->getElement(), "Frutas extra", 150));
+        extrasList->insertFirst(std::make_shared<ExtraDessert>(productList->getFirst()->getElement(), "Nueces Extra" , 200));
+    }
+
 }
 
