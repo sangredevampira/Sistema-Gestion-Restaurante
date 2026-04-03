@@ -4,6 +4,6 @@
 
 #include "EmptyOrder.h"
 
-EmptyOrder::EmptyOrder() : GeneralException("No se puede pagar un pedido inexistente")
+EmptyOrder::EmptyOrder() : GeneralException("No se puede crear un pedido sin seleccionar productos. Intenta de nuevo")
 {
 }

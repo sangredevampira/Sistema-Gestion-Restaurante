@@ -97,6 +97,36 @@ std::shared_ptr<List<Product>> ProductManagement::getProductList() {
 std::shared_ptr<List<Extras>> ProductManagement::getExtrasList()
 { return extrasList; }
 
+int ProductManagement::countExtrasByType(std::shared_ptr<Product> product)
+{
+    int type;
+    if (dynamic_cast<Meal*>(product.get()) != nullptr) type = 1;
+    if (dynamic_cast<Beverage*>(product.get()) != nullptr) type = 2;
+    if (dynamic_cast<Dessert*>(product.get()) != nullptr) type = 3;
+
+    int count = 0;
+    std::shared_ptr<Nodo<Extras>> current = extrasList->getFirst();
+
+    for (int i = 1; i <= extrasList->length(); i++)
+    {
+        if (type == 1)
+            if (dynamic_cast<MealExtra*>(current->getElement().get()))
+                count++;
+
+        if (type == 2)
+            if (dynamic_cast<ExtraBeverage*>(current->getElement().get()))
+                count++;
+
+        if (type == 3)
+            if (dynamic_cast<ExtraDessert*>(current->getElement().get()))
+                count++;
+
+        current = current->getNext();
+    }
+
+    return count;
+}
+
 std::string ProductManagement::showExtrasByType(std::shared_ptr<Product> product)
 {
     int type;
@@ -106,38 +136,131 @@ std::string ProductManagement::showExtrasByType(std::shared_ptr<Product> product
 
     std::stringstream ss;
     std::shared_ptr<Nodo<Extras>> current = extrasList->getFirst();
+
+    int displayIndex = 1;
+
     for (int i = 1; i <= extrasList->length(); i++)
     {
         if (type == 1)
             if (dynamic_cast<MealExtra*>(current->getElement().get()))
-                ss << i << ". " << current->getElement() << "\n";
+            {
+                ss << displayIndex << ". " << current->getElement() << "\n";
+                displayIndex++;
+            }
+
         if (type == 2)
             if (dynamic_cast<ExtraBeverage*>(current->getElement().get()))
-                ss << i << ". " << current->getElement() << "\n";
+            {
+                ss << displayIndex << ". " << current->getElement() << "\n";
+                displayIndex++;
+            }
+
         if (type == 3)
             if (dynamic_cast<ExtraDessert*>(current->getElement().get()))
-                ss << i << ". " << current->getElement() << "\n";
+            {
+                ss << displayIndex << ". " << current->getElement() << "\n";
+                displayIndex++;
+            }
+
         current = current->getNext();
     }
 
     return ss.str();
 }
 
-std::shared_ptr<Extras> ProductManagement::searchExtra(int index)
+std::shared_ptr<Extras> ProductManagement::classifySize(int index)
 {
-    if (productList == nullptr || productList->isEmpty()) {
-        return nullptr;
-    }
-    bool found = false;
+
+    std::shared_ptr<Extras> selected = nullptr;
     std::shared_ptr<Nodo<Extras>> current = extrasList->getFirst();
+    bool found = false;
+
     for (int i = 1; i <= extrasList->length() && !found; i++)
     {
-        if (i == index)
+        if (index == 1)
         {
-            found = true;
-            return current->getElement();
-        }else current = current->getNext();
+            if (dynamic_cast<BigSize*>(current->getElement().get()))
+            {
+                selected = current->getElement();
+                found = true;
+            }
+        }
+
+        if (index == 2)
+        {
+            if (dynamic_cast<MediumSize*>(current->getElement().get()))
+            {
+                selected = current->getElement();
+                found = true;
+            }
+        }
+
+        if (index == 3)
+        {
+            if (dynamic_cast<SmallSize*>(current->getElement().get()))
+            {
+                selected = current->getElement();
+                found = true;
+            }
+        }
+
+        current = current->getNext();
     }
+
+    return selected;
+}
+
+std::shared_ptr<Extras> ProductManagement::searchExtra(int index, std::shared_ptr<Product> product)
+{
+    if (extrasList == nullptr || extrasList->isEmpty()) {
+        return nullptr;
+    }
+
+    int type;
+    if (dynamic_cast<Meal*>(product.get()) != nullptr) type = 1;
+    if (dynamic_cast<Beverage*>(product.get()) != nullptr) type = 2;
+    if (dynamic_cast<Dessert*>(product.get()) != nullptr) type = 3;
+
+    std::shared_ptr<Nodo<Extras>> current = extrasList->getFirst();
+    int displayIndex = 1; // 🔥 clave
+
+    for (int i = 1; i <= extrasList->length(); i++)
+    {
+        auto extra = current->getElement();
+
+        if (type == 1)
+        {
+            if (dynamic_cast<MealExtra*>(extra.get()))
+            {
+                if (displayIndex == index)
+                    return extra;
+                displayIndex++;
+            }
+        }
+
+        if (type == 2)
+        {
+            if (dynamic_cast<ExtraBeverage*>(extra.get()))
+            {
+                if (displayIndex == index)
+                    return extra;
+                displayIndex++;
+            }
+        }
+
+        if (type == 3)
+        {
+            if (dynamic_cast<ExtraDessert*>(extra.get()))
+            {
+                if (displayIndex == index)
+                    return extra;
+                displayIndex++;
+            }
+        }
+
+        current = current->getNext();
+    }
+
     return nullptr;
 }
 
@@ -178,6 +301,10 @@ void ProductManagement::loadExtras()
     extrasList->insertFirst(std::make_shared<ExtraDessert>("Chocolate extra", 100));
     extrasList->insertFirst(std::make_shared<ExtraDessert>("Frutas extra", 150));
     extrasList->insertFirst(std::make_shared<ExtraDessert>("Nueces Extra" , 200));
+
+    extrasList->insertFirst(std::make_shared<BigSize>("Tamanio grande", 900));
+    extrasList->insertFirst(std::make_shared<MediumSize>("Tamanio mediano", 750));
+    extrasList->insertFirst(std::make_shared<SmallSize>("Tamanio pequenio", 550));
 
 
 }

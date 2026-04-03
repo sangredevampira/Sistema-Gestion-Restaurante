@@ -7,6 +7,9 @@
 
 #include "Client.h"
 #include "PaymentMethod.h"
+#include "Card.h"
+#include "Cash.h"
+#include "Digital.h"
 #include "../Decorator Headers/Product.h"
 #include "../ListEntitie/List.h"
 
@@ -24,15 +27,16 @@ public:
     Order(std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>);
     Order(std::string, std::shared_ptr<PaymentMethod>);
 
-
+    Order(std::string, std::shared_ptr<List<Product>>);
     Order(int, std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>, float);
     int getOrderID();
     std::string getClientsName();
     std::shared_ptr<List<Product>> getProductsList();
     std::shared_ptr<PaymentMethod> getPaymentMethod();
+    void setPaymentMethod(std::shared_ptr<PaymentMethod>);
     std::string addProductOrder(std::shared_ptr<Product>);
     std::string removeProductOrder(std::string);
-    void calculateTotalPrice(std::string);
+    std::string calculateTotalPrice(std::string);
     float getTotalPrice();
     friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client);
 

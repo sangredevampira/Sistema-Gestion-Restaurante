@@ -6,10 +6,10 @@
 
 OrderManagement::OrderManagement() { ordersList = std::make_shared<List<Order>>(); }
 
-std::string OrderManagement::placeOrder(std::string clientsName, std::shared_ptr<List<Product>> productsList, int index)
+std::string OrderManagement::placeOrder(std::shared_ptr<Order> newOrder, int index)
 {
     std::shared_ptr payment = CashRegister::classifyPayment(index);
-    std::shared_ptr<Order> newOrder = std::make_shared<Order>(clientsName, productsList, payment);
+    newOrder->setPaymentMethod(payment);
     ordersList->insertFirst(newOrder);
     return "Orden aceptada correctamente\n";
 }

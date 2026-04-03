@@ -13,7 +13,7 @@ private:
     std::shared_ptr<List<Order>> ordersList;
 public:
     OrderManagement();
-    std::string placeOrder(std::string, std::shared_ptr<List<Product>>, int);
+    std::string placeOrder(std::shared_ptr<Order>, int);
     std::shared_ptr<Order> searchOrder(int);
     std::shared_ptr<List<Order>> getOrderList();
 

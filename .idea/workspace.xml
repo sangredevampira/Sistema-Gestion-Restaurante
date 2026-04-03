@@ -30,7 +30,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Arreglo de la clase product">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_3_2026_00_19_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_3_2026_00_19__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_3_2026_00_40_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_3_2026_00_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_3_2026_01_02_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_3_2026_01_02__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Product.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Product.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Product.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Product.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Order.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Order.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/OrderManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/OrderManagement.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exceptions/EmptyOrder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/EmptyOrder.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +120,8 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "Modulo-2-Decorador",
+    "ignore.virus.scanning.warn.message": "true",
+    "nodejs_package_manager_path": "npm",
     "org.rust.first.attach.projects": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -114,11 +132,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="new_target" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="new_target" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="new_target">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -135,7 +148,10 @@
       <workItem from="1774592032311" duration="720000" />
       <workItem from="1775117357969" duration="2148000" />
       <workItem from="1775121029484" duration="622000" />
-      <workItem from="1775178007633" duration="23676000" />
+      <workItem from="1775178007633" duration="30766000" />
+      <workItem from="1775211273981" duration="3404000" />
+      <workItem from="1775233517732" duration="4013000" />
+      <workItem from="1775237670517" duration="4668000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -225,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775203143786</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Arreglo de la clase product">
+      <option name="closed" value="true" />
+      <created>1775204095551</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775204095551</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,17 +272,6 @@
     <MESSAGE value="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras" />
     <MESSAGE value="Arreglo de la clase product" />
     <option name="LAST_COMMIT_MESSAGE" value="Arreglo de la clase product" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Entities cpp/Menu.cpp</url>
-          <line>116</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

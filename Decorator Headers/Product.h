@@ -20,8 +20,9 @@ protected:
     virtual std::string getName() = 0;
     virtual float getPrice() = 0;
     friend std::ostream& operator<<(std::ostream& os, const Product* baseProduct); // operador sobrecargado
-    std::string addExtraToProduct(std::shared_ptr<Product> baseProduct, std::shared_ptr<Extras> extras);
-    std::string removeExtraFromProduct(std::shared_ptr<Product> baseProduct, std::string extra);
+    std::shared_ptr<Extras> searchExtraByIndex(int index);
+    std::string addExtraToProduct(std::shared_ptr<Extras> extras);
+    std::string removeExtraFromProduct(std::string extra);
     std::shared_ptr<List<Extras>> getExtras();
 
 

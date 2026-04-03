@@ -9,6 +9,13 @@ Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsLis
 { calculateTotalPrice(this->clientsName); }
 
 
+Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsList)
+    : orderID(orderCounter), clientsName(clientsName), productsList(productsList)
+{
+    calculateTotalPrice(this->clientsName);
+    payment = nullptr;
+}
+
 Order::Order(int orderID, std::string clientsName, std::shared_ptr<List<Product>> productsList, std::shared_ptr<PaymentMethod>payment, float totalPrice){
     this->orderID = orderID;
     this->clientsName = clientsName;
@@ -27,6 +34,9 @@ std::string Order::getClientsName() { return clientsName;}
 std::shared_ptr<List<Product>> Order::getProductsList() { return productsList; }
 
 std::shared_ptr<PaymentMethod> Order::getPaymentMethod() { return payment; }
+
+void Order::setPaymentMethod(std::shared_ptr<PaymentMethod> paymentMethod)
+{ payment = paymentMethod; }
 
 float Order::getTotalPrice() {
     return totalPrice;
@@ -55,13 +65,19 @@ std::string Order::removeProductOrder(std::string productName)
     return messaje;
 }
 
-void Order::calculateTotalPrice(std::string clientName)
+std::string Order::calculateTotalPrice(std::string clientName)
 {
     std::shared_ptr<Nodo<Product>> temp = productsList->getFirst();
     while (temp != nullptr)
+    {
         totalPrice += temp->getElement()->getPrice();
+    }
     if (clientName != "")
+    {
         totalPrice -= (totalPrice * 0.15);
+        return "Aplica 15% de descuento";
+    }
+    return "No aplica";
 }
 
 std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> order)
@@ -69,8 +85,10 @@ std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> order)
     os << "*********************************\n";
     os << "  ORDEN No. " << order->getOrderID() << "\n";
     if (order->getClientsName() != "")
-        os << "Cliente: " << order->getClientsName() << "\n";
+        os << "* Cliente: " << order->getClientsName() << "\n";
     os << "* Productos seleccionados:\n";
     os << order->getProductsList()->showList();
+    os << "* Descuento: " << order->getTotalPrice() << "\n";
+    os << "* Total a pagar:" << order->getTotalPrice() << "\n";
     return os;
 }

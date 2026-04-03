@@ -15,6 +15,9 @@
 #include "MealExtra.h"
 #include "ExtraBeverage.h"
 #include "ExtraDessert.h"
+#include "BigSize.h"
+#include "MediumSize.h"
+#include "SmallSize.h"
 
 class ProductManagement {
 private:
@@ -30,8 +33,10 @@ public:
 
 
     std::shared_ptr<List<Extras>> getExtrasList();
+    int countExtrasByType(std::shared_ptr<Product> product);
     std::string showExtrasByType(std::shared_ptr<Product> product);
-    std::shared_ptr<Extras> searchExtra(int index);
+    std::shared_ptr<Extras> classifySize(int);
+    std::shared_ptr<Extras> searchExtra(int index, std::shared_ptr<Product> product);
 
     void loadProducts();
     void loadExtras();
