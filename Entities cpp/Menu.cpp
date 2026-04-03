@@ -112,7 +112,8 @@ void Menu::createOrder()
                 std::cout << "----------------------------------------\n"
                     << "    MENU EXTRAS - RESTAURANTE GOJO'S ROOM\n"
                     << "----------------------------------------\n";
-                //aqui la vara de los extras
+                std::cout << restaurant->getProductService()->showExtrasByType(newProduct);
+
             }
 
 

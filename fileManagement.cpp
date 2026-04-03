@@ -58,6 +58,8 @@ Json::Value fileManagement::convertExtrasToJson(std::shared_ptr<List<Extras>> ex
     std::shared_ptr<Nodo<Extras>> tempExtras = extraList->getFirst();
     while (tempExtras != nullptr) {
         Json::Value extras;
+        extras["Name"] = tempExtras->getElement()->getName();
+        extras["Price"] = tempExtras->getElement()->getPrice();
         if (dynamic_cast<MealExtra*>(tempExtras->getElement().get()) != nullptr) {
             extras["Type"] = "Meal";
         } else if (dynamic_cast<ExtraBeverage*>(tempExtras->getElement().get()) != nullptr) {
@@ -209,18 +211,20 @@ void fileManagement::loadOrderListToJson(const Json::Value &object, std::shared_
 void fileManagement::loadExtrasListToJson(const Json::Value &object, std::shared_ptr<List<Extras>> &extraList, std::string type, std::shared_ptr<Product> product) {
     for (int i = 0; i < object.size() ; i++) {
         std::shared_ptr<Extras> tempExtras;
+        std::string name = object["Extras"][i]["Name"].asString();
+        float price = object["Extras"][i]["Price"].asFloat();
         if (type == "Meal") {
-            tempExtras = std::make_shared<MealExtra>(product);
+            tempExtras = std::make_shared<MealExtra>(product, name, price);
         } else if (type == "Beverage") {
-            tempExtras = std::make_shared<ExtraBeverage>(product);
+            tempExtras = std::make_shared<ExtraBeverage>(product, name, price);
         } else if (type == "Dessert") {
-            tempExtras = std::make_shared<ExtraDessert>(product);
+            tempExtras = std::make_shared<ExtraDessert>(product, name, price);
         } else if (type == "SmallSize") {
-            tempExtras = std::make_shared<SmallSize>(product);
+            tempExtras = std::make_shared<SmallSize>(product, name, price);
         } else if (type == "MediumSize") {
-            tempExtras = std::make_shared<MediumSize>(product);
+            tempExtras = std::make_shared<MediumSize>(product, name, price);
         } else if (type == "BigSize") {
-            tempExtras = std::make_shared<BigSize>(product);
+            tempExtras = std::make_shared<BigSize>(product, name, price);
          }
          extraList->insertFirst(tempExtras);
     }
