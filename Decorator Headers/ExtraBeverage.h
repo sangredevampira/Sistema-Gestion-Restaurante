@@ -8,7 +8,7 @@
 #include "Extras.h"
 class ExtraBeverage : public Extras {
     public:
-    ExtraBeverage(std::shared_ptr<Product> p);
+    ExtraBeverage(std::shared_ptr<Product> p, std::string name, float price);
     std::string getName() override;
     float getPrice() override;
 };

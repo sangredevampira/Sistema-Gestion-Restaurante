@@ -4,14 +4,14 @@
 
 #include "../Decorator Headers/ExtraBeverage.h"
 
-ExtraBeverage::ExtraBeverage(std::shared_ptr<Product>p): Extras(p) {
+ExtraBeverage::ExtraBeverage(std::shared_ptr<Product>p, std::string name, float price): Extras(p, name , price) {
 
 }
 
 std::string ExtraBeverage::getName() {
-    return baseProduct->getName() + "con hielo extra";
+    return baseProduct->getName() + " " + name;
 }
 
 float ExtraBeverage::getPrice() {
-    return baseProduct->getPrice() + 0.005;
+    return price;
 }

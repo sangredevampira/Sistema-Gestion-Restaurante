@@ -4,7 +4,7 @@
 
 #include "../Decorator Headers/SmallSize.h"
 
-SmallSize::SmallSize(std::shared_ptr<Product>p): Extras(p){
+SmallSize::SmallSize(std::shared_ptr<Product>p,std::string name,float price): Extras(p, name, price){
 }
 
 std::string SmallSize::getName() {

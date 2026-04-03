@@ -9,10 +9,14 @@
 class Extras {
     protected:
     std::shared_ptr<Product> baseProduct;
+    std::string name;
+    float price;
 public:
-    Extras(std::shared_ptr<Product> p);
+    Extras(std::shared_ptr<Product> p,std::string name, float price);
     virtual std::string getName() = 0;
     virtual float getPrice() = 0;
+    friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Extras> extras); // operador sobrecargado
+
 };
 
 
