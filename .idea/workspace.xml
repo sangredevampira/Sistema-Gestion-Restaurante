@@ -29,19 +29,22 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Rama para modificar el decorador">
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Menu de archivos listo. Archivos completos(sin imprime bien el json)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/ClientManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/ClientManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Menu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/Order.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Order.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/OrderManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/OrderManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/fileManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/BigSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/BigSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraBeverage.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraBeverage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Extras.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Extras.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/MealExtra.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MealExtra.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/MediumSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MediumSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/SmallSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/SmallSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/BigSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/BigSize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraBeverage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraBeverage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Extras.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Extras.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/MealExtra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MealExtra.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/MediumSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MediumSize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/SmallSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/SmallSize.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +59,13 @@
       <entry key="_E:/Clion/Proyecto-1---Kris-y-Derekk" value="3BW5YIvLSsS8eh7YIjWAp22tONZ" />
     </persistenceIdMap>
   </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
+  </component>
   <component name="CopilotUserSelectedModel">
     <selectedModels>
-      <entry key="chat-panel" value="GPT-5.2" />
-      <entry key="agent-panel" value="GPT-5.2" />
+      <entry key="chat-panel" value="GPT-5.3-Codex" />
+      <entry key="agent-panel" value="GPT-5.3-Codex" />
     </selectedModels>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
@@ -100,34 +106,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "CMake Application.new_target.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Modulo-2-Archivos",
-    "org.rust.first.attach.projects": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;CMake Application.new_target.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Modulo-2-Archivos&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XPC\Documents\UNIVERSIDAD\Programacion 2\Proyecto 1\Utilities" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="new_target" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="new_target" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="new_target">
@@ -145,7 +151,8 @@
       <updated>1774592031293</updated>
       <workItem from="1774592032311" duration="720000" />
       <workItem from="1775117357969" duration="2148000" />
-      <workItem from="1775121029484" duration="622000" />
+      <workItem from="1775121029484" duration="974000" />
+      <workItem from="1775180495641" duration="5730000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -187,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774596930945</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Menu de archivos listo. Archivos completos(sin imprime bien el json)">
+      <option name="closed" value="true" />
+      <created>1775122013787</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775122013787</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +221,8 @@
     <MESSAGE value="Actualizacion carpeta de utilities" />
     <MESSAGE value="Commit main &gt;:D" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Modulo-2-Archivos' into Modulo-2-Archivos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/Modulo-2-Archivos' into Modulo-2-Archivos" />
+    <MESSAGE value="Menu de archivos listo. Archivos completos(sin imprime bien el json)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu de archivos listo. Archivos completos(sin imprime bien el json)" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
