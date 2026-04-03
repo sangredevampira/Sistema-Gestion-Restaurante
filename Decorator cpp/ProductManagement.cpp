@@ -123,6 +123,8 @@ std::string ProductManagement::showExtrasByType(std::shared_ptr<Product> product
 
 std::shared_ptr<Extras> ProductManagement::searchExtra(int index)
 {
+    
+
 }
 
 void ProductManagement::loadProducts()
