@@ -8,7 +8,13 @@
 #include "../ListEntitie/List.h"
 #include "../Utilities/Utilities.h"
 #include "Product.h"
+#include "Meal.h"
+#include "Beverage.h"
+#include "Dessert.h"
 #include "Extras.h"
+#include "MealExtra.h"
+#include "ExtraBeverage.h"
+#include "ExtraDessert.h"
 
 class ProductManagement {
 private:
@@ -24,7 +30,7 @@ public:
 
 
     std::shared_ptr<List<Extras>> getExtrasList();
-    std::string showExtrasByType(int index);
+    std::string showExtrasByType(std::shared_ptr<Product> product);
     std::shared_ptr<Extras> searchExtra(int index);
 
     void loadProducts();
