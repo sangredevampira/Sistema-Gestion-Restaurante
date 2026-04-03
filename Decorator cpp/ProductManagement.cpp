@@ -92,10 +92,32 @@ std::shared_ptr<List<Product>> ProductManagement::getProductList() {
 }
 
 std::shared_ptr<List<Extras>> ProductManagement::getExtrasList()
-{ return extrasList;}
+{ return extrasList; }
 
-std::string ProductManagement::showExtrasByType(int index)
+std::string ProductManagement::showExtrasByType(std::shared_ptr<Product> product)
 {
+    int type;
+    if (dynamic_cast<Meal*>(product.get()) != nullptr) type = 1;
+    if (dynamic_cast<Beverage*>(product.get()) != nullptr) type = 2;
+    if (dynamic_cast<Dessert*>(product.get()) != nullptr) type = 3;
+
+    std::stringstream ss;
+    std::shared_ptr<Nodo<Extras>> current = extrasList->getFirst();
+    for (int i = 1; i <= productList->length(); i++)
+    {
+        if (type == 1)
+            if (dynamic_cast<MealExtra*>(current->getElement().get()))
+                ss << current->getElement();
+        if (type == 2)
+            if (dynamic_cast<ExtraBeverage*>(current->getElement().get()))
+                ss << current->getElement();
+        if (type == 3)
+            if (dynamic_cast<ExtraDessert*>(current->getElement().get()))
+                ss << current->getElement();
+        current = current->getNext();
+    }
+
+    return ss.str();
 }
 
 std::shared_ptr<Extras> ProductManagement::searchExtra(int index)
