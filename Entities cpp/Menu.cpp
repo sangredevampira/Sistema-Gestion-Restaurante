@@ -96,7 +96,7 @@ void Menu::createOrder()
     std::cin.ignore();
     std::getline(std::cin, clientsName);
 
-    if (std::cin.fail() || clientsName == "") throw Miscapture();
+    if (std::cin.fail() || clientsName == "" || !ConsoleService::validateInput(clientsName)) throw Miscapture();
 
     do
     {
@@ -124,6 +124,7 @@ void Menu::createOrder()
         std::cin >> index;
 
         if (index < 1 || index > 3) throw IndexOutOfRange();
+        if (std::cin.fail()) throw Miscapture();
 
         newExtra = restaurant->getProductService()->classifySize(index);
         std::cout << newProduct->addExtraToProduct(newExtra) << "\n\n";
@@ -335,17 +336,17 @@ void Menu::registerClient()
                 << "     INGRESA LOS DATOS DEL CLIENTE\n"
                 << "------------------ * -------------------\n";
         std::cout << "* Digita el nombre completo: "; std::cin.ignore(); std::getline(std::cin,name);
+        if (std::cin.fail() || name == "" || !ConsoleService::validateInput(name)) throw Miscapture();
+        std::cout << "* Digita el numero telefonico: "; std::cin.ignore(); std::getline(std::cin,phone);
         if (std::cin.fail()) throw Miscapture();
-        std::cout << "* Digita el numero telefonico: "; std::cin >> phone;
-        if (std::cin.fail()) throw Miscapture();
-        std::cout << "* Digita el numero de identificacion: "; std::cin.ignore(); std::getline(std::cin,id);
-        if (std::cin.fail()) throw Miscapture();
+        std::cout << "* Digita el numero de identificacion (sin espacios ni guiones): ";std::cin >> id;
+        if (std::cin.fail() || ConsoleService::validateID(id)) throw Miscapture();
 
         std::cout << "----------------------------------------\n";
 
         if (name == "" || id == "")
         {
-            std::cout << "    No se puedo registrar el cliente\n";
+            std::cout << "    No se pudo registrar el cliente\n";
         }else
             std::cout << "     " << restaurant->getClientService()->addClient(name, id, phone);
 
@@ -391,7 +392,7 @@ void Menu::addProduct()
                         std::cout << "No hay productos disponibles.\n";
                     } else {
                         std::cout << "----------------------------------------\n"
-                                  << "     PRODUCTOS DISPONIBLES\n"
+                                  << "        PRODUCTOS DISPONIBLES\n"
                                   << "----------------------------------------\n";
                         std::cout << list->showList() << "\n";
                     }
@@ -417,10 +418,8 @@ void Menu::addProduct()
                     std::cin >> type;
                     if (std::cin.fail()) throw Miscapture();
 
-                    std::cout << "* Digita el nombre del producto: ";
-                    std::cin.ignore(1000, '\n');
-                    std::getline(std::cin, name);
-                    if (std::cin.fail()) throw Miscapture();
+                    std::cout << "* Digita el nombre del producto: "; std::cin.ignore(); std::getline(std::cin, name);
+                    if (std::cin.fail() || !ConsoleService::validateInput(name)) throw Miscapture();
 
                     std::cout << "* Digita el precio del producto: ";
                     std::cin >> price;
