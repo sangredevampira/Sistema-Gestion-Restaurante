@@ -29,10 +29,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="actualizacion">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="archivos duplicados arreglados" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,11 +115,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="new_target" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="new_target" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="new_target">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -205,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1775195237709</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="menu de productos">
+      <option name="closed" value="true" />
+      <created>1775203350399</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1775203350399</updated>
+    </task>
+    <task id="LOCAL-00010" summary="archivos duplicados arreglados">
+      <option name="closed" value="true" />
+      <created>1775205236643</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1775205236643</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +235,9 @@
     <MESSAGE value="Menu de archivos listo. Archivos completos(sin imprime bien el json)" />
     <MESSAGE value="modificacion de los extras, ademas del sobrecargado de extra" />
     <MESSAGE value="actualizacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="actualizacion" />
+    <MESSAGE value="menu de productos" />
+    <MESSAGE value="archivos duplicados arreglados" />
+    <option name="LAST_COMMIT_MESSAGE" value="archivos duplicados arreglados" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
