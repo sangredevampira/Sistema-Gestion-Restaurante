@@ -67,10 +67,12 @@ std::string Order::removeProductOrder(std::string productName)
 
 std::string Order::calculateTotalPrice(std::string clientName, bool registered)
 {
+    totalPrice = 0.0f;
     std::shared_ptr<Nodo<Product>> temp = productsList->getFirst();
     while (temp != nullptr)
     {
         totalPrice += temp->getElement()->getPrice();
+        totalPrice += temp->getElement()->calculatePriceExtras();
         temp = temp->getNext();
     }
     if (registered)

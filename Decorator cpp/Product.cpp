@@ -10,7 +10,7 @@ Product::Product(std::string name, float price) {
     this->price = price;
     extras = std::make_shared<List<Extras>>();
 }
-std::ostream & operator<<(std::ostream &os, const Product *baseProduct) {
+std::ostream & operator<<(std::ostream &os, const std::shared_ptr<Product> baseProduct) {
     os << "Nombre: " << baseProduct->name << std::endl;
     os << "Precio: " << baseProduct->price << " colones" << std::endl;
     int n = 1;
@@ -28,6 +28,7 @@ std::ostream & operator<<(std::ostream &os, const Product *baseProduct) {
             n++;
 
         }
+        os << "Precio incluyendo los extras: " << baseProduct->price + baseProduct->calculatePriceExtras() << " colones" << std::endl;
     }
 
     return os;
@@ -56,7 +57,6 @@ std::string Product::addExtraToProduct(std::shared_ptr<Extras> extras) {
         return "No se puede agregar un extra nulo al producto";
     }
     this->extras->insertFirst(extras);
-    price += extras->getPrice();
     return "Extra agregado: " + extras->getName() + " al producto";
 }
 
@@ -96,6 +96,26 @@ std::shared_ptr<List<Extras>> Product::getExtras() const
 void Product::setExtras(std::shared_ptr<List<Extras>> extras)
 {
     this->extras = extras;
+}
+
+float Product::calculatePriceExtras()
+{
+    float totalExtras = 0.0f;
+
+    if (extras == nullptr || extras->isEmpty())
+        return totalExtras;
+
+    std::shared_ptr<Nodo<Extras>> current = extras->getFirst();
+
+    while (current != nullptr)
+    {
+        std::shared_ptr<Extras> extra = current->getElement();
+        if (extra != nullptr)
+            totalExtras += extra->getPrice();
+        current = current->getNext();
+    }
+
+    return totalExtras;
 }
 
 

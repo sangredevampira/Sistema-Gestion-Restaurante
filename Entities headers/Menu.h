@@ -10,6 +10,7 @@
 #include "../Exceptions/Miscapture.h"
 #include "../Exceptions/IndexOutOfRange.h"
 #include "../fileManagement.h"
+#include "..//Entities headers/CashRegister.h"
 
 
 class Menu {
