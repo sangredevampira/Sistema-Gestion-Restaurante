@@ -27,7 +27,8 @@ public:
     Order(std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>);
     Order(std::string, std::shared_ptr<PaymentMethod>);
 
-    Order(std::string, std::shared_ptr<List<Product>>);
+    Order(std::string, std::shared_ptr<List<Product>>, bool);
+
     Order(int, std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>, float);
     int getOrderID();
     std::string getClientsName();
@@ -36,7 +37,7 @@ public:
     void setPaymentMethod(std::shared_ptr<PaymentMethod>);
     std::string addProductOrder(std::shared_ptr<Product>);
     std::string removeProductOrder(std::string);
-    std::string calculateTotalPrice(std::string);
+    std::string calculateTotalPrice(std::string, bool);
     float getTotalPrice();
     friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> client);
 

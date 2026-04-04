@@ -23,7 +23,10 @@ protected:
     std::shared_ptr<Extras> searchExtraByIndex(int index);
     std::string addExtraToProduct(std::shared_ptr<Extras> extras);
     std::string removeExtraFromProduct(std::string extra);
-    std::shared_ptr<List<Extras>> getExtras();
+    std::shared_ptr<List<Extras>> getExtras() const;
+    void setExtras(std::shared_ptr<List<Extras>> extras);
+
+    virtual std::shared_ptr<Product> clone() const = 0;
 
 
 };

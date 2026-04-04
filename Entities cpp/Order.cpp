@@ -6,13 +6,13 @@
 
 Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsList, std::shared_ptr<PaymentMethod> selected)
     : clientsName(clientsName), productsList(productsList), payment(selected), orderID(orderCounter++)
-{ calculateTotalPrice(this->clientsName); }
+{  }
 
 
-Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsList)
+Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsList, bool registered)
     : orderID(orderCounter), clientsName(clientsName), productsList(productsList)
 {
-    calculateTotalPrice(this->clientsName);
+    calculateTotalPrice(this->clientsName, registered);
     payment = nullptr;
 }
 
@@ -65,14 +65,15 @@ std::string Order::removeProductOrder(std::string productName)
     return messaje;
 }
 
-std::string Order::calculateTotalPrice(std::string clientName)
+std::string Order::calculateTotalPrice(std::string clientName, bool registered)
 {
     std::shared_ptr<Nodo<Product>> temp = productsList->getFirst();
     while (temp != nullptr)
     {
         totalPrice += temp->getElement()->getPrice();
+        temp = temp->getNext();
     }
-    if (clientName != "")
+    if (registered)
     {
         totalPrice -= (totalPrice * 0.15);
         return "Aplica 15% de descuento";
@@ -88,7 +89,6 @@ std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> order)
         os << "* Cliente: " << order->getClientsName() << "\n";
     os << "* Productos seleccionados:\n";
     os << order->getProductsList()->showList();
-    os << "* Descuento: " << order->getTotalPrice() << "\n";
     os << "* Total a pagar:" << order->getTotalPrice() << "\n";
     return os;
 }

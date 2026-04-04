@@ -29,24 +29,34 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Arreglo de la clase product">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_3_2026_00_19_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_3_2026_00_19__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_3_2026_00_40_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_3_2026_00_40__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_3_2026_01_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_3_2026_01_02__Changes_.xml" beforeDir="false" />
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Agrego implementacion de crear un pedido">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Beverage.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Beverage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/BigSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/BigSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Dessert.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Dessert.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraBeverage.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraBeverage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ExtraDessert.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Meal.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Meal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/MealExtra.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MealExtra.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/MediumSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/MediumSize.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Decorator Headers/Product.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Product.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/SmallSize.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/SmallSize.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Beverage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Beverage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/BigSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/BigSize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Dessert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Dessert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraBeverage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraBeverage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ExtraDessert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/Meal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Meal.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/MealExtra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MealExtra.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/MediumSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/MediumSize.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Decorator cpp/Product.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Product.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/SmallSize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/SmallSize.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Menu.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities headers/Order.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Order.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/OrderManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/OrderManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/EmptyOrder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/EmptyOrder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListEntitie/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/ListEntitie/List.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListEntitie/Nodo.h" beforeDir="false" afterPath="$PROJECT_DIR$/ListEntitie/Nodo.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +118,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "CMake Application.new_target.executor": "Run",
+    "CMake Application.new_target.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -151,7 +161,7 @@
       <workItem from="1775178007633" duration="30766000" />
       <workItem from="1775211273981" duration="3404000" />
       <workItem from="1775233517732" duration="4013000" />
-      <workItem from="1775237670517" duration="4668000" />
+      <workItem from="1775237670517" duration="21468000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -249,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775204095551</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Agrego implementacion de crear un pedido">
+      <option name="closed" value="true" />
+      <created>1775244245296</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1775244245296</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +289,35 @@
     <MESSAGE value="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales" />
     <MESSAGE value="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras" />
     <MESSAGE value="Arreglo de la clase product" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arreglo de la clase product" />
+    <MESSAGE value="Agrego implementacion de crear un pedido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agrego implementacion de crear un pedido" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Entities cpp/Menu.cpp</url>
+          <line>257</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Entities cpp/Order.cpp</url>
+          <line>14</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Entities cpp/Order.cpp</url>
+          <line>75</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="this-&gt;productsList.get()-&gt;first.get()-&gt;element.get()-&gt;Product" />
+        <watch expression="opcion" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

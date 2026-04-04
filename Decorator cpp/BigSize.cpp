@@ -15,3 +15,13 @@ float BigSize::getPrice() {
   return price;
 }
 
+std::shared_ptr<Product> BigSize::clone() const
+{
+  auto copy = std::make_shared<BigSize>(this->name, this->price);
+
+  if (this->getExtras() != nullptr)
+    copy->setExtras(this->getExtras()->clone());
+
+  return copy;
+}
+

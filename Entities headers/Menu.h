@@ -25,6 +25,9 @@ public:
 
     //Crear pedido
     void createOrder();
+    void addProductOrder();
+    void addExtras();
+    void removeExtras();
 
     //Registrar cliente
     void registerClient();

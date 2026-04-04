@@ -12,7 +12,7 @@ class Dessert : public Product{
     Dessert(std::string name = "", float price = 0.0);
     std::string getName() override;
     float getPrice() override;
-
+    std::shared_ptr<Product> clone() const override;
 };
 
 

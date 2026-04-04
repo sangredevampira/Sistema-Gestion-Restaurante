@@ -14,3 +14,13 @@ std::string Meal::getName() {
 float Meal::getPrice() {
     return price;
 }
+
+std::shared_ptr<Product> Meal::clone() const
+{
+    auto copy = std::make_shared<Meal>(this->name, this->price);
+
+    if (this->getExtras() != nullptr)
+        copy->setExtras(this->getExtras()->clone());
+
+    return copy;
+}

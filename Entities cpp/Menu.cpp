@@ -78,184 +78,209 @@ void Menu::createOrder()
 {
     ConsoleService::clearConsole();
     std::string clientsName, productsName;
-    int index, menuSize = restaurant->getProductService()->getProductList()->length();
+    int index, opcion, menuSize = restaurant->getProductService()->getProductList()->length();
     bool continueO = true;
+
     std::shared_ptr<Product> newProduct = nullptr;
     std::shared_ptr<Extras> newExtra = nullptr, tempExtra = nullptr;
     std::shared_ptr<List<Product>> products = std::make_shared<List<Product>>();
     std::shared_ptr<Order> newOrder = nullptr;
-    
-
 
     std::cout << "------------------ * -------------------\n"
-                << "              NUEVO PEDIDO\n"
-                << "------------------ * -------------------\n";
-    std::cout << "* Digita el nombre del cliente: "; std::cin.ignore(); std::getline(std::cin,clientsName);
+              << "              NUEVO PEDIDO\n"
+              << "------------------ * -------------------\n";
+
+    std::cout << "* Digita el nombre del cliente: ";
+    std::cin.ignore();
+    std::getline(std::cin, clientsName);
+
     if (std::cin.fail() || clientsName == "") throw Miscapture();
 
     do
     {
         std::cout << "----------------------------------------\n"
-                << "     MENU - RESTAURANTE GOJO'S ROOM\n"
-                << "----------------------------------------\n";
+                  << "     MENU - RESTAURANTE GOJO'S ROOM\n"
+                  << "----------------------------------------\n";
+
         std::cout << restaurant->getProductService()->getProductList()->showList();
-        std::cout << "* Digita el numero de producto deseado: "; std::cin >> index;
 
-        if(index > menuSize) throw IndexOutOfRange();
-        else
+        std::cout << "* Digita el numero de producto deseado: ";
+        std::cin >> index;
+
+        if (index > menuSize) throw IndexOutOfRange();
+
+        newProduct = restaurant->getProductService()->searchProduct(index)->clone();
+
+        std::cout << "----------------------------------------\n"
+                  << " MENU TAMANIOS - RESTAURANTE GOJO'S ROOM\n"
+                  << "----------------------------------------\n"
+                  << "(1) Tamanio grande\n"
+                  << "(2) Tamanio mediano\n"
+                  << "(3) Tamanio pequenio\n"
+                  << "* Digita la opcion deseada: ";
+
+        std::cin >> index;
+
+        if (index < 1 || index > 3) throw IndexOutOfRange();
+
+        newExtra = restaurant->getProductService()->classifySize(index);
+        std::cout << newProduct->addExtraToProduct(newExtra) << "\n\n";
+
+        std::cout << "* Deseas personalizar el producto?\n"
+                  << "(1) Si\n"
+                  << "(0) No\n"
+                  << "* Digita la opcion deseada: "; std::cin >> index;
+
+        if (index < 0 || index > 1) throw IndexOutOfRange();
+        if (std::cin.fail()) throw Miscapture();
+
+        if (index == 1)
         {
-            newProduct = restaurant->getProductService()->searchProduct(index);
+            int max = restaurant->getProductService()->countExtrasByType(newProduct);
 
-            std::cout << "----------------------------------------\n"
-                    << " MENU TAMANIOS - RESTAURANTE GOJO'S ROOM\n"
-                    << "----------------------------------------\n"
-                    << "(1) Tamanio grande\n"
-                    << "(2) Tamanio mediano\n"
-                    << "(3) Tamanio pequenio\n"
-                    << "* Digita la opcion deseada: "; std::cin >> index;
-            if (index < 1 || index > 3) throw IndexOutOfRange();
-            else
+            do
             {
-                newExtra = restaurant->getProductService()->classifySize(index);
-                std::cout << newProduct->addExtraToProduct(newExtra) << "\n";
-                std::cout << "\n";
-            }
+                std::cout << "----------------------------------------\n"
+                          << "       OPCIONES DE PERSONALIZACION\n"
+                          << "----------------------------------------\n"
+                          << "(1) Agregar ingredientes o extras\n"
+                          << "(0) Remover ingredientes o extras\n"
+                          << "* Digita la opcion deseada: ";
 
-            std::cout << "* Deseas personalizar el producto?\n"
-                    << "(1) Si\n"
-                    << "(0) No\n"
-                    << "* Digita la opcion deseada: "; std::cin >> index;
-
-            if (index < 0 || index > 1) throw IndexOutOfRange();
-
-            if (index == 1)
-            {
-                int max = restaurant->getProductService()->countExtrasByType(newProduct);
-
-                do
-                {
-                    std::cout << "----------------------------------------\n"
-                            << "       OPCIONES DE PERSONALIZACION\n"
-                            << "----------------------------------------\n"
-                    << "(1) Agregar ingredientes o extras\n"
-                    << "(0) Remover ingredientes o extras\n"
-                    << "* Digita la opcion deseada: "; std::cin >> index;
+                std::cin >> index;
 
                 if (index < 0 || index > 1) throw IndexOutOfRange();
 
-                if (index == 1)                                                                                // AGREGAR EXTRAS AL PRODUCTO
+                if (index == 1) // AGREGAR
                 {
                     do
                     {
                         std::cout << "----------------------------------------\n"
-                        << " MENU EXTRAS - RESTAURANTE GOJO'S ROOM\n"
-                        << "----------------------------------------\n";
+                                  << " MENU EXTRAS - RESTAURANTE GOJO'S ROOM\n"
+                                  << "----------------------------------------\n";
+
                         std::cout << restaurant->getProductService()->showExtrasByType(newProduct);
-                        std::cout << "* Digita el numero de ingrediente o extra deseado: "; std::cin >> index;
+
+                        std::cout << "* Digita el numero de ingrediente o extra deseado: ";
+                        std::cin >> index;
 
                         if (index < 1 || index > max) throw IndexOutOfRange();
 
                         newExtra = restaurant->getProductService()->searchExtra(index, newProduct);
-                        std::cout << newProduct->addExtraToProduct(newExtra) << "\n";
-                        std::cout << "\n";
+                        std::cout << newProduct->addExtraToProduct(newExtra) << "\n\n";
 
                         std::cout << "* Deseas agregar mas ingredientes?\n"
-                        << "(1) Si\n"
-                        << "(0) No\n"
-                        << "* Digita la opcion deseada: "; std::cin >> index;
+                                  << "(1) Si\n"
+                                  << "(0) No\n"
+                                  << "* Digita la opcion deseada: ";
+
+                        std::cin >> index;
 
                         if (index < 0 || index > 1) throw IndexOutOfRange();
 
-                    }while (index == 1);
-                }else                                                                        // ELIMINAR EXTRAS DE UN PRODUCTO
+                    } while (index == 1);
+                }
+                else // REMOVER
                 {
                     do
                     {
                         max = newProduct->getExtras()->length();
-                        std::cout << "----------------------------------------\n"
-                            << "     PERSONALIZACION - " << newProduct->getName() << "\n"
-                            << "----------------------------------------\n"
-                        << newProduct
-                        << "* Digita el numero de ingrediente o extra a remover: "; std::cin >> index;
 
-                        if(index < 1 || index > max) throw IndexOutOfRange();
+                        std::cout << "----------------------------------------\n"
+                                  << "     PERSONALIZACION - " << newProduct->getName() << "\n"
+                                  << "----------------------------------------\n"
+                                  << newProduct;
+
+                        std::cout << "* Digita el numero de ingrediente o extra a remover: ";
+                        std::cin >> index;
+
+                        if (index < 1 || index > max) throw IndexOutOfRange();
 
                         tempExtra = newProduct->searchExtraByIndex(index);
 
                         if (tempExtra != nullptr)
                         {
                             std::cout << "----------------------------------------\n"
-                            << "       INGREDIENTE ENCONTRADO\n"
-                            << "----------------------------------------\n";
+                                      << "       INGREDIENTE ENCONTRADO\n"
+                                      << "----------------------------------------\n";
+
                             std::cout << tempExtra << "\n"
-                            << "* Deseas remover este ingrediente?: \n"
-                            << "(1) Si\n"
-                            << "(0) No\n"
-                            << "* Digita la opcion deseada: "; std::cin >> index;
+                                      << "* Deseas remover este ingrediente?: \n"
+                                      << "(1) Si\n"
+                                      << "(0) No\n"
+                                      << "* Digita la opcion deseada: ";
 
-                            if (index < 1 || index > max) throw IndexOutOfRange();
-                            else
+                            std::cin >> index;
+
+                            if (index < 0 || index > 1) throw IndexOutOfRange();
+
+                            if (index == 1)
                                 std::cout << newProduct->removeExtraFromProduct(tempExtra->getName()) << "\n\n";
-
                         }
 
                         std::cout << "* Deseas remover mas ingredientes?\n"
-                          << "(1) Si\n"
-                          << "(0) No\n"
-                          << "* Digita la opcion deseada: "; std::cin >> index;
+                                  << "(1) Si\n"
+                                  << "(0) No\n"
+                                  << "* Digita la opcion deseada: ";
+
+                        std::cin >> index;
 
                         if (index < 0 || index > 1) throw IndexOutOfRange();
-                    }while (index == 1);
 
+                    } while (index == 1);
                 }
 
-                    std::cout << "* Deseas continuar con la personalzacion?\n"
-                        << "(1) Si\n"
-                        << "(0) No\n"
-                        << "* Digita la opcion deseada: "; std::cin >> index;
+                std::cout << "* Deseas continuar con la personalizacion?\n"
+                          << "(1) Si\n"
+                          << "(0) No\n"
+                          << "* Digita la opcion deseada: "; std::cin >> opcion;
 
-                    if (index < 0 || index > 1) throw IndexOutOfRange();
+                if (opcion < 0 || opcion > 1) throw IndexOutOfRange();
+                if (std::cin.fail()) throw Miscapture();
 
-                }while (index == 1);
+                continueO = (opcion == 1);
 
-                                                                                                // UNA VEZ CONFIRMADO SE AGREGA
-                products->insertFirst(newProduct);
-                std::cout << "Producto agregado exitosamente!\n\n";
-            }
-
-            std::cout << "* Deseas agregar mas productos?\n"
-                 << "(1) Si\n"
-                << "(0) No\n"
-                << "* Digita la opcion deseada: "; std::cin >> continueO;
+            } while (continueO);
         }
-    }while (continueO);
+
+        products->insertFirst(newProduct);
+        std::cout << "Producto agregado exitosamente!\n\n";
+
+        std::cout << "* Deseas agregar mas productos?\n"
+                  << "(1) Si\n"
+                  << "(0) No\n"
+                  << "* Digita la opcion deseada: "; std::cin >> opcion;
+
+        if (opcion < 0 || opcion > 1) throw IndexOutOfRange();
+        if (std::cin.fail()) throw Miscapture();
+
+        continueO = (opcion == 1);
+
+    } while (continueO);
+
+    if (products->isEmpty()) throw EmptyOrder();
+
+    bool registered = (restaurant->getClientService()->searchClient(clientsName) != nullptr);
+    newOrder = std::make_shared<Order>(clientsName, products, registered);
 
     do
     {
-        if (products == nullptr) throw EmptyOrder();
 
-        newOrder = make_shared<Order>(clientsName, products);
         std::cout << "------------------ * -------------------\n"
-              << "            DATOS DEL PEDIDO\n"
-              << "------------------ * -------------------\n"
-        << products->showList();
-
-
-
-
-
-
-
-
+                  << "            DATOS DEL PEDIDO\n"
+                  << "------------------ * -------------------\n"
+                  << newOrder;
 
         std::cout << "* Deseas seguir editando el pedido?\n"
-            << "(1) Si\n"
-            << "(0) No\n"
-            << "* Digita la opcion deseada: "; std::cin >> index;
+                  << "(1) Si\n"
+                  << "(0) No\n"
+                  << "* Digita la opcion deseada: ";
+
+        std::cin >> index;
 
         if (index < 0 || index > 1) throw IndexOutOfRange();
 
-    }while (index == 1);
+    } while (index == 0);
 }
 
 void Menu::registerClient()
@@ -301,7 +326,7 @@ void Menu::registerClient()
 
 void Menu::addProduct()
 {
-int option = -1;
+    int option = -1;
     bool back = false;
 
     do {
@@ -318,7 +343,7 @@ int option = -1;
             if (std::cin.fail()) throw Miscapture();
 
             switch (option) {
-                case 1: {
+            case 1: {
                     ConsoleService::clearConsole();
                     std::shared_ptr<List<Product>> list = restaurant->getProductService()->getProductList();
 
@@ -333,9 +358,9 @@ int option = -1;
 
                     ConsoleService::pause();
                     break;
-                }
+            }
 
-                case 2: {
+            case 2: {
                     ConsoleService::clearConsole();
                     int type;
                     std::string name;
@@ -362,23 +387,23 @@ int option = -1;
                     if (std::cin.fail()) throw Miscapture();
 
                     switch (type) {
-                        case 1: newProduct = std::make_shared<Meal>(name, price); break;
-                        case 2: newProduct = std::make_shared<Beverage>(name, price); break;
-                        case 3: newProduct = std::make_shared<Dessert>(name, price); break;
-                        default: throw IndexOutOfRange();
+                    case 1: newProduct = std::make_shared<Meal>(name, price); break;
+                    case 2: newProduct = std::make_shared<Beverage>(name, price); break;
+                    case 3: newProduct = std::make_shared<Dessert>(name, price); break;
+                    default: throw IndexOutOfRange();
                     }
 
                     std::cout << restaurant->getProductService()->addProduct(newProduct) << "\n";
                     ConsoleService::pause();
                     break;
-                }
+            }
 
-                case 0:
-                    back = true;
-                    break;
+            case 0:
+                back = true;
+                break;
 
-                default:
-                    throw IndexOutOfRange();
+            default:
+                throw IndexOutOfRange();
             }
 
         } catch (std::exception& e) {
@@ -388,7 +413,7 @@ int option = -1;
             std::cin.ignore(1000, '\n');
         }
 
-    } while (!back);  // <- CORREGIDO
+    } while (!back);
 }
 
 void Menu::loadOrders() {

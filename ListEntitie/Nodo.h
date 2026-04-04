@@ -13,7 +13,8 @@ private:
   std::shared_ptr<Nodo<T>> next;
 public:
   Nodo(std::shared_ptr<T> element,  std::shared_ptr<Nodo<T>> next);
-  std::shared_ptr<Nodo<T>> getNext();
+  Nodo(std::shared_ptr<T> element);
+  std::shared_ptr<Nodo<T>> getNext() const;
   std::shared_ptr<T> getElement();
   void setNext(std::shared_ptr<Nodo<T>> sig);
   void setElement(std::shared_ptr<T> element);
@@ -25,6 +26,13 @@ Nodo<T>::Nodo(std::shared_ptr<T> element,std::shared_ptr<Nodo<T>> next ){
   this->next = next;
 }
 
+template <class T>
+Nodo<T>::Nodo(std::shared_ptr<T> element)
+{
+  this->element = element;
+  this->next = nullptr;
+}
+
 
 template<class T>
 std::shared_ptr<T> Nodo<T>::getElement() {
@@ -32,7 +40,7 @@ std::shared_ptr<T> Nodo<T>::getElement() {
 }
 
 template<class T>
-std::shared_ptr<Nodo<T>> Nodo<T>::getNext() {
+std::shared_ptr<Nodo<T>> Nodo<T>::getNext() const {
   return next;
 }
 

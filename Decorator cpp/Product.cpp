@@ -88,8 +88,14 @@ std::string Product::removeExtraFromProduct(std::string extrasName) {
     return "Extra eliminado: " + extrasName + " del producto";
 }
 
-std::shared_ptr<List<Extras>> Product::getExtras() {
+std::shared_ptr<List<Extras>> Product::getExtras() const
+{
     return extras;
+}
+
+void Product::setExtras(std::shared_ptr<List<Extras>> extras)
+{
+    this->extras = extras;
 }
 
 

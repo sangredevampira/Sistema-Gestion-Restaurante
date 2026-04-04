@@ -15,11 +15,13 @@ private:
     public:
     List();
     void insertFirst(std::shared_ptr<T>);
+    void insertLast(std::shared_ptr<T> element);
     bool isEmpty();
     void deleteElement(std::shared_ptr<T>);
-    std::shared_ptr<Nodo<T>> getFirst();
+    std::shared_ptr<Nodo<T>> getFirst() const;
     int length();
     std::string showList();
+    std::shared_ptr<List<T>> clone() const;
 };
 
 template<class T>
@@ -37,9 +39,32 @@ void List<T>::insertFirst(std::shared_ptr<T> dato) {
     first = std::make_shared<Nodo<T>>(dato, first);
 }
 
+template <class T>
+void List<T>::insertLast(std::shared_ptr<T> element)
+{
+
+    auto newNode = std::make_shared<Nodo<T>>(element);
+
+    if (this->first == nullptr)
+    {
+        this->first = newNode;
+    }
+    else
+    {
+        auto current = this->first;
+
+        while (current->getNext() != nullptr)
+        {
+            current = current->getNext();
+        }
+
+        current->setNext(newNode);
+    }
+}
+
 
 template<class T>
-std::shared_ptr<Nodo<T>> List<T>::getFirst() {
+std::shared_ptr<Nodo<T>> List<T>::getFirst() const{
     return first;
 }
 
@@ -70,6 +95,21 @@ std::string List<T>::showList()
         i++;
     }
     return ss.str();
+}
+
+template <class T>
+std::shared_ptr<List<T>> List<T>::clone() const
+{
+    auto newList = std::make_shared<List<T>>();
+    auto current = this->getFirst();
+
+    while (current != nullptr)
+    {
+        newList->insertLast(current->getElement());
+        current = current->getNext();
+    }
+
+    return newList;
 }
 
 template<class T>

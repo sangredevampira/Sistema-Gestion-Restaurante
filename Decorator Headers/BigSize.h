@@ -10,6 +10,7 @@ class BigSize:public Extras {
 public: BigSize(std::string name, float price);
     std::string getName() override;
     float getPrice() override;
+    std::shared_ptr<Product> clone() const override;
 };
 
 

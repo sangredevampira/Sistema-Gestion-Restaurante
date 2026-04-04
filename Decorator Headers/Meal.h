@@ -8,9 +8,10 @@
 #include "Product.h"
 class Meal : public Product{
 public:
-    Meal(std::string name = "", float price = 0.0);
+    Meal(std::string name = "", float price = 0);
     std::string getName() override;
     float getPrice() override;
+    std::shared_ptr<Product> clone() const override;
 };
 
 
