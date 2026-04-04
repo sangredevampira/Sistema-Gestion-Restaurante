@@ -19,12 +19,13 @@ protected:
     virtual ~Product() = default;
     virtual std::string getName() = 0;
     virtual float getPrice() = 0;
-    friend std::ostream& operator<<(std::ostream& os, const Product* baseProduct); // operador sobrecargado
+    friend std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Product> baseProduct); // operador sobrecargado
     std::shared_ptr<Extras> searchExtraByIndex(int index);
     std::string addExtraToProduct(std::shared_ptr<Extras> extras);
     std::string removeExtraFromProduct(std::string extra);
     std::shared_ptr<List<Extras>> getExtras() const;
     void setExtras(std::shared_ptr<List<Extras>> extras);
+    float calculatePriceExtras();
 
     virtual std::shared_ptr<Product> clone() const = 0;
 
