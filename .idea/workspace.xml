@@ -29,13 +29,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="menu de ordenes, clientes y productos">
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Cambios en load de JSON">
       <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/Client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Client.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/OrderManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/Order.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Order.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Menu.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities headers/OrderManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/OrderManagement.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/fileManagement.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/fileManagement.h" afterDir="false" />
@@ -50,16 +52,17 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
+      <entry key="_C:/Users/XPC/Documents/UNIVERSIDAD/Programacion 2/Proyecto 1" value="3BvNwBjpaFseQMOevSS3HHBrt6o" />
       <entry key="_E:/Clion/Proyecto-1---Kris-y-Derekk" value="3BW5YIvLSsS8eh7YIjWAp22tONZ" />
     </persistenceIdMap>
   </component>
   <component name="CopilotUserSelectedChatMode">
-    <option name="chatModeId" value="Agent" />
+    <option name="chatModeId" value="Ask" />
   </component>
   <component name="CopilotUserSelectedModel">
     <selectedModels>
-      <entry key="chat-panel" value="GPT-5.3-Codex" />
-      <entry key="agent-panel" value="GPT-5.3-Codex" />
+      <entry key="chat-panel" value="GPT-4.1" />
+      <entry key="agent-panel" value="GPT-4.1" />
     </selectedModels>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
@@ -80,7 +83,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/kristelperazasanchez-cloud/Proyecto-1---Kris-y-Derek.git&quot;,
-    &quot;accountId&quot;: &quot;c808a30d-f741-4a06-b8f4-fe9a61194d3d&quot;
+    &quot;accountId&quot;: &quot;e826efe3-0324-475a-ba6f-9945e83258ef&quot;
   }
 }</component>
   <component name="MacroExpansionManager">
@@ -107,7 +110,6 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -115,10 +117,11 @@
     "RunOnceActivity.west.config.association.type.startup.service": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Modulo-2-Archivos",
+    "git-widget-placeholder": "Modulo-2-Decorador",
     "ignore.virus.scanning.warn.message": "true",
     "nodejs_package_manager_path": "npm",
     "org.rust.first.attach.projects": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -143,11 +146,19 @@
       <updated>1774592031293</updated>
       <workItem from="1774592032311" duration="720000" />
       <workItem from="1775117357969" duration="2148000" />
-      <workItem from="1775121029484" duration="974000" />
-      <workItem from="1775180495641" duration="8987000" />
-      <workItem from="1775279587702" duration="9911000" />
-      <workItem from="1775366716658" duration="12672000" />
-      <workItem from="1775381528521" duration="3402000" />
+      <workItem from="1775121029484" duration="622000" />
+      <workItem from="1775178007633" duration="30766000" />
+      <workItem from="1775211273981" duration="3404000" />
+      <workItem from="1775233517732" duration="4013000" />
+      <workItem from="1775237670517" duration="21549000" />
+      <workItem from="1775337349119" duration="4979000" />
+      <workItem from="1775364984624" duration="670000" />
+      <workItem from="1775365704757" duration="5682000" />
+      <workItem from="1775373129087" duration="5230000" />
+      <workItem from="1775382724145" duration="790000" />
+      <workItem from="1775406540920" duration="246000" />
+      <workItem from="1775407339295" duration="797000" />
+      <workItem from="1775408168358" duration="13796000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -189,79 +200,111 @@
       <option name="project" value="LOCAL" />
       <updated>1774596930945</updated>
     </task>
-    <task id="LOCAL-00006" summary="Menu de archivos listo. Archivos completos(sin imprime bien el json)">
+    <task id="LOCAL-00006" summary="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales">
       <option name="closed" value="true" />
-      <created>1775122013787</created>
+      <created>1775187089588</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1775122013787</updated>
+      <updated>1775187089588</updated>
     </task>
-    <task id="LOCAL-00007" summary="modificacion de los extras, ademas del sobrecargado de extra">
+    <task id="LOCAL-00007" summary="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales">
       <option name="closed" value="true" />
-      <created>1775190678569</created>
+      <created>1775187138558</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1775190678569</updated>
+      <updated>1775187138558</updated>
     </task>
-    <task id="LOCAL-00008" summary="actualizacion">
+    <task id="LOCAL-00008" summary="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras">
       <option name="closed" value="true" />
-      <created>1775195237708</created>
+      <created>1775190077365</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1775195237709</updated>
+      <updated>1775190077365</updated>
     </task>
-    <task id="LOCAL-00009" summary="menu de productos">
+    <task id="LOCAL-00009" summary="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras">
       <option name="closed" value="true" />
-      <created>1775203350399</created>
+      <created>1775191254423</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1775203350399</updated>
+      <updated>1775191254423</updated>
     </task>
-    <task id="LOCAL-00010" summary="archivos duplicados arreglados">
+    <task id="LOCAL-00010" summary="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras">
       <option name="closed" value="true" />
-      <created>1775205236643</created>
+      <created>1775193179218</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1775205236643</updated>
+      <updated>1775193179218</updated>
     </task>
-    <task id="LOCAL-00011" summary="menu de ordenes completo y cambios en orden y producto">
+    <task id="LOCAL-00011" summary="Arreglo de la clase product">
       <option name="closed" value="true" />
-      <created>1775289030085</created>
+      <created>1775203143786</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1775289030085</updated>
+      <updated>1775203143786</updated>
     </task>
-    <task id="LOCAL-00012" summary="metodo cargar clientes listo y todos los productos con extras calzan">
+    <task id="LOCAL-00012" summary="Arreglo de la clase product">
       <option name="closed" value="true" />
-      <created>1775371677721</created>
+      <created>1775204095551</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1775371677721</updated>
+      <updated>1775204095551</updated>
     </task>
-    <task id="LOCAL-00013" summary="correccion pequena a cargar clientes">
+    <task id="LOCAL-00013" summary="Agrego implementacion de crear un pedido">
       <option name="closed" value="true" />
-      <created>1775372780433</created>
+      <created>1775244245296</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1775372780433</updated>
+      <updated>1775244245296</updated>
     </task>
-    <task id="LOCAL-00014" summary="menu de ordenes, clientes y productos">
+    <task id="LOCAL-00014" summary="Agrego implementacion de crear un pedido">
       <option name="closed" value="true" />
-      <created>1775378423095</created>
+      <created>1775261964639</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1775378423095</updated>
+      <updated>1775261964639</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Agregué regex para comprobar inputs de nombre cliente y productos, tambien otro para verificar que id cliente sea valido">
+      <option name="closed" value="true" />
+      <created>1775341447079</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1775341447079</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Detalles esteticos del menu">
+      <option name="closed" value="true" />
+      <created>1775374902583</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1775374902583</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Detalles esteticos del menu">
+      <option name="closed" value="true" />
+      <created>1775376006373</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1775376006373</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Cambios en load de JSON">
+      <option name="closed" value="true" />
+      <created>1775378379540</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1775378379540</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,16 +323,40 @@
     <MESSAGE value="Actualizacion carpeta de utilities" />
     <MESSAGE value="Commit main &gt;:D" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Modulo-2-Archivos' into Modulo-2-Archivos" />
-    <MESSAGE value="Menu de archivos listo. Archivos completos(sin imprime bien el json)" />
-    <MESSAGE value="modificacion de los extras, ademas del sobrecargado de extra" />
-    <MESSAGE value="actualizacion" />
-    <MESSAGE value="menu de productos" />
-    <MESSAGE value="archivos duplicados arreglados" />
-    <MESSAGE value="menu de ordenes completo y cambios en orden y producto" />
-    <MESSAGE value="metodo cargar clientes listo y todos los productos con extras calzan" />
-    <MESSAGE value="correccion pequena a cargar clientes" />
-    <MESSAGE value="menu de ordenes, clientes y productos" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu de ordenes, clientes y productos" />
+    <MESSAGE value="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales" />
+    <MESSAGE value="Actualización de la clase ProductManagement con la lista de extras y métodos adicionales con la lista de extras" />
+    <MESSAGE value="Arreglo de la clase product" />
+    <MESSAGE value="Agrego implementacion de crear un pedido" />
+    <MESSAGE value="Agregué regex para comprobar inputs de nombre cliente y productos, tambien otro para verificar que id cliente sea valido" />
+    <MESSAGE value="Detalles esteticos del menu" />
+    <MESSAGE value="Cambios en load de JSON" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios en load de JSON" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Entities cpp/Order.cpp</url>
+          <line>14</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Entities cpp/OrderManagement.cpp</url>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/fileManagement.cpp</url>
+          <line>274</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="this-&gt;productsList.get()-&gt;first.get()-&gt;element.get()-&gt;Product" />
+        <watch expression="opcion" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

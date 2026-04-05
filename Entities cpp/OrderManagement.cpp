@@ -43,3 +43,4 @@ int OrderManagement::getOrderCounter() {
 void OrderManagement::setOrderCounter(int orderCounter) {
     this->orderCounter = orderCounter;
 }
+

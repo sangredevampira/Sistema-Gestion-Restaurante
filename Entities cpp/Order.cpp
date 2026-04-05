@@ -91,5 +91,11 @@ std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> order)
     os << "* Productos seleccionados:\n";
     os << order->getProductsList()->showList();
     os << "* Total a pagar:" << order->getTotalPrice() << "\n";
+    if (order->payment != nullptr && dynamic_cast<Card*>(order->payment.get()))
+        os << "* Metodo de pago: Tarjeta\n";
+    if (order->payment != nullptr && dynamic_cast<Digital*>(order->payment.get()))
+        os << "* Metodo de pago: Digital (sinpeMovil)\n";
+    if (order->payment != nullptr && dynamic_cast<Cash*>(order->payment.get()))
+        os << "* Metodo de pago: Efectivo\n";
     return os;
 }

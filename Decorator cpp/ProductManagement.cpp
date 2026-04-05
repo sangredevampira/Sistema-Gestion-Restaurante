@@ -8,6 +8,23 @@
 ProductManagement::ProductManagement() {
     this->productList = std::make_shared<List<Product>>();
     this->extrasList = std::make_shared<List<Extras>>();
+
+    extrasList->insertFirst(std::make_shared<BigSize>("Tamano Grande", 800));
+    extrasList->insertFirst(std::make_shared<MediumSize>("Tamano Mediano", 500));
+    extrasList->insertFirst(std::make_shared<SmallSize>("Tamano Pequeno", 200));
+
+    extrasList->insertFirst(std::make_shared<MealExtra>("Queso Extra", 300));
+    extrasList->insertFirst(std::make_shared<MealExtra>("Tocineta", 800));
+    extrasList->insertFirst(std::make_shared<MealExtra>("Aguacate", 480));
+
+    extrasList->insertFirst(std::make_shared<ExtraBeverage>("Hielo", 150));
+    extrasList->insertFirst(std::make_shared<ExtraBeverage>("Limon", 100));
+    extrasList->insertFirst(std::make_shared<ExtraBeverage>("Azucar Extra", 100));
+
+    extrasList->insertFirst(std::make_shared<ExtraDessert>("Sirope de Chocolate", 220));
+    extrasList->insertFirst(std::make_shared<ExtraDessert>("Frutas", 350));
+    extrasList->insertFirst(std::make_shared<ExtraDessert>("Crema Batida", 150));
+
 }
 
 std::string ProductManagement::addProduct(std::shared_ptr<Product> product) {

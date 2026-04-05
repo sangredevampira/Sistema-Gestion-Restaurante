@@ -40,7 +40,7 @@ void Client::setId(std::string id) {
 
 std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Client> client)
 {
-    os << "\t** DATOS DEL CLIENTE **" << "\n";
+    os << "  ** DATOS DEL CLIENTE **" << "\n";
     os << "Nombre: " << client->getName() << "\n";
     os << "ID: " << client->getId() << "\n";
     os << "Numero telefonico : " << client->getPhone() << "\n";

@@ -25,6 +25,15 @@ void fileManagement::clearClienteList(std::shared_ptr<List<Client>> &clientList)
     }
 }
 
+void fileManagement::clearExtrasList(std::shared_ptr<List<Extras>>& extraList)
+{
+    if (extraList == nullptr) return;
+    while (!extraList->isEmpty())
+    {
+        extraList->deleteElement(extraList->getFirst()->getElement());
+    }
+}
+
 void fileManagement::clearProductList(std::shared_ptr<List<Product>> &productList) {
     if (productList == nullptr) return;
     while (!productList->isEmpty()) {
@@ -48,9 +57,9 @@ void clearOrderList(std::shared_ptr<List<Order>>& orderList) {
 //--------------------------------------------------------------------------
 
 
-// metodos para guardar archivod
+// metodos para guardar archivos
 std::string fileManagement::saveToFile(std::shared_ptr<List<Client>> clientList, std::shared_ptr<List<Product>> productList,
-                                std::shared_ptr<List<Order>> orderList) {
+                                std::shared_ptr<List<Order>> orderList, std::shared_ptr<List<Extras>> extraList) {
 
         Json::StreamWriterBuilder builder;
         builder["CommentStyle"] = "None";
@@ -60,6 +69,7 @@ std::string fileManagement::saveToFile(std::shared_ptr<List<Client>> clientList,
         std:: ofstream file("GestionRestaurante.txt");
         Json::Value event;
         event["Clients"] = convertClientListToJson(clientList);
+        event["Extras"] = convertExtrasToJson(extraList);
         event["Products"] = convertProductListToJson(productList);
         event["Orders"] = convertOrderListToJson(orderList);
         writer->write(event, &file);
@@ -168,13 +178,14 @@ Json::Value fileManagement::convertOrderListToJson(std::shared_ptr<List<Order>> 
 //  metodos para leer archivos.
 
 void fileManagement::loadFromFile(std::shared_ptr<List<Client>> &clientList,
-                                  std::shared_ptr<List<Product>> &productList, std::shared_ptr<List<Order>> &orderList, int &orderRegister) {
+                                  std::shared_ptr<List<Product>> &productList, std::shared_ptr<List<Order>> &orderList, int &orderRegister, std::shared_ptr<List<Extras>> extraList) {
 
     std::ifstream file("GestionRestaurante.txt");
     if (!file) throw MissingFile();
 
 
     clearClienteList(clientList);
+    clearExtrasList(extraList);
     clearProductList(productList);
     clearOrderList(orderList);
 
@@ -185,6 +196,7 @@ void fileManagement::loadFromFile(std::shared_ptr<List<Client>> &clientList,
     }
 
     loadClientListToJson(object, clientList);
+    loadExtrasListToJson(object, extraList);
     loadProductListToJson(object, productList);
     loadOrderListToJson(object, orderList, orderRegister);
 
@@ -221,7 +233,7 @@ void fileManagement::loadProductListToJson(const Json::Value &object, std::share
         }
         if (tempProduct != nullptr && products[i].isMember("Extras")) {
             std::shared_ptr<List<Extras>> extraList = std::make_shared<List<Extras>>();
-            loadExtrasListToJson(products[i], extraList, type);
+            loadExtrasListToJson(products[i], extraList);
             tempProduct->getExtras() = extraList;
         }
         if (tempProduct != nullptr) {
@@ -259,23 +271,23 @@ void fileManagement::loadOrderListToJson(const Json::Value &object, std::shared_
         orderRegister = maxOrderId + 1;
 }
 
-void fileManagement::loadExtrasListToJson(const Json::Value &object, std::shared_ptr<List<Extras>> &extraList, std::string type) {
+void fileManagement::loadExtrasListToJson(const Json::Value &object, std::shared_ptr<List<Extras>> &extraList) {
     const Json::Value& extras = object["Extras"];
     for (Json::ArrayIndex i = 0; i < extras.size() ; i++) {
         std::shared_ptr<Extras> tempExtras;
         std::string name = extras[i]["Name"].asString();
         float price = extras[i]["Price"].asFloat();
-        if (type == "Meal") {
+        if (extras[i]["Type"] == "Meal") {
             tempExtras = std::make_shared<MealExtra>(name, price);
-        } else if (type == "Beverage") {
+        } else if (extras[i]["Type"] == "Beverage") {
             tempExtras = std::make_shared<ExtraBeverage>(name, price);
-        } else if (type == "Dessert") {
+        } else if (extras[i]["Type"] == "Dessert") {
             tempExtras = std::make_shared<ExtraDessert>(name, price);
-        } else if (type == "SmallSize") {
+        } else if (extras[i]["Type"] == "SmallSize") {
             tempExtras = std::make_shared<SmallSize>(name, price);
-        } else if (type == "MediumSize") {
+        } else if (extras[i]["Type"] == "MediumSize") {
             tempExtras = std::make_shared<MediumSize>(name, price);
-        } else if (type == "BigSize") {
+        } else if (extras[i]["Type"] == "BigSize") {
             tempExtras = std::make_shared<BigSize>(name, price);
          }
          extraList->insertFirst(tempExtras);

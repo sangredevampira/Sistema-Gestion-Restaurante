@@ -22,7 +22,6 @@ public:
     int getOrderCounter();
     void setOrderCounter(int);
 
-
 };
 
 

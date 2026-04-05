@@ -19,27 +19,17 @@ private:
 public:
     Menu();
 
-    //Menu principal
     void mainMenu();
     void actionsMainMenu();
     void finalMessage();
 
-    //Crear pedido
-    void orderMenu();
-    void addProductOrder();
-    void addExtras();
-    void removeExtras();
+    void ordersMenu();
 
-    //Registrar cliente
     void clientMenu();
 
-    //Agregar un producto
     void productMenu();
 
-    //Cargar pedidos
     void loadOrders();
-
-    //Guardar
     void saveOrders();
 };
 
