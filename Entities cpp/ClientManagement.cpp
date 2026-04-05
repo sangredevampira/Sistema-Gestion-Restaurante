@@ -6,7 +6,6 @@
 
 ClientManagement::ClientManagement() {
     clientsList = std::make_shared<List<Client>>();
-    //loadClients();
 }
 
 std::string ClientManagement::addClient(std::string name, std::string id, std::string phoneNumber)

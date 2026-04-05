@@ -8,8 +8,6 @@
 ProductManagement::ProductManagement() {
     this->productList = std::make_shared<List<Product>>();
     this->extrasList = std::make_shared<List<Extras>>();
-    //loadProducts();
-    //loadExtras();
 }
 
 std::string ProductManagement::addProduct(std::shared_ptr<Product> product) {

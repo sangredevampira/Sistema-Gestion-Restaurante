@@ -17,7 +17,6 @@ public:
     std::string addClient(std::string, std::string, std::string);
     std::shared_ptr<Client> searchClient(std::string);
     std::shared_ptr<List<Client>> getClientList();
-    //void loadClients();
 };
 
 

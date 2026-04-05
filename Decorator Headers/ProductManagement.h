@@ -38,8 +38,6 @@ public:
     std::shared_ptr<Extras> classifySize(int);
     std::shared_ptr<Extras> searchExtra(int index, std::shared_ptr<Product> product);
 
-    //void loadProducts();
-    //void loadExtras();
 };
 
 

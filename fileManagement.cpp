@@ -195,7 +195,8 @@ void fileManagement::loadFromFile(std::shared_ptr<List<Client>> &clientList,
 void fileManagement::loadClientListToJson(const Json::Value& object, std::shared_ptr<List<Client>> &clientList) {
 
     std::shared_ptr<Client> tempClient = std::make_shared<Client>();
-    for (int i = 0; i < object.size() ; i++) {
+    const Json::Value& clients = object["Clients"];
+    for (int i = 0; i < clients.size() ; i++) {
         tempClient->setName(object["Clients"][i]["Name"].asString());
         tempClient->setId(object["Clients"][i]["ID"].asString());
         tempClient->setPhone(object["Clients"][i]["Phone"].asString());
@@ -206,7 +207,8 @@ void fileManagement::loadClientListToJson(const Json::Value& object, std::shared
 
 void fileManagement::loadProductListToJson(const Json::Value &object, std::shared_ptr<List<Product>> &productList) {
 
-    for (int i = 0; i < object.size() ; i++) {
+    const Json::Value& products = object["Products"];
+    for (int i = 0; i < products.size() ; i++) {
         std::string type = object["Products"][i]["Type"].asString();
         std::shared_ptr<Product> tempProduct;
         if (type == "Meal") {
@@ -221,7 +223,7 @@ void fileManagement::loadProductListToJson(const Json::Value &object, std::share
             loadExtrasListToJson(object["Products"][i], extraList, type);
             tempProduct->getExtras() = extraList;
         }
-        productList->insertFirst(tempProduct);
+        productList->insertLast(tempProduct);
     }
 }
 
@@ -229,7 +231,8 @@ void fileManagement::loadProductListToJson(const Json::Value &object, std::share
 
 void fileManagement::loadOrderListToJson(const Json::Value &object, std::shared_ptr<List<Order>> &orderList) {
     std::shared_ptr<Order> order;
-    for (int i = 0; i < object.size() ; i++) {
+    const Json::Value& orders = object["Orders"];
+    for (int i = 0; i < orders.size() ; i++) {
         int orderID = object["Order"][i]["ID"].asInt();
         std::string clientsName = object["Order"][i]["ClientName"].asString();
         std::shared_ptr<List<Product>> productsList = std::make_shared<List<Product>>();
@@ -249,7 +252,8 @@ void fileManagement::loadOrderListToJson(const Json::Value &object, std::shared_
 }
 
 void fileManagement::loadExtrasListToJson(const Json::Value &object, std::shared_ptr<List<Extras>> &extraList, std::string type) {
-    for (int i = 0; i < object.size() ; i++) {
+    const Json::Value& extras = object["Products"]["Extras"];
+    for (int i = 0; i < extras.size() ; i++) {
         std::shared_ptr<Extras> tempExtras;
         std::string name = object["Extras"][i]["Name"].asString();
         float price = object["Extras"][i]["Price"].asFloat();
