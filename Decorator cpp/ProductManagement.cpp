@@ -8,8 +8,8 @@
 ProductManagement::ProductManagement() {
     this->productList = std::make_shared<List<Product>>();
     this->extrasList = std::make_shared<List<Extras>>();
-    loadProducts();
-    loadExtras();
+    //loadProducts();
+    //loadExtras();
 }
 
 std::string ProductManagement::addProduct(std::shared_ptr<Product> product) {
@@ -258,45 +258,5 @@ std::shared_ptr<Extras> ProductManagement::searchExtra(int index, std::shared_pt
     return nullptr;
 }
 
-void ProductManagement::loadProducts()
-{
-    productList->insertFirst(std::make_shared<Meal>("Hamburguesa clasica", 1500));
-    productList->insertFirst(std::make_shared<Meal>("Pizza", 3500));
-    productList->insertFirst(std::make_shared<Meal>("Perro caliente", 1000));
-    productList->insertFirst(std::make_shared<Meal>("Papas fritas", 1350));
-    productList->insertFirst(std::make_shared<Meal>("Burrito", 1200));
 
-    productList->insertFirst(std::make_shared<Beverage>("Coca-Cola", 800));
-    productList->insertFirst(std::make_shared<Beverage>("Fanta", 800));
-    productList->insertFirst(std::make_shared<Beverage>("Sprite", 800));
-    productList->insertFirst(std::make_shared<Beverage>("Agua", 500));
-    productList->insertFirst(std::make_shared<Beverage>("GingerAle", 800));
-
-    productList->insertFirst(std::make_shared<Dessert>("Helado de chocolate", 1200));
-    productList->insertFirst(std::make_shared<Dessert>("Pastel de chocolate", 2000));
-    productList->insertFirst(std::make_shared<Dessert>("Galleta de chocolate", 800));
-    productList->insertFirst(std::make_shared<Dessert>("Brownie de chocolate", 1300));
-    productList->insertFirst(std::make_shared<Dessert>("Flan de coco", 1100));
-
-}
-
-void ProductManagement::loadExtras()
-{
-    extrasList->insertFirst(std::make_shared<MealExtra>("Doble carne", 700));
-    extrasList->insertFirst(std::make_shared<MealExtra>("Queso extra", 300));
-    extrasList->insertFirst(std::make_shared<MealExtra>("Tocino extra", 500));
-
-    extrasList->insertFirst(std::make_shared<ExtraBeverage>("Hielo extra", 50));
-    extrasList->insertFirst(std::make_shared<ExtraBeverage>("Vaso escarchado", 100));
-    extrasList->insertFirst(std::make_shared<ExtraBeverage>("Zero azucar", 200));
-
-    extrasList->insertFirst(std::make_shared<ExtraDessert>("Chocolate extra", 250));
-    extrasList->insertFirst(std::make_shared<ExtraDessert>("Frutas extra", 300));
-    extrasList->insertFirst(std::make_shared<ExtraDessert>("Nueces Extra" , 350));
-
-    extrasList->insertFirst(std::make_shared<BigSize>("Tamanio grande", 900));
-    extrasList->insertFirst(std::make_shared<MediumSize>("Tamanio mediano", 750));
-    extrasList->insertFirst(std::make_shared<SmallSize>("Tamanio pequenio", 550));
-
-}
 

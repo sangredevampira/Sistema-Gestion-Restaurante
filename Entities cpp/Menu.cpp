@@ -19,8 +19,8 @@ void Menu::mainMenu()
             << "(1) Crear un pedido" << "\n"
             << "(2) Registrar cliente" << "\n"
             << "(3) Agregar un producto" << "\n"
-            << "(4) Cargar pedidos" << "\n"
-            << "(5) Guardar pedidos" << "\n"
+            << "(4) Cargar datos" << "\n"
+            << "(5) Guardar datos" << "\n"
             << "(0) Salir" << "\n"
             << "* Digita la opcion deseada: ";
 }
@@ -108,7 +108,7 @@ void Menu::createOrder()
         std::cout << "* Digita el numero de producto deseado: ";
         std::cin >> index;
 
-        if (index > menuSize) throw IndexOutOfRange();
+        if (index > menuSize || index < 1) throw IndexOutOfRange();
 
         newProduct = restaurant->getProductService()->searchProduct(index)->clone();
 

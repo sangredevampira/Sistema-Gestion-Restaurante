@@ -29,16 +29,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Agregué regex para comprobar inputs de nombre cliente y productos, tambien otro para verificar que id cliente sea valido">
-      <change afterPath="$PROJECT_DIR$/Exceptions/Unpaid.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/Unpaid.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="Detalles esteticos del menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/Product.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/Product.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Cash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Cash.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/ProductManagement.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Order.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/ClientManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/ClientManagement.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +151,7 @@
       <workItem from="1775337349119" duration="4979000" />
       <workItem from="1775364984624" duration="670000" />
       <workItem from="1775365704757" duration="5682000" />
-      <workItem from="1775373129087" duration="1715000" />
+      <workItem from="1775373129087" duration="2673000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -276,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775341447079</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Detalles esteticos del menu">
+      <option name="closed" value="true" />
+      <created>1775374902583</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1775374902583</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +305,8 @@
     <MESSAGE value="Arreglo de la clase product" />
     <MESSAGE value="Agrego implementacion de crear un pedido" />
     <MESSAGE value="Agregué regex para comprobar inputs de nombre cliente y productos, tambien otro para verificar que id cliente sea valido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregué regex para comprobar inputs de nombre cliente y productos, tambien otro para verificar que id cliente sea valido" />
+    <MESSAGE value="Detalles esteticos del menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Detalles esteticos del menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
