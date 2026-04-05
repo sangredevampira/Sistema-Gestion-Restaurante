@@ -25,16 +25,16 @@ public:
     void finalMessage();
 
     //Crear pedido
-    void createOrder();
+    void orderMenu();
     void addProductOrder();
     void addExtras();
     void removeExtras();
 
     //Registrar cliente
-    void registerClient();
+    void clientMenu();
 
     //Agregar un producto
-    void addProduct();
+    void productMenu();
 
     //Cargar pedidos
     void loadOrders();
