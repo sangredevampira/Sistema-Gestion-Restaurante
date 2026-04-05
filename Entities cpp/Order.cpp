@@ -75,7 +75,7 @@ std::string Order::calculateTotalPrice(std::string clientName, bool registered)
         totalPrice += temp->getElement()->calculatePriceExtras();
         temp = temp->getNext();
     }
-    if (registered)
+
     {
         totalPrice -= (totalPrice * 0.15);
         return "Aplica 15% de descuento";
@@ -85,8 +85,7 @@ std::string Order::calculateTotalPrice(std::string clientName, bool registered)
 
 std::ostream& operator<<(std::ostream& os, const std::shared_ptr<Order> order)
 {
-    os << "*********************************\n";
-    os << "  ORDEN No. " << order->getOrderID() << "\n";
+    os << "\tORDEN No. " << order->getOrderID() << "\n";
     if (order->getClientsName() != "")
         os << "* Cliente: " << order->getClientsName() << "\n";
     os << "* Productos seleccionados:\n";

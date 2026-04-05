@@ -64,4 +64,6 @@ add_executable(new_target main.cpp
         fileManagement.cpp
         dist/json/json.h
         dist/jsoncpp.cpp
+        Exceptions/Unpaid.cpp
+        Exceptions/Unpaid.h
 )

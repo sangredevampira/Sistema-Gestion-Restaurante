@@ -20,7 +20,7 @@ std::string Cash::pay(float amount, float totalPrice)
             ss << "Vuelto: " << change << " colones" <<"\n"
             << "Se devuelve en:\n";
 
-            int denominations[] = {10000, 5000, 2000, 1000, 500, 100, 50, 25};
+            int denominations[] = {10000, 5000, 2000, 1000, 500, 100, 50, 25, 10, 5};
 
             for (int i = 0; i < 8; i++)
             {

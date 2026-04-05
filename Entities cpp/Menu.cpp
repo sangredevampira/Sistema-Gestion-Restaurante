@@ -5,8 +5,7 @@
 #include "../Entities headers/Menu.h"
 
 #include "../Exceptions/EmptyOrder.h"
-
-
+#include "../Exceptions/Unpaid.h"
 
 
 Menu::Menu() { this->restaurant = std::make_unique<Restaurant>(); }
@@ -89,7 +88,7 @@ void Menu::createOrder()
     std::shared_ptr<Order> newOrder = nullptr;
 
     std::cout << "------------------ * -------------------\n"
-              << "              NUEVO PEDIDO\n"
+              << "              NUEVO PEDIDO              \n"
               << "------------------ * -------------------\n";
 
     std::cout << "* Digita el nombre del cliente: ";
@@ -113,15 +112,13 @@ void Menu::createOrder()
 
         newProduct = restaurant->getProductService()->searchProduct(index)->clone();
 
-        std::cout << "----------------------------------------\n"
-                  << " MENU TAMANIOS - RESTAURANTE GOJO'S ROOM\n"
-                  << "----------------------------------------\n"
+        std::cout << "------------------------------------------\n"
+                  << " MENU TAMANIOS - RESTAURANTE GOJO'S ROOM \n"
+                  << "------------------------------------------\n"
                   << "(1) Tamanio grande\n"
                   << "(2) Tamanio mediano\n"
                   << "(3) Tamanio pequenio\n"
-                  << "* Digita la opcion deseada: ";
-
-        std::cin >> index;
+                  << "* Digita la opcion deseada: "; std::cin >> index;
 
         if (index < 1 || index > 3) throw IndexOutOfRange();
         if (std::cin.fail()) throw Miscapture();
@@ -204,7 +201,7 @@ void Menu::createOrder()
                         if (tempExtra != nullptr)
                         {
                             std::cout << "----------------------------------------\n"
-                                      << "       INGREDIENTE ENCONTRADO\n"
+                                      << "        INGREDIENTE ENCONTRADO\n"
                                       << "----------------------------------------\n";
 
                             std::cout << tempExtra << "\n"
@@ -274,45 +271,50 @@ void Menu::createOrder()
         bool paid = false;
         do {
             int paymentOption = 0;
-            float amount = 0.0f;
+            float amount = 0;
+            std::cout << "\n";
 
-            ConsoleService::clearConsole();
             std::cout << "------------------ * -------------------\n"
-                      << "            DATOS DEL PEDIDO\n"
+                      << "           DATOS DEL PEDIDO\n"
                       << "------------------ * -------------------\n"
-                      << newOrder;
+                      << newOrder
+                      << "* Descuento: " << newOrder->calculateTotalPrice(clientsName, registered) << "\n\n";
+
 
             try {
-                std::cout << "* Ingrese el metodo de pago que desea utilizar: \n";
-                std::cout << "------------------ * -------------------\n"
-                          << "     METODOS DE PAGO - RESTAURANTE GOJO'S ROOM\n"
-                          << "------------------ * -------------------\n"
+                std::cout << "------------------------- * --------------------------\n"
+                          << " METODOS DE PAGO DISPONIBLES - RESTAURANTE GOJO'S ROOM\n"
+                          << "------------------------- * --------------------------\n"
                           << "(1) Tarjeta\n"
                           << "(2) Efectivo\n"
                           << "(3) Digital (sinpe movil)\n"
-                          << "* Digita la opcion deseada: \n";
-                std::cin >> paymentOption;
+                          << "* Digita la opcion deseada: "; std::cin >> paymentOption;
 
                 if (paymentOption != 1 && paymentOption != 2 && paymentOption != 3) throw IndexOutOfRange();
                 std::shared_ptr<PaymentMethod> payment = CashRegister::classifyPayment(paymentOption);
+
                 if (dynamic_cast<Cash*>(payment.get()) != nullptr) {
-                    std::cout << "* Ingrese el monto con el que cancela \n";
-                    std::cin >> amount;
+                    std::cout << "* Ingrese el monto con el que cancela: "; std::cin >> amount;
                     if (amount < newOrder->getTotalPrice()) throw Underpayment();
                 }
                 newOrder->setPaymentMethod(payment);
             } catch (std::exception& e) {
                 ConsoleService::clearConsole();
-                std::cout << "ERROR: " << e.what() << '\n';
+                std::cout << e.what() << '\n';
                 std::cin.clear();
                 std::cin.ignore(1000, '\n');
             }
+
+            if (newOrder->getProductsList()->isEmpty()) throw EmptyOrder();
+            if (newOrder->getPaymentMethod() == nullptr) throw Unpaid();
+
             std::cout << "     " << restaurant->getOrderManager()->placeOrder(newOrder, paymentOption);
-            ConsoleService::clearConsole();
             std::cout << "------------------ * -------------------\n"
-                      << "           FACTURA\n"
+                      << "               FACTURA\n"
+                      << "------------------ * -------------------\n"
                       << newOrder << "\n"
-                    << newOrder->getPaymentMethod()->pay(amount, newOrder->getTotalPrice()) << "\n"
+                      << "* Descuento: " << newOrder->calculateTotalPrice(clientsName, registered) << "\n"
+                      << "   * " << newOrder->getPaymentMethod()->pay(amount, newOrder->getTotalPrice()) << "\n"
                      << "------------------ * -------------------\n";
 
             ConsoleService::pause();
@@ -340,7 +342,7 @@ void Menu::registerClient()
         std::cout << "* Digita el numero telefonico: "; std::cin.ignore(); std::getline(std::cin,phone);
         if (std::cin.fail()) throw Miscapture();
         std::cout << "* Digita el numero de identificacion (sin espacios ni guiones): ";std::cin >> id;
-        if (std::cin.fail() || ConsoleService::validateID(id)) throw Miscapture();
+        if (std::cin.fail() || !ConsoleService::validateID(id)) throw Miscapture();
 
         std::cout << "----------------------------------------\n";
 

@@ -54,10 +54,10 @@ std::shared_ptr<Extras> Product::searchExtraByIndex(int index)
 
 std::string Product::addExtraToProduct(std::shared_ptr<Extras> extras) {
     if (extras == nullptr) {
-        return "No se puede agregar un extra nulo al producto";
+        return "No se puede agregar un extra vacio al producto";
     }
     this->extras->insertFirst(extras);
-    return "Extra agregado: " + extras->getName() + " al producto";
+    return "Extra agregado: " + extras->getName();
 }
 
 
@@ -85,7 +85,7 @@ std::string Product::removeExtraFromProduct(std::string extrasName) {
 
     extras->deleteElement(targetExtra);
 
-    return "Extra eliminado: " + extrasName + " del producto";
+    return "Extra eliminado: " + extrasName;
 }
 
 std::shared_ptr<List<Extras>> Product::getExtras() const
