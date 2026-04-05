@@ -29,12 +29,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="menu de ordenes completo y cambios en orden y producto">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" afterDir="false" />
+    <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="metodo cargar clientes listo y todos los productos con extras calzan">
       <change beforePath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/ClientManagement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/ClientManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/ClientManagement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileManagement.h" beforeDir="false" afterPath="$PROJECT_DIR$/fileManagement.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +137,7 @@
       <workItem from="1775121029484" duration="974000" />
       <workItem from="1775180495641" duration="8987000" />
       <workItem from="1775279587702" duration="9911000" />
-      <workItem from="1775366716658" duration="4798000" />
+      <workItem from="1775366716658" duration="5899000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <option name="closed" value="true" />
@@ -231,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775289030085</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="metodo cargar clientes listo y todos los productos con extras calzan">
+      <option name="closed" value="true" />
+      <created>1775371677721</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775371677721</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +260,8 @@
     <MESSAGE value="menu de productos" />
     <MESSAGE value="archivos duplicados arreglados" />
     <MESSAGE value="menu de ordenes completo y cambios en orden y producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu de ordenes completo y cambios en orden y producto" />
+    <MESSAGE value="metodo cargar clientes listo y todos los productos con extras calzan" />
+    <option name="LAST_COMMIT_MESSAGE" value="metodo cargar clientes listo y todos los productos con extras calzan" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
