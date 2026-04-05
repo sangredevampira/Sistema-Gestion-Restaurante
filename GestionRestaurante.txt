@@ -2,44 +2,9 @@
 	"Clients" : 
 	[
 		{
-			"ID" : "110",
-			"Name" : "Ronny Villalobos",
-			"Phone" : "88880000"
-		},
-		{
-			"ID" : "109",
-			"Name" : "Josue Rojas",
-			"Phone" : "88889999"
-		},
-		{
-			"ID" : "108",
-			"Name" : "Josue Penaranda",
-			"Phone" : "88888888"
-		},
-		{
-			"ID" : "107",
-			"Name" : "Adrian Fernandez",
-			"Phone" : "88887777"
-		},
-		{
-			"ID" : "106",
-			"Name" : "Stiven Salas",
-			"Phone" : "88886666"
-		},
-		{
-			"ID" : "105",
-			"Name" : "Paulina Rojas",
-			"Phone" : "88885555"
-		},
-		{
-			"ID" : "104",
-			"Name" : "Mariana Arroyo",
-			"Phone" : "88884444"
-		},
-		{
-			"ID" : "103",
-			"Name" : "Javi Garita",
-			"Phone" : "88883333"
+			"ID" : "101",
+			"Name" : "Kris Peraza",
+			"Phone" : "88881111"
 		},
 		{
 			"ID" : "102",
@@ -47,12 +12,91 @@
 			"Phone" : "88882222"
 		},
 		{
-			"ID" : "101",
-			"Name" : "Kris Peraza",
-			"Phone" : "88881111"
+			"ID" : "103",
+			"Name" : "Javi Garita",
+			"Phone" : "88883333"
+		},
+		{
+			"ID" : "104",
+			"Name" : "Mariana Arroyo",
+			"Phone" : "88884444"
+		},
+		{
+			"ID" : "105",
+			"Name" : "Paulina Rojas",
+			"Phone" : "88885555"
+		},
+		{
+			"ID" : "106",
+			"Name" : "Stiven Salas",
+			"Phone" : "88886666"
+		},
+		{
+			"ID" : "107",
+			"Name" : "Adrian Fernandez",
+			"Phone" : "88887777"
+		},
+		{
+			"ID" : "108",
+			"Name" : "Josue Penaranda",
+			"Phone" : "88888888"
+		},
+		{
+			"ID" : "109",
+			"Name" : "Josue Rojas",
+			"Phone" : "88889999"
+		},
+		{
+			"ID" : "110",
+			"Name" : "Ronny Villalobos",
+			"Phone" : "88880000"
 		}
 	],
-	"Orders" : [],
+	"Orders" : 
+	[
+		{
+			"ClientName" : "Derek Garcia",
+			"ID" : 3,
+			"PaymentMethod" : "Digital",
+			"Products" : 
+			[
+				{
+					"Name" : "Perro caliente",
+					"Price" : 1000.0,
+					"Type" : "Meal"
+				}
+			],
+			"TotalPrice" : 850.0
+		},
+		{
+			"ClientName" : "Kris Peraza",
+			"ID" : 2,
+			"PaymentMethod" : "Card",
+			"Products" : 
+			[
+				{
+					"Name" : "Hamburguesa clasica",
+					"Price" : 1500.0,
+					"Type" : "Meal"
+				}
+			],
+			"TotalPrice" : 1275.0
+		},
+		{
+			"ClientName" : "Javi Garita",
+			"ID" : 1,
+			"PaymentMethod" : "Card",
+			"Products" : 
+			[
+				{
+					"Name" : "Pizza",
+					"Price" : 3500.0,
+					"Type" : "Meal"
+				}
+			],
+			"TotalPrice" : 2975.0
+		}
+	],
 	"Products" : 
 	[
 		{
