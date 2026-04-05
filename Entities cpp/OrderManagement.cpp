@@ -36,3 +36,10 @@ std::shared_ptr<List<Order>> OrderManagement::getOrderList() {
     return ordersList;
 }
 
+int OrderManagement::getOrderCounter() {
+    return orderCounter++;
+}
+
+void OrderManagement::setOrderCounter(int orderCounter) {
+    this->orderCounter = orderCounter;
+}

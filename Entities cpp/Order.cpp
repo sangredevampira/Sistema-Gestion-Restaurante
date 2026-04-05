@@ -4,20 +4,20 @@
 
 #include "../Entities headers/Order.h"
 
-Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsList, std::shared_ptr<PaymentMethod> selected)
-    : clientsName(clientsName), productsList(productsList), payment(selected), orderID(orderCounter++)
+Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsList, std::shared_ptr<PaymentMethod> selected, int id)
+    : clientsName(clientsName), productsList(productsList), payment(selected), id(id)
 {  }
 
 
-Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsList, bool registered)
-    : orderID(orderCounter), clientsName(clientsName), productsList(productsList)
+Order::Order(std::string clientsName, std::shared_ptr<List<Product>> productsList, bool registered, int id)
+    : id(id), clientsName(clientsName), productsList(productsList)
 {
     calculateTotalPrice(this->clientsName, registered);
     payment = nullptr;
 }
 
 Order::Order(int orderID, std::string clientsName, std::shared_ptr<List<Product>> productsList, std::shared_ptr<PaymentMethod>payment, float totalPrice){
-    this->orderID = orderID;
+    this->id = orderID;
     this->clientsName = clientsName;
     this->productsList = productsList;
     this->payment = payment;
@@ -27,7 +27,7 @@ Order::Order(int orderID, std::string clientsName, std::shared_ptr<List<Product>
 
 
 
-int Order::getOrderID() { return orderID;}
+int Order::getOrderID() { return id;}
 
 std::string Order::getClientsName() { return clientsName;}
 

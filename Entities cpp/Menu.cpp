@@ -379,7 +379,7 @@ void Menu::orderMenu()
                 if (products->isEmpty()) throw EmptyOrder();
 
                 bool registered = (restaurant->getClientService()->searchClient(clientsName) != nullptr);
-                newOrder = std::make_shared<Order>(clientsName, products, registered);
+                newOrder = std::make_shared<Order>(clientsName, products, registered,restaurant->getOrderManager()->getOrderCounter());
 
                 bool paid = false;
                 do
@@ -591,8 +591,9 @@ void Menu::loadOrders() {
         }
 
         fileManagement fm;
-        fm.loadFromFile(clientList, productList, orderList);
-
+        int orderRegister;
+        fm.loadFromFile(clientList, productList, orderList, orderRegister);
+        restaurant->getOrderManager()->setOrderCounter(orderRegister);
         std::cout << "\n* Pedidos cargados desde 'GestionRestaurante.txt'\n";
         std::cout << "* Presiona Enter para continuar...";
         std::cin.ignore(1000, '\n');

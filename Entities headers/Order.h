@@ -13,21 +13,20 @@
 #include "../Decorator Headers/Product.h"
 #include "../ListEntitie/List.h"
 
-static int orderCounter = 1;
+
 
 class Order
 {
 private:
-    int orderID;
+    int id;
     std::string clientsName;
     std::shared_ptr<List<Product>> productsList;
     std::shared_ptr<PaymentMethod> payment;
     float totalPrice;
 public:
-    Order(std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>);
-    Order(std::string, std::shared_ptr<PaymentMethod>);
+    Order(std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>, int);
 
-    Order(std::string, std::shared_ptr<List<Product>>, bool);
+    Order(std::string, std::shared_ptr<List<Product>>, bool, int);
 
     Order(int, std::string, std::shared_ptr<List<Product>>, std::shared_ptr<PaymentMethod>, float);
     int getOrderID();

@@ -140,25 +140,26 @@ Json::Value fileManagement::convertProductListToJson(std::shared_ptr<List<Produc
 Json::Value fileManagement::convertOrderListToJson(std::shared_ptr<List<Order>> orderList) {
     Json::Value arreglo(Json::arrayValue);
     std::shared_ptr<Nodo<Order>> tempOrder = orderList->getFirst();
+    Json::Value order;
     while (tempOrder != nullptr) {
-        Json::Value order;
-        order["Order"] = tempOrder->getElement()->getOrderID();
-        order["Client name"] = tempOrder->getElement()->getClientsName();
-        order["Total price"] = tempOrder->getElement()->getTotalPrice();
+        order["ID"] = tempOrder->getElement()->getOrderID();
+        order["ClientName"] = tempOrder->getElement()->getClientsName();
+        order["TotalPrice"] = tempOrder->getElement()->getTotalPrice();
         order["Products"] = convertProductListToJson(tempOrder->getElement()->getProductsList());
         if (tempOrder->getElement()->getPaymentMethod() != nullptr) {
             if (dynamic_cast<Card*>(tempOrder->getElement()->getPaymentMethod().get()) != nullptr) {
-                order["Payment method"] = "Card";
+                order["PaymentMethod"] = "Card";
             } else if (dynamic_cast<Cash*>(tempOrder->getElement()->getPaymentMethod().get()) != nullptr) {
-                order["Payment method"] = "Cash";
+                order["PaymentMethod"] = "Cash";
             } else if (dynamic_cast<Digital*>(tempOrder->getElement()->getPaymentMethod().get()) != nullptr) {
-                order["Payment method"] = "Digital";
+                order["PaymentMethod"] = "Digital";
             }
         }
 
         arreglo.append(order);
         tempOrder = tempOrder->getNext();
     }
+
     return arreglo;
 }
 
@@ -167,7 +168,7 @@ Json::Value fileManagement::convertOrderListToJson(std::shared_ptr<List<Order>> 
 //  metodos para leer archivos.
 
 void fileManagement::loadFromFile(std::shared_ptr<List<Client>> &clientList,
-                                  std::shared_ptr<List<Product>> &productList, std::shared_ptr<List<Order>> &orderList) {
+                                  std::shared_ptr<List<Product>> &productList, std::shared_ptr<List<Order>> &orderList, int &orderRegister) {
 
     std::ifstream file("GestionRestaurante.txt");
     if (!file) throw MissingFile();
@@ -185,7 +186,7 @@ void fileManagement::loadFromFile(std::shared_ptr<List<Client>> &clientList,
 
     loadClientListToJson(object, clientList);
     loadProductListToJson(object, productList);
-    loadOrderListToJson(object, orderList);
+    loadOrderListToJson(object, orderList, orderRegister);
 
     file.close();
 }
@@ -194,12 +195,12 @@ void fileManagement::loadFromFile(std::shared_ptr<List<Client>> &clientList,
 
 void fileManagement::loadClientListToJson(const Json::Value& object, std::shared_ptr<List<Client>> &clientList) {
 
-    std::shared_ptr<Client> tempClient = std::make_shared<Client>();
     const Json::Value& clients = object["Clients"];
-    for (int i = 0; i < clients.size() ; i++) {
-        tempClient->setName(object["Clients"][i]["Name"].asString());
-        tempClient->setId(object["Clients"][i]["ID"].asString());
-        tempClient->setPhone(object["Clients"][i]["Phone"].asString());
+    for (Json::ArrayIndex i = 0; i < clients.size() ; i++) {
+        std::shared_ptr<Client> tempClient = std::make_shared<Client>();
+        tempClient->setName(clients[i]["Name"].asString());
+        tempClient->setId(clients[i]["ID"].asString());
+        tempClient->setPhone(clients[i]["Phone"].asString());
         clientList->insertFirst(tempClient);
     }
 
@@ -207,56 +208,63 @@ void fileManagement::loadClientListToJson(const Json::Value& object, std::shared
 
 void fileManagement::loadProductListToJson(const Json::Value &object, std::shared_ptr<List<Product>> &productList) {
 
-    const Json::Value& products = object["Products"];
-    for (int i = 0; i < products.size() ; i++) {
-        std::string type = object["Products"][i]["Type"].asString();
+    const Json::Value& products = object.isArray() ? object : object["Products"];
+    for (Json::ArrayIndex i = 0; i < products.size() ; i++) {
+        std::string type = products[i]["Type"].asString();
         std::shared_ptr<Product> tempProduct;
         if (type == "Meal") {
-            tempProduct = std::make_shared<Meal>(object["Products"][i]["Name"].asString(), object["Products"][i]["Price"].asFloat());
+            tempProduct = std::make_shared<Meal>(products[i]["Name"].asString(), products[i]["Price"].asFloat());
         } else if (type == "Beverage") {
-            tempProduct = std::make_shared<Beverage>(object["Products"][i]["Name"].asString(), object["Products"][i]["Price"].asFloat());
+            tempProduct = std::make_shared<Beverage>(products[i]["Name"].asString(), products[i]["Price"].asFloat());
         } else if (type == "Dessert") {
-            tempProduct = std::make_shared<Dessert>(object["Products"][i]["Name"].asString(), object["Products"][i]["Price"].asFloat());
+            tempProduct = std::make_shared<Dessert>(products[i]["Name"].asString(), products[i]["Price"].asFloat());
         }
-        if (object["Products"][i].isMember("Extras")) {
+        if (tempProduct != nullptr && products[i].isMember("Extras")) {
             std::shared_ptr<List<Extras>> extraList = std::make_shared<List<Extras>>();
-            loadExtrasListToJson(object["Products"][i], extraList, type);
+            loadExtrasListToJson(products[i], extraList, type);
             tempProduct->getExtras() = extraList;
         }
-        productList->insertLast(tempProduct);
+        if (tempProduct != nullptr) {
+            productList->insertLast(tempProduct);
+        }
     }
 }
 
 
 
-void fileManagement::loadOrderListToJson(const Json::Value &object, std::shared_ptr<List<Order>> &orderList) {
+void fileManagement::loadOrderListToJson(const Json::Value &object, std::shared_ptr<List<Order>> &orderList, int &orderRegister) {
     std::shared_ptr<Order> order;
     const Json::Value& orders = object["Orders"];
-    for (int i = 0; i < orders.size() ; i++) {
-        int orderID = object["Order"][i]["ID"].asInt();
-        std::string clientsName = object["Order"][i]["ClientName"].asString();
+    int maxOrderId = 0;
+    for (Json::ArrayIndex i = 0; i < orders.size() ; i++) {
+        int orderID = orders[i]["ID"].asInt();
+        if (orderID > maxOrderId) {
+            maxOrderId = orderID;
+        }
+        std::string clientsName = orders[i]["ClientName"].asString();
         std::shared_ptr<List<Product>> productsList = std::make_shared<List<Product>>();
-        loadProductListToJson(object["Order"][i]["Products"], productsList);
+        loadProductListToJson(orders[i]["Products"], productsList);
         std::shared_ptr<PaymentMethod> payment;
-        if (object["Order"][i]["PaymentMethod"].asString() == "Card") {
+        if (orders[i]["PaymentMethod"].asString() == "Card") {
             payment = std::make_shared<Card>();
-        } else if (object["Order"][i]["PaymentMethod"].asString() == "Cash") {
+        } else if (orders[i]["PaymentMethod"].asString() == "Cash") {
             payment = std::make_shared<Cash>();
-        } else if (object["Order"][i]["PaymentMethod"].asString() == "Digital") {
+        } else if (orders[i]["PaymentMethod"].asString() == "Digital") {
             payment = std::make_shared<Digital>();
         }
-        float totalPrice = object["Order"][i]["Price"].asFloat();
+        float totalPrice = orders[i]["TotalPrice"].asFloat();
         order = std::make_shared<Order>(orderID, clientsName, productsList, payment, totalPrice);
         orderList->insertFirst(order);
     }
+        orderRegister = maxOrderId + 1;
 }
 
 void fileManagement::loadExtrasListToJson(const Json::Value &object, std::shared_ptr<List<Extras>> &extraList, std::string type) {
-    const Json::Value& extras = object["Products"]["Extras"];
-    for (int i = 0; i < extras.size() ; i++) {
+    const Json::Value& extras = object["Extras"];
+    for (Json::ArrayIndex i = 0; i < extras.size() ; i++) {
         std::shared_ptr<Extras> tempExtras;
-        std::string name = object["Extras"][i]["Name"].asString();
-        float price = object["Extras"][i]["Price"].asFloat();
+        std::string name = extras[i]["Name"].asString();
+        float price = extras[i]["Price"].asFloat();
         if (type == "Meal") {
             tempExtras = std::make_shared<MealExtra>(name, price);
         } else if (type == "Beverage") {

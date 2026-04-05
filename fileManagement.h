@@ -31,10 +31,10 @@ public:
     Json::Value convertExtrasToJson(std::shared_ptr<List<Extras>> extraList);
 
     //metodos de leer archivos Json
-    void loadFromFile(std::shared_ptr<List<Client>>&clientList, std::shared_ptr<List<Product>>&productList, std::shared_ptr<List<Order>>&orderList);
+    void loadFromFile(std::shared_ptr<List<Client>>&clientList, std::shared_ptr<List<Product>>&productList, std::shared_ptr<List<Order>>&orderList, int &orderRegister);
     void loadClientListToJson(const Json::Value& root, std::shared_ptr<List<Client>>&clientList);
     void loadProductListToJson(const Json::Value& root, std::shared_ptr<List<Product>>&productList);
-    void loadOrderListToJson(const Json::Value& root, std::shared_ptr<List<Order>>&orderList);
+    void loadOrderListToJson(const Json::Value& root, std::shared_ptr<List<Order>>&orderList, int &orderRegister);
     void loadExtrasListToJson(const Json::Value& root, std::shared_ptr<List<Extras>>&extraList, std::string type);
 
 

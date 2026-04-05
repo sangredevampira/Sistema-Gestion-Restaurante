@@ -8,14 +8,20 @@
 #include "Order.h"
 #include "CashRegister.h"
 
+
+
 class OrderManagement {
 private:
     std::shared_ptr<List<Order>> ordersList;
+    int orderCounter = 1;
 public:
     OrderManagement();
     std::string placeOrder(std::shared_ptr<Order>, int);
     std::shared_ptr<Order> searchOrder(int);
     std::shared_ptr<List<Order>> getOrderList();
+    int getOrderCounter();
+    void setOrderCounter(int);
+
 
 };
 
