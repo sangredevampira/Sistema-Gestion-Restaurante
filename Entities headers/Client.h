@@ -14,7 +14,6 @@ private:
     std:: string id;
 public:
     Client(std::string name = "", std::string id = "", std:: string phone = "");
-    virtual ~Client();
     std::string getName();
     std::string getPhone();
     std::string getId();

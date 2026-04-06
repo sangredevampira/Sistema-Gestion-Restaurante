@@ -10,9 +10,6 @@ Client::Client(std::string name, std::string id, std::string phone) {
     this->phone = phone;
 }
 
-Client::~Client() {
-}
-
 std::string Client::getName() {
     return name;
 }

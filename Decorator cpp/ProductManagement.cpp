@@ -148,8 +148,7 @@ std::string ProductManagement::showExtrasByType(std::shared_ptr<Product> product
 
     int displayIndex = 1;
 
-    for (int i = 1; i <= extrasList->length(); i++)
-    {
+    for (int i = 1; i <= extrasList->length(); i++) {
         if (type == 1)
             if (dynamic_cast<MealExtra*>(current->getElement().get()))
             {

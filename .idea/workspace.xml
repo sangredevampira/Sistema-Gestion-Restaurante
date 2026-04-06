@@ -30,8 +30,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dceba42b-dbc0-4805-b569-6a3e789ea620" name="Changes" comment="correccion pequena a cargar clientes">
-      <change beforePath="$PROJECT_DIR$/Entities cpp/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities headers/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Menu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator Headers/Product.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator Headers/Product.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator cpp/ProductManagement.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities cpp/Client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities cpp/Client.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities headers/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities headers/Client.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
