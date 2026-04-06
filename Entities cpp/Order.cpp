@@ -76,7 +76,7 @@ std::string Order::calculateTotalPrice(std::string clientName, bool registered)
         temp = temp->getNext();
     }
 
-    {
+    if (registered){
         totalPrice -= (totalPrice * 0.15);
         return "Aplica 15% de descuento";
     }
